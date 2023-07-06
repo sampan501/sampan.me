@@ -59,7 +59,7 @@
     "grunt-uncss-inline": "1.2.7",
     "grunt-xmlmin": "0.1.8",
     "jit-grunt": "0.10.0",
-    "postcss": "8.4.24",
+    "postcss": "8.4.25",
     "sass": "1.63.6",
     "terser": "5.18.2"
   },
