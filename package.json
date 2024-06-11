@@ -61,7 +61,7 @@
     "postcss": "8.4.38",
     "sass": "1.77.4",
     "terser": "5.31.0",
-    "prettier": "^3.3.0"
+    "prettier": "^3.3.2"
   },
   "browserslist": [
     ">0.2%",
