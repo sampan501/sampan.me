@@ -59,7 +59,7 @@
     "grunt-xmlmin": "0.1.8",
     "jit-grunt": "0.10.0",
     "postcss": "8.4.38",
-    "sass": "1.77.4",
+    "sass": "1.77.6",
     "terser": "5.31.0",
     "prettier": "^3.3.0"
   },
