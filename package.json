@@ -69,6 +69,6 @@
     "not op_mini all"
   ],
   "dependencies": {
-    "@percy/cli": "^1.28.7"
+    "@percy/cli": "^1.28.8"
   }
 }
