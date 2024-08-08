@@ -1,0 +1,37 @@
+.footer {
+    font-size: 90%;
+    clear: both;
+    padding-bottom: 1em;
+    margin-top: 5em;
+    text-align: center;
+
+    ul,
+    ol {
+        display: flex;
+        justify-content: center;
+        max-width: none;
+        @include remove-list-styling;
+        @include inline-nav;
+    }
+
+    &:before {
+        background-color: $colour-black;
+        content: '';
+        display: block;
+        margin-bottom: $section-spacing;
+        @include dark-mode($background: $colour-dark-mode-white);
+    }
+
+    .utility {
+        @include remove-list-styling;
+        @include inline-nav;
+    }
+}
+
+.social {
+
+    a {
+        display: inline-flex;
+        align-items: center;
+    }
+}

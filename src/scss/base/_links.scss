@@ -1,0 +1,30 @@
+a {
+    @include text-link;
+
+    p & {
+        padding-top: .25em;
+    }
+
+    >code {
+        padding: 0;
+        margin-right: 0;
+    }
+
+    @media (min-width: $m) {
+
+        h2 & {
+            text-decoration-thickness: .06em;
+        }
+    }
+}
+
+.research-links {
+    font-size: ms(1);
+    justify-content: center;
+    @include remove-list-styling;
+    @include inline-nav;
+
+    @media (min-width: $m) {
+        font-size: ms(2);
+    }
+}

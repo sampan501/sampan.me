@@ -1,0 +1,28 @@
+@mixin container {
+    max-width: 40em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: .5em;
+    padding-right: .5em;
+
+    @media (min-width: $m) {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    @media (min-width: $l) {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@mixin visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
