@@ -33,7 +33,7 @@ home: true
     <h2 id="software">Software</h2>
     <p>I love solving difficult problems, and often times develop software to help. If you want to see more, here is the <a href="/software/">full software list.</a></p>
     <ul class="index-list" reversed>
-        {%- set posts = collections.post | reverse %}
+        {%- set posts = collections.software | reverse %}
         {%- for post in posts %}
         {%- if post.data.featured === true %}
         {%- include "post-in-list.html" -%}

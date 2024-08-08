@@ -1,0 +1,28 @@
+---
+title: Software by Sambit Panda
+heading: Software
+intro: |
+    I enjoy developing software, many of which help solve difficult research problems. Many of these projects are also [on GitHub](https://github.com/sampan501).
+description: Sambit Panda's software organized by type.
+layout: default
+listing: true
+---
+
+<ol class="hfeed index-list" reversed>
+    {%- for post in collections.software | reverse %}
+    {% if post.data.type == "work" %}
+    {%- include "post-in-list.html" %}
+    {%- endif %}
+    {%- endfor %}
+</ol>
+
+<!-- TODO: try to get rid of this loop-->
+<hr>
+
+<ol class="hfeed index-list" reversed>
+    {%- for post in collections.software | reverse %}
+    {% if post.data.type == "personal" %}
+    {%- include "post-in-list.html" %}
+    {%- endif %}
+    {%- endfor %}
+</ol>

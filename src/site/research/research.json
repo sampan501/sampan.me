@@ -2,5 +2,5 @@
   "layout": "research.html",
   "hideIntro": true,
   "tags": ["research"],
-  "permalink": "research/{{ customURL if customURL else title | slugify | safe }}.html"
+  "permalink": "research/{{ customURL if customURL else page.fileSlug | slugify | safe }}.html"
 }

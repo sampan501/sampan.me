@@ -4,9 +4,6 @@
 {%- elif tags.includes('research') %}
     {%- set linkToList = '/research/' %}
     {%- set items = collections.research %}
-{%- elif tags.includes('case-study') %}
-    {%- set linkToList = '/portfolio/' %}
-    {%- set items = collections['case-study'] %}
 {%- endif %}
 <section aria-labelledby="further-reading-heading" class="teaser">
     <ol class="hfeed index-list" reversed>
