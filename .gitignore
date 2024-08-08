@@ -4,3 +4,4 @@
 .sass-cache/
 *.sublime-workspace
 *.css.map
+/tmp
