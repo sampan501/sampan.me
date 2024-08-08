@@ -1,0 +1,35 @@
+{%- if home %}
+    {%- set featuredPost = true %}
+{%- endif -%}
+
+<li class="post-in-list">
+    {%- if featuredPost %}<h3>{% else %}<h2 class="entry-title">{% endif %}
+        {% if post.data.tags.includes('research') %}
+            {% if post.data.type == "journal" %}
+            <span class="emoji-title">&#128196;</span>
+            {% elseif post.data.type == "preprint" %}
+            <span class="emoji-title">&#128221;</span>
+            {% endif -%}
+        {% endif -%}
+        <a href="{{ post.url  | replace(".html", "") }}">
+            {{ post.data.title | smart | safe }}
+        </a>
+    {% if featuredPost %}</h3>{% else %}</h2>{% endif %}
+    <p class="details">
+        <!-- TODO: figure out how to make these markdown instead of raw HTML-->
+        {% if post.data.tags.includes('research') %}
+            by {{ post.data.authors | safe }}<br>
+        {% endif -%}
+        on {{ post.data.date | date }}
+        {% if post.data.tags.includes('research') %}
+        in <a href="http://doi.org/{{ post.data.doi }}">{{ post.data.journal }}</a>
+        {% elseif post.data.tags.includes('blog') %}
+        {% include "post-categories.html" %}
+        {% endif -%}
+    </p>
+    {% if not post.data.tags.includes('research') %}
+    <div class="description entry-summary">
+        {{ post.data.intro  | markdown | safe }}
+    </div>
+    {% endif -%}
+</li>

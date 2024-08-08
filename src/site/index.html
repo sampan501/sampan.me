@@ -1,9 +1,43 @@
 ---
-title: Hello world
+title: Sambit Panda
 description: This is the website homepage
-layout: default
+intro: |
+    I'm a PhD candidate at [Johns Hopkins](https://www.bme.jhu.edu/academics/graduate/phd-program/), where I am advised by [Joshua T. Vogelstein](https://jovo.me/) in the NeuroData lab. Most days, I
+    develop and apply high-dimensional and nonlinear machine learning algorithms to answer interesting biomedical questions.
+    Here's a little bit more [about me](/about/).
+layout: base
+home: true
 ---
 
-<p>Lorem <a href="about">ipsum dolor sit amet</a>, consectetur <strong>adipisicing elit</strong>. Ullam in ducimus, cumque culpa repellendus corrupti quos facilis, illo dolore neque. Minus ex, odio dolore repudiandae ut quam porro repellat illum.</p>
+<article>
+    <h1>{{- title | smart | safe }}</h1>
+    {%- if intro %}
+    {{- intro | markdown | safe }}
+    {%- endif %}
+</article>
 
-<img src="/assets/img/karate-cat.jpg" width="411" height="348" alt="A cat in front of a Japanese temple with its front paws in the air, one back paw forward, and its mouth open; it looks like it’s preparing to fight." />
+<section aria-labelledby="research">
+    <h2 id="research">Research</h2>
+    <p>Here are some of my favorite research articles that I have written. If you want to read more, <a href="/research/">here is the full publication list.</a></p>
+    <ol class="hfeed index-list" reversed>
+        {%- set posts = collections.research | reverse %}
+        {%- for post in posts %}
+        {%- if post.data.featured === true %}
+        {%- include "post-in-list.html" -%}
+        {%- endif %}
+        {%- endfor %}
+    </ol>
+</section>
+
+<section aria-labelledby="software">
+    <h2 id="software">Software</h2>
+    <p>I love solving difficult problems, and often times develop software to help. If you want to see more, here is the <a href="/software/">full software list.</a></p>
+    <ul class="index-list" reversed>
+        {%- set posts = collections.post | reverse %}
+        {%- for post in posts %}
+        {%- if post.data.featured === true %}
+        {%- include "post-in-list.html" -%}
+        {%- endif %}
+        {%- endfor %}
+    </ul>
+</section>

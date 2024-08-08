@@ -1,7 +1,9 @@
 .DS_Store
+.sass-cache/
+*.css.map
 /node_modules/
 /dist/
-.sass-cache/
-*.sublime-workspace
-*.css.map
-/tmp
+.env
+/src/site/_includes/critical.css
+/src/site/_includes/scripts.js
+tmp/

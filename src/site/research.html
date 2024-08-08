@@ -1,0 +1,29 @@
+---
+title: Research by Sambit Panda
+heading: Research
+intro: |
+    My research encompasses many topics, including causal inference, hypothesis testing, neuroscience, etc. You see my work
+    by type below, or you can [browse by topic](/topics) or by [year](/blog/years). A full list is also available [on Google Scholar](https://scholar.google.com/citations?user=-V3CmPoAAAAJ&hl=en).
+description: Sambit Panda's research organized by type.
+layout: default
+listing: true
+---
+
+<ol class="hfeed index-list" reversed>
+    {%- for post in collections.research | reverse %}
+    {% if post.data.type != "other" %}
+    {%- include "post-in-list.html" %}
+    {%- endif %}
+    {%- endfor %}
+</ol>
+
+<!-- TODO: try to get rid of this loop-->
+<hr>
+
+<ol class="hfeed index-list" reversed>
+    {%- for post in collections.research | reverse %}
+    {% if post.data.type == "other" %}
+    {%- include "post-in-list.html" %}
+    {%- endif %}
+    {%- endfor %}
+</ol>

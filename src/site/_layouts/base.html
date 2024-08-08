@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+{% include "head.html" %}
+
+<body>
+    <div class="wrapper">
+        <a href="#main" tabindex="0" class="skip-to-content">Skip to main content</a>
+        {% include "header.html" %}
+        <main id="main" tabindex="-1">
+            {{ content | safe }}
+        </main>
+        <style>
+            @supports (color-scheme: dark light) {
+                @media screen and (prefers-color-scheme: dark) {
+                    :where(a:link) {
+                        color: #9e9eff;
+                    }
+
+                    :where(a:visited) {
+                        color: #d0adf0;
+                    }
+                }
+            }
+        </style>
+    </div>
+    {% include "footer.html" %}
+</body>
+
+</html>
