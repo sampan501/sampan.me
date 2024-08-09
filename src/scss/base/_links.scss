@@ -28,3 +28,10 @@ a {
         font-size: ms(2);
     }
 }
+
+.social {
+    a {
+        display: inline-flex;
+        align-items: center;
+    }
+}
