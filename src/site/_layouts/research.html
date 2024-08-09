@@ -7,9 +7,17 @@ layout: base.html
     <section aria-label="Post details" class="post-details">
         <p>
             by {{ authors | safe }}<br>
-            on <span class="entry-published date" itemprop="dateCreated pubdate datePublished" content="{{ date | isoDate }}" >{{ date | date }}</span> in {{ journal }}
+            on <span class="entry-published date" itemprop="dateCreated pubdate datePublished" content="{{ date | isoDate }}" >{{ date | date }}</span>
+            {% if type != "other" %}
+            in {{ journal }}
+            {% endif -%}
             <meta itemprop="author" content="{{ site.author.name }}" />
             <meta itemprop="publisher" itemscope itemtype="https://schema.org/Corporation" content="{{ site.company }}" />
+        </p>
+        <p>
+            {% if equalContribution %}
+            *Equal Contribution
+            {% endif -%}
         </p>
     </section>
     <div itemprop="mainEntityOfPage">
@@ -32,7 +40,11 @@ layout: base.html
         {{ content | safe }}
 
         <h2 id="abstract">Abstract</h2>
-        {{ abstract | markdown | safe }}
+        {% if abstract.includes("<sub>") %}
+            {{ abstract | safe }}
+        {% else %}
+            {{ abstract | markdown | safe }}
+        {% endif %}
     </div>
 </article>
 

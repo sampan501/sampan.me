@@ -27,7 +27,9 @@
         {% endif -%}
         on {{ post.data.date | date }}
         {% if post.data.tags.includes('research') %}
+        {% if post.data.type != "other" %}
         in <a href="http://doi.org/{{ post.data.doi }}">{{ post.data.journal }}</a>
+        {% endif -%}
         {% else %}
         {% include "post-categories.html" %}
         {% endif -%}
