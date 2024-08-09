@@ -26,12 +26,8 @@
         @include remove-list-styling;
         @include inline-nav;
     }
-}
 
-.social {
-
-    a {
-        display: inline-flex;
-        align-items: center;
+    .copyright {
+        margin-top: 1em;
     }
 }
