@@ -1,0 +1,12 @@
+img {
+    @include embedded-media;
+
+    a & {
+        display: inline;
+    }
+
+    p & {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

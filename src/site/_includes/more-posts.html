@@ -1,0 +1,40 @@
+{%- if tags.includes('post') %}
+    {%- set linkToList = '/blog/' %}
+    {%- set items = collections.post %}
+{%- elif tags.includes('research') %}
+    {%- set linkToList = '/research/' %}
+    {%- set items = collections.research %}
+{%- endif %}
+<section aria-labelledby="further-reading-heading" class="teaser">
+    <ol class="hfeed index-list" reversed>
+        {%- for post in collections.post | reverse | removeCurrent(title) | limit(2) %}
+            {% include "post-in-list.html" %}
+        {%- endfor %}
+    </ol>
+</section>
+
+<hr>
+<section aria-labelledby="further-reading-heading" class="post-nav">
+    {% set previousPost = items | getPreviousCollectionItem %}
+    {% set nextPost = items | getNextCollectionItem %}
+    <div>
+        {% if previousPost %}
+        <p>
+            &larr; Previous<br>
+            <a href="{{ previousPost.url }}">
+                {{ previousPost.data.title }}
+            </a>
+        </p>
+        {% endif %}
+    </div>
+    <div>
+        {% if nextPost %}
+        <p>
+            Next &rarr;<br>
+            <a href="{{ nextPost.url }}">
+                {{ nextPost.data.title }}
+            </a>
+        </p>
+        {% endif %}
+    </div>
+</section>

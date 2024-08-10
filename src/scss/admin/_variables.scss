@@ -1,0 +1,61 @@
+// Breakpoints
+$xxs: 15em;
+$xs: 25em;
+$s: 31em;
+$m: 43em;
+$l: 63em;
+$xl: 85em;
+
+// Light mode colours
+$colour-primary: #0097db;
+$colour-primary-darker: #0077b3;
+$colour-primary-dark: #0073ab;
+$colour-black: #0b0c0c;
+$colour-white: #fff;
+$colour-grey: #949494;
+$colour-highlight: #ebf8ff;
+$colour-main: $colour-white;
+
+// Dark mode colours
+$colour-dark-mode-primary-light: #19b3ff;
+$colour-dark-mode-primary: $colour-primary;
+$colour-dark-mode-primary-dark: #006394;
+$colour-dark-mode-black: #1f1f22;
+$colour-dark-mode-white: #f2f2f2;
+$colour-dark-mode-grey: #777;
+$colour-dark-mode-highlight: #3d3d3d;
+$colour-dark-mode-main: #262626;
+
+// High contrast colours
+$colour-high-contrast-primary-light: #4dc4ff;
+$colour-high-contrast-highlight: #171717;
+$colour-high-contrast-main: #000;
+
+// Code colours
+$colour-code-background: #f2f2f2;
+$colour-code-grey: #534f54;
+$colour-code-magenta: #d8036e;
+$colour-code-purple: #6d5ad8;
+$colour-code-cyan: #147685;
+$colour-code-yellow: #7c6c04;
+
+// Dark mode code colours
+$colour-dark-mode-code-background: #1a1a1c;
+$colour-dark-mode-code-grey: #adacaf;
+$colour-dark-mode-code-magenta: #ff508c;
+$colour-dark-mode-code-purple: #9786e9;
+$colour-dark-mode-code-cyan: #00d7e9;
+$colour-dark-mode-code-yellow: #ffe648;
+
+// High contrast code colours
+$colour-high-contrast-code-background: $colour-high-contrast-highlight;
+$colour-high-contrast-code-magenta: #ff75a5;
+$colour-high-contrast-code-purple: #a498ec;
+
+// General styles
+$border-radius-default: 5px;
+$border-radius-small: 2.5px;
+$section-spacing: 3em;
+
+// Code
+$code--font: menlo, monaco, 'Lucida Console', monospace;

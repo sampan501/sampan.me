@@ -1,0 +1,6 @@
+{
+  "layout": "research.html",
+  "hideIntro": true,
+  "tags": ["research"],
+  "permalink": "{{ page.filePathStem | replace('-', '', 1) | slugify | safe }}.html"
+}

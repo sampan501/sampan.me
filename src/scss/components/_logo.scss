@@ -1,0 +1,31 @@
+.logo {
+    display: inline-block;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    margin-top: -.2em;
+    text-decoration: none;
+    padding-left: .4em;
+    padding-right: .4em;
+    font-weight: 500;
+
+    &:link,
+    &:visited {
+        color: $colour-black;
+        @include dark-mode($colour: $colour-dark-mode-white);
+    }
+
+    &:hover,
+    &:active {
+        border-radius: .2rem;
+        background: $colour-highlight;
+        @include dark-mode($background: $colour-dark-mode-highlight);
+    }
+
+    @media (min-width: $xs) {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: $xs) {
+        padding: 0;
+    }
+}

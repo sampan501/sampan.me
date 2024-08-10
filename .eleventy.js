@@ -1,8 +1,117 @@
 module.exports = function(eleventyConfig) {
+  eleventyConfig.setUseGitIgnore(false);
+
+  // Date filter
+  eleventyConfig.addFilter("date", require("./lib/filters/dates.js") );
+  eleventyConfig.addFilter("isoDate", require("./lib/filters/isoDate.js") );
+
+  // Get development environment variable
+  require('dotenv').config()
+  const { ELEVENTY_ENV } = process.env
 
   // Generate assets
   eleventyConfig.addPassthroughCopy({ "src/img": "assets/img" });
-  eleventyConfig.addPassthroughCopy({ "src/css": "assets/css" });
+  eleventyConfig.addPassthroughCopy({ "src/txt": "assets/txt" });
+  eleventyConfig.addPassthroughCopy({ "src/pdf": "assets/pdf" });
+
+  // Smart quotes filter
+  const smartypants = require("smartypants");
+  eleventyConfig.addFilter("smart", str => smartypants.smartypants(str, 'qDe'));
+
+  // Markdown Plugins
+  var uslug = require('uslug');
+  var uslugify = s => uslug(s);
+  var anchor = require('markdown-it-anchor');
+  var markdownIt = require("markdown-it");
+  eleventyConfig.setLibrary("md", markdownIt({
+    html: true,
+    typographer: true
+  }).use(anchor, {slugify: uslugify, tabIndex: false}));
+  var mdIntro = markdownIt({
+    typographer: true
+  });
+  eleventyConfig.addFilter("markdown", markdown => mdIntro.render(markdown));
+
+  const slugify = require("slugify");
+  eleventyConfig.addFilter("slugify", str => {
+    return slugify(str, {
+      customReplacements: [
+        ['+', ' plus '],
+        ['@', ' at ']
+      ],
+      remove: /[*~.,–—()'"‘’“”!?:;]/g,
+      lower: true
+    });
+  });
+
+  // Code syntax highlighting
+  const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+  eleventyConfig.addPlugin(syntaxHighlight, {
+    templateFormats: ["njk", "md"]
+  });
+
+  // RSS
+  const pluginRss = require("@11ty/eleventy-plugin-rss");
+  eleventyConfig.addPlugin(pluginRss);
+
+  // List all tags
+  eleventyConfig.addFilter("tags", collection => {
+    const notRendered = ['all', 'post', 'research', 'software', 'other'];
+    return Object.keys(collection)
+      .filter(d => !notRendered.includes(d))
+      .sort();
+  });
+
+  // List tags belonging to a page
+  eleventyConfig.addFilter("tagsOnPage", tags => {
+    const notRendered = ['all', 'post', 'research', 'software', 'other'];
+    return tags
+      .filter(d => !notRendered.includes(d))
+      .sort();
+  });
+
+  // Sort by order in front matter
+  eleventyConfig.addFilter("ordered", collection => {
+    return collection.sort((a, b) => a.data.order - b.data.order);
+  });
+
+  // Add limit for output
+  eleventyConfig.addFilter("limit", (arr, limit) => {
+    return arr.slice(0, limit);
+  });
+
+  // Remove current post from output
+  eleventyConfig.addFilter("removeCurrent", (arr, title) => {
+    return arr.filter(item => {
+      return item.url && item.data.title !== title;
+    });
+  });
+
+  // Get all the years that blog posts were posted
+  eleventyConfig.addFilter("getYears", (arr) => {
+    const dates = arr.map(post => post.date.getFullYear());
+    const uniqueYears = [...new Set(dates)];
+    return uniqueYears;
+  });
+
+  // Filter items by year
+  eleventyConfig.addFilter("filterByYear", (arr, year) => {
+    return arr.filter(item => {
+      return item.date.getFullYear() == year;
+    })
+  });
+
+  // Get current year for footer
+  eleventyConfig.addFilter("getCurrentYear", () => new Date().getFullYear());
+
+  // Get current date
+  eleventyConfig.addFilter("getCurrentDate", () => {
+    const today = new Date();
+    const dd = String(today.getDate()).padStart(2, '0');
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const yyyy = today.getFullYear();
+    return yyyy + '/' + mm + '/' + dd;
+  });
 
   // Localhost server config
   eleventyConfig.setServerOptions({
@@ -16,6 +125,7 @@ module.exports = function(eleventyConfig) {
       includes: "_includes",
       layouts: "_layouts"
     },
+    templateFormats : ["njk", "html", "md", "txt", "webmanifest", "ico"],
     htmlTemplateEngine : "njk",
     markdownTemplateEngine : "njk"
   };

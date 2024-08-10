@@ -1,14 +1,12 @@
-# eleventy-base
+# sampan.me
 
-This is a basic [Eleventy](https://www.11ty.io) website that will form a starting point for pretty much any project.
-
+Source code for [sampan.me](https://sampan.me), my personal website, built with [Eleventy](https://www.11ty.dev/).
 
 ## Initial setup
 
 - Make sure [node is installed locally via nvm](https://www.tempertemper.net/blog/using-nvm-on-macos)
 - Run `nvm use` in the project root directory, to ensure the correct npm version is running
 - Run `npm install` (or `npm i` if you're feeling flashy) in the project root to install the npm packages
-
 
 ## Development environment
 
@@ -21,7 +19,6 @@ Any changes you make will automatically appear in your browser. Note: any config
 
 When you're finished, `⌃` + `c` stops your dev environment running.
 
-
 ## Site build
 
 - Run `npm run build` to build the site out into the /dist/ directory. This doesn't run a local development server or watch the /src/ directory for any SCSS or Eleventy changes
@@ -29,19 +26,11 @@ When you're finished, `⌃` + `c` stops your dev environment running.
 
 Both of these build commands are configured in the netlify.toml file, so you don't have to worry about them.
 
-
 ## Updating dependencies
 
 Do this with caution.
 
 - Run `npm update` in the project root
-
-
-## Getting started
-
-This repo is full of references to `example.com`. The first thing to do is to replace this with your own site's URL. You'll probably want to change all the references to this template repo (e.g. in your package.json file) to your own too.
-
-The root folder of this repo contains all the config files you need. The stuff you'll be editing more regularly is all in the `/src/` directory.
 
 ### HTML
 
@@ -51,21 +40,16 @@ Each page starts with <i>front matter</i> – that's the stuff between the two `
 
 Every page needs a `title` and a `permalink` set in front matter.
 
-### CSS
+## License
 
-You should write your styling in `/src/scss/`. What's SCSS? Is [often called Sass](https://sass-lang.com/) and it's a way to write CSS more efficiently. The good thing, though, is that you can write plain ol' CSS if you like. So you're fine if you know some SCSS, but don't be scared if you don't – the CSS you know and love will work fine!
+This is my personal website. I use a lot of code fragments that smarter people than me have come up with, so it's only right to release my code open source as well. You're free to re-use **parts of this codebase** in your own site. Just **don't copy the entire thing**, replace the content and publish it. You know - be nice about it.
 
+## Acknowledgements
 
-## Production release
+The content and design for this website was inspired by a number of people:
 
-To publish work, you should create a release:
-
-- Take a branch from `main` with `git checkout -b release/1.0.0` (where `1.0.0` should be the forthcoming version number)
-- Update the `.changelog` file with details of what has been added/changed/fixed/removed (this usually means moving everything under `## Unreleased` into a new version underneath)
-- Bump the version number accordingly:
-    - For a major: `npm run bump:major`
-    - For a minor: `npm run bump:minor`
-    - For a patch: `npm run bump:patch`
-- Push the changes to the remote for PR (Pull Request)
-- Deal with the merge on the remote; a deployment will trigger when the release branch is merged into your deployment branch (usualy `main`)
-- Pull the updated `main` branch down and delete the release branch with `git branch -d release/1.0.0`
+- [tempertemper.net](https://www.tempertemper.net/)
+- [jonbarron.info](https://jonbarron.info/)
+- [stefanzweifel.dev/](https://stefanzweifel.dev/)
+- [bdpedigo.github.io](https://bdpedigo.github.io/)
+- [neurodata.io/about/jovo/](https://neurodata.io/about/jovo/)

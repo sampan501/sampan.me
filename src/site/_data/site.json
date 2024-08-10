@@ -1,15 +1,14 @@
 {
-  "title": "eleventy-base",
-  "company": "Example Limited",
+  "title": "sampan.me",
+  "company": "Sambit Panda",
   "version": "1.1.1",
-  "url": "https://example.com",
+  "url": "https://sampan.me",
   "baseurl": "",
-  "repo": "https://github.com/tempertemper/eleventy-base/issues",
+  "repo": "https://github.com/sampan501/website/issues",
   "comments": false,
   "author": {
-    "name": "Example name",
-    "twitter": "@example",
-    "email": "hello+website@example.com"
+    "name": "Sambit Panda",
+    "email": "sampanda501@gmail.com"
   },
-  "og_locale": "en_GB"
+  "og_locale": "en_US"
 }
