@@ -13,8 +13,6 @@ abstract: |
   **Results:** This application simplifies and streamlines the analysis process, thereby reducing labor and time requirements. It offers interactive visualizations, event-triggered average processing, powerful tools for filtering behavioral events, and quality control features.
 
   **Conclusions:** FiPhA is a valuable tool for behavioral neuroscientists working with discrete, event-based FP data. It addresses the challenges associated with analyzing and investigating such data, offering a robust and user-friendly solution without the complexity of having to hand-design custom analysis pipelines. This application thus helps standardize an approach to FP analysis.
-tags:
-  - neuro
 links:
   - "bioRxiv: https://www.biorxiv.org/content/10.1101/2023.07.21.550098v2"
   - "Code: https://github.com/mfbridge/FiPhA"

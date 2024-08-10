@@ -11,8 +11,6 @@ abstract: |
   **Results:** Aversive foot shock increased both NE and DA release in the dorsal CA1, while freezing behavior associated with recall of fear memory was accompanied by decreased release. Moreover, we found that freezing at the recent time point was sensitive to both partial and complete loss of locus coeruleus--NE synthesis throughout prenatal and postnatal development, similar to previous observations of mice with global loss of NE synthesis beginning postnatally. In contrast, freezing at the remote time point was compromised only by complete loss of locus coeruleus--NE synthesis beginning prenatally.
 
   **Conclusions:** Overall, these findings provide novel insights into the role of NE in contextual fear and the precise temporal dynamics of both NE and DA during freezing behavior and highlight complex relationships between genotype, sex, and NE signaling.
-tags:
-  - neuro
 links:
   - "bioRxiv:  https://www.biorxiv.org/content/10.1101/2023.03.26.534277v1"
 type: journal

@@ -11,8 +11,6 @@ abstract: |
   **Results:** Machine learning models trained on the HBN data exhibited improved performance over existing assessments. Using only non-proprietary assessments did not significantly impact model performance.
 
   **Discussion:** This study demonstrates the feasibility of using existing large-scale datasets for creating accurate and efficient assessments for mental disorders and learning disabilities. The performance values of the machine learning models provide estimates of the performance of the new assessments in a population similar to HBN. The trained models can be used in a new population after validation and acquiring consent of the authors of the original assessments. The modular architecture of the developed tool ensures seamless application to diverse clinical and research contexts.
-tags:
-  - neuro
 type: preprint
 date: 2024-06-20
 equalContribution: true
