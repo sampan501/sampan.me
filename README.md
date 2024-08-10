@@ -47,3 +47,9 @@ This is my personal website. I use a lot of code fragments that smarter people t
 ## Acknowledgements
 
 The content and design for this website was inspired by a number of people:
+
+- [tempertemper.net](https://www.tempertemper.net/)
+- [jonbarron.info](https://jonbarron.info/)
+- [stefanzweifel.dev/](https://stefanzweifel.dev/)
+- [bdpedigo.github.io](https://bdpedigo.github.io/)
+- [neurodata.io/about/jovo/](https://neurodata.io/about/jovo/)
