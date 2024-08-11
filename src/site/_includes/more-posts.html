@@ -5,14 +5,6 @@
     {%- set linkToList = '/research/' %}
     {%- set items = collections.research %}
 {%- endif %}
-<section aria-labelledby="further-reading-heading" class="teaser">
-    <ol class="hfeed index-list" reversed>
-        {%- for post in collections.post | reverse | removeCurrent(title) | limit(2) %}
-            {% include "post-in-list.html" %}
-        {%- endfor %}
-    </ol>
-</section>
-
 <hr>
 <section aria-labelledby="further-reading-heading" class="post-nav">
     {% set previousPost = items | getPreviousCollectionItem %}
