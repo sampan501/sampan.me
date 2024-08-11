@@ -22,9 +22,7 @@ When you're finished, `⌃` + `c` stops your dev environment running.
 ## Site build
 
 - Run `npm run build` to build the site out into the /dist/ directory. This doesn't run a local development server or watch the /src/ directory for any SCSS or Eleventy changes
-- `npm run staging` does a very similar thing to `npm run build`, the only difference being it overwrites the robots.txt file so that search engines won't index the site
-
-Both of these build commands are configured in the netlify.toml file, so you don't have to worry about them.
+- `npm run staging` does a very similar thing to `npm run build`, the only difference being it overwrites the robots.txt file so that search engines won't index the site.
 
 ## Updating dependencies
 
