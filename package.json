@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sampan501/website.git"
+    "url": "git+https://github.com/sampan501/sampan.me.git"
   },
   "author": "Sambit Panda",
   "license": "CC BY-SA",
   "bugs": {
-    "url": "https://github.com/sampan501/website/issues"
+    "url": "https://github.com/sampan501/sampan.me/issues"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
