@@ -17,10 +17,10 @@
         {% else %}
         <a href="{{ post.url  | replace(" .html", "" ) }}">
         {% endif -%}
-            {{ post.data.title | smart | safe }}
+        {{ post.data.title | smart | safe }}
         </a>
     {% if featuredPost %}</h3>{% else %}</h2>{% endif %}
-    {% if not post.data.tags.includes('software') %}
+    {% if not post.data.tags.includes('software') and not featuredPost %}
     <p class="details">
         <!-- TODO: figure out how to make these markdown instead of raw HTML-->
         {% if post.data.tags.includes('research') %}
@@ -36,7 +36,7 @@
         {% endif -%}
     </p>
     {% endif -%}
-    {% if not post.data.tags.includes('research') %}
+    {% if post.data.intro %}
     <div class="description entry-summary">
         {{ post.data.intro  | markdown | safe }}
     </div>

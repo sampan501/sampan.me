@@ -16,4 +16,5 @@ links:
 type: journal
 date: 2024-01-02
 equalContribution: true
+intro: Investiages the role of norepinephrine, a neurotransmitter, in fear and how this changes with genotype, sex, etc.
 ---

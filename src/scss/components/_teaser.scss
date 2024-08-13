@@ -1,6 +1,7 @@
 .teaser {
 
     li {
+        @include highlight-box;
 
         +li {
             margin-top: 1em;
@@ -12,10 +13,30 @@
     }
 
     h3 {
-        margin-top: .75em;
+        margin-top: 0;
+        overflow-wrap: word-break;
     }
 
     .index-list {
         max-width: none;
+
+        @media (min-width: $m) {
+            max-width: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0em 1em;
+            grid-auto-flow: row;
+            grid-template-areas:
+                ". .";
+
+            @media (min-width: $l) {
+                @include overspill;
+            }
+        }
+    }
+
+    .emoji-title {
+        margin-left: 0;
     }
 }
