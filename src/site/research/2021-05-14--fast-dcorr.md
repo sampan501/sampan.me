@@ -11,5 +11,5 @@ links:
 type: journal
 date: 2022-01-02
 featured: true
-intro: Derives an approximation to the p-value of distance correlation that bypasses the permutation test.
+intro: Derives an approximation to the p-value of distance correlation that bypasses the permutation test with no significant loss of power.
 ---
