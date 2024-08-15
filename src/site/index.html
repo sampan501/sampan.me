@@ -15,7 +15,7 @@ home: true
         <picture>
             <source srcset="../assets/img/profile.avif" type="image/avif">
             <source srcset="../assets/img/profile.webp" type="image/webp">
-            <img class="profile-img" src="../assets/img/profile.jpg" alt="Sambit Panda profile picture" width="40" height="40">
+            <img class="profile-img" src="../assets/img/profile.jpg" alt="Sambit Panda profile picture" width="800" height="800">
         </picture>
         <div class="profile-title">
             <h1>{{- title | smart | safe }}</h1>
@@ -30,9 +30,9 @@ home: true
     {%- endif %}
 </article>
 
-<section aria-labelledby="research" class="teaser">
+<div aria-labelledby="research" class="teaser">
     <h2 id="research">Research</h2>
-    <p>Here are some of my favorite research articles that I have written. If you want to read more, <a href="/research/">here is the full publication list.</a></p>
+    <p>Here are some of my favorite research articles. If you want to read more, take a look at the <a href="/research/">full publication list.</a></p>
     <ol class="hfeed index-list" reversed>
         {%- set posts = collections.research | reverse %}
         {%- for post in posts %}
@@ -41,11 +41,11 @@ home: true
         {%- endif %}
         {%- endfor %}
     </ol>
-</section>
+</div>
 
-<section aria-labelledby="software" class="teaser">
+<div aria-labelledby="software" class="teaser">
     <h2 id="software">Software</h2>
-    <p>I love solving difficult problems, and often times develop software to help. If you want to see more, <a href="/software/">here is the full software list.</a></p>
+    <p>I love solving difficult problems, and often times develop software to help. You can see more in the <a href="/software/">full software list.</a></p>
     <ul class="hfeed index-list" reversed>
         {%- set posts = collections.software | reverse %}
         {%- for post in posts %}
@@ -54,4 +54,4 @@ home: true
         {%- endif %}
         {%- endfor %}
     </ul>
-</section>
+</div>

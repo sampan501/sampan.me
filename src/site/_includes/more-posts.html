@@ -6,7 +6,7 @@
     {%- set items = collections.research %}
 {%- endif %}
 <hr>
-<section aria-labelledby="further-reading-heading" class="post-nav">
+<div aria-labelledby="further-reading-heading" class="post-nav">
     {% set previousPost = items | getPreviousCollectionItem %}
     {% set nextPost = items | getNextCollectionItem %}
     <div>
@@ -29,4 +29,4 @@
         </p>
         {% endif %}
     </div>
-</section>
+</div>
