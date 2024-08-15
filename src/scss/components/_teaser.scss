@@ -1,7 +1,6 @@
 .teaser {
 
     li {
-
         +li {
             margin-top: 1em;
 
@@ -13,9 +12,5 @@
 
     h3 {
         margin-top: .75em;
-    }
-
-    .index-list {
-        max-width: none;
     }
 }

@@ -6,5 +6,4 @@ tags:
   - selected
 type: work
 date: 2019-12-16
-featured: true
 ---

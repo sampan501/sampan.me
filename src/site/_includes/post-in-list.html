@@ -3,7 +3,7 @@
 {%- endif -%}
 
 <li class="post-in-list">
-    {%- if featuredPost %}<h3>{% else %}<h2 class="entry-title">{% endif %}
+    {%- if featuredPost %}<h3>{% else %}<h2>{% endif %}
         {% if post.data.tags.includes('research') %}
             {% if post.data.type == "journal" %}
             <span class="emoji-title">&#128196;</span>
@@ -17,26 +17,27 @@
         {% else %}
         <a href="{{ post.url  | replace(" .html", "" ) }}">
         {% endif -%}
-            {{ post.data.title | smart | safe }}
+        {{ post.data.title | smart | safe }}
         </a>
     {% if featuredPost %}</h3>{% else %}</h2>{% endif %}
-    {% if not post.data.tags.includes('software') %}
+    {% if not featuredPost %}
     <p class="details">
         <!-- TODO: figure out how to make these markdown instead of raw HTML-->
         {% if post.data.tags.includes('research') %}
-            by {{ post.data.authors | safe }}<br>
+            {{ post.data.authors | safe }}<br>
         {% endif -%}
-        on {{ post.data.date | date }}
-        {% if post.data.tags.includes('research') %}
-        {% if post.data.type != "other" %}
-        in <a href="http://doi.org/{{ post.data.doi }}">{{ post.data.journal }}</a>
+        {% if post.data.tags.includes('research') -%}
+        {% if post.data.type != "other" -%}
+        <em><a href="http://doi.org/{{ post.data.doi }}">{{ post.data.journal }}</a></em>,
         {% endif -%}
-        {% else %}
-        {% include "post-categories.html" %}
+        {{ post.data.date | date('year') }} &#12539;
+        {% elseif not post.data.tags.includes('software') -%}
+        {{ post.data.date | date }} &#12539;
         {% endif -%}
+        {%- include "post-categories.html" %}
     </p>
     {% endif -%}
-    {% if not post.data.tags.includes('research') %}
+    {% if post.data.intro %}
     <div class="description entry-summary">
         {{ post.data.intro  | markdown | safe }}
     </div>
