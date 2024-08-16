@@ -19,4 +19,6 @@ links:
 type: journal
 date: 2024-02-23
 intro: Introduces `FiPhA`, a R package for performing fiber photometry analysis.
+tags:
+  - Neuroscience
 ---

@@ -10,4 +10,6 @@ links:
 type: journal
 date: 2018-01-02
 intro: Developed a sensor that can be used to monitor real-time dynamics of hydrogen peroxide in the brain; we used it to investigate Parkinson's disease.
+tags:
+  - Neuroscience
 ---

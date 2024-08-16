@@ -8,4 +8,7 @@ abstract: |
 type: preprint
 date: 2023-11-28
 intro: Generalizes causal estimators to arbitrary dimensional space and uses this to develop a new test (Causal CDcorr).
+tags:
+  - Causal Inference
+  - Hypothesis Testing
 ---

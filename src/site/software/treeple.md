@@ -5,4 +5,7 @@ url: https://github.com/neurodata/treeple
 type: work
 date: 2024-05-31
 featured: true
+tags:
+  - Forests
+  - Python
 ---
