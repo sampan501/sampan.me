@@ -8,4 +8,6 @@ abstract: |
 type: thesis
 date: 2020-05-05
 intro: My master's thesis, which introduces a Python package and a new framework for k-sample testing.
+tags:
+  - Hypothesis Testing
 ---

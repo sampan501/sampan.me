@@ -1,7 +1,7 @@
 ---
 title: "Partial or Complete Loss of Norepinephrine Differentially Alters Contextual Fear and Catecholamine Release Dynamics in Hippocampal CA1"
 authors: "Leslie R. Wilson*, Nicholas W. Plummer*, Irina Y. Evsyukova, Daniela Patino, Casey L. Stewart, Kathleen G. Smith, Kathryn S. Konrad, Sydney A. Fry, Alex L. Deal, Victor W. Kilonzo, <strong>Sambit Panda</strong>, Natale R. Sciolino, Jesse D. Cushman, and Patricia Jensen"
-journal: Biological Psychiatry Global Open Science
+journal: "BP: GOS"
 doi: "10.1016/j.bpsgos.2023.10.001"
 abstract: |
   **Background:** Contextual fear learning is heavily dependent on the hippocampus. Despite evidence that catecholamines contribute to contextual encoding and memory retrieval, the precise temporal dynamics of their release in the hippocampus during behavior is unknown. In addition, new animal models are required to probe the effects of altered catecholamine synthesis on release dynamics and contextual learning.
@@ -16,5 +16,7 @@ links:
 type: journal
 date: 2024-01-02
 equalContribution: true
-intro: Investigates the role of norepinephrine, a neurotransmitter, in fear and how this changes with genotype, sex, etc.
+intro: Investigates the role of norepinephrine (NE), a neurotransmitter, in fear and NE release changes with genotype, sex, etc.
+tags:
+  - Neuroscience
 ---

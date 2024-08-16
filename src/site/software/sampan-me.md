@@ -4,4 +4,6 @@ intro: "This website, which takes inspiration from [www.tempertemper.net](https:
 url: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.multiscale_graphcorr.html
 type: personal
 date: 2024-03-01
+tags:
+  - HTML/CSS
 ---

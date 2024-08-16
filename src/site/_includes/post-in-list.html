@@ -30,11 +30,10 @@
         {% if post.data.type != "other" -%}
         <em><a href="http://doi.org/{{ post.data.doi }}">{{ post.data.journal }}</a></em>,
         {% endif -%}
-        {{ post.data.date | date('year') }} &#12539;
+        {{ post.data.date | date('year') }}
         {% elseif not post.data.tags.includes('software') -%}
-        {{ post.data.date | date }} &#12539;
+        {{ post.data.date | date }}
         {% endif -%}
-        {%- include "post-categories.html" %}
     </p>
     {% endif -%}
     {% if post.data.intro %}

@@ -11,6 +11,8 @@ links:
   - "Talk: https://neurodata.io/talks/scipy21.html"
 type: preprint
 date: 2021-04-01
-# featured: true
 intro: "Introduces `hyppo`, a package that incorporates conventional and novel multivariate hypothesis tests."
+tags:
+  - Hypothesis Testing
+  - Python
 ---
