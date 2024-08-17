@@ -10,9 +10,9 @@ module.exports = function(eleventyConfig) {
   const { ELEVENTY_ENV } = process.env
 
   // Generate assets
-  eleventyConfig.addPassthroughCopy({ "src/img": "assets/img" });
-  eleventyConfig.addPassthroughCopy({ "src/txt": "assets/txt" });
-  eleventyConfig.addPassthroughCopy({ "src/pdf": "assets/pdf" });
+  eleventyConfig.addPassthroughCopy({ "src/img": "img" });
+  eleventyConfig.addPassthroughCopy({ "src/txt": "txt" });
+  eleventyConfig.addPassthroughCopy({ "src/pdf": "pdf" });
 
   // Smart quotes filter
   const smartypants = require("smartypants");
