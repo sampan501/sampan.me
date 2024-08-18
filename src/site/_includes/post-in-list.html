@@ -8,7 +8,8 @@
             {% if post.data.type == "journal" %}
             <span class="emoji-title">&#128196;</span>
             {% elseif post.data.type == "preprint" %}
-            <span class="emoji-title">&#128221;</span>{% elseif post.data.type == "thesis" %}
+            <span class="emoji-title">&#128221;</span>
+            {% elseif post.data.type == "thesis" %}
             <span class="emoji-title">&#127891;</span>
             {% endif -%}
         {% endif -%}
