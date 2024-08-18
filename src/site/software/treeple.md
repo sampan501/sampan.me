@@ -1,6 +1,6 @@
 ---
 title: "treeple"
-intro: "Scikit-learn compatible decision trees beyond those offered in scikit-learn."
+intro: "Extends scikit-learn decision trees to do oblique splits, manifold learning, hypothesis testing, etc."
 url: https://github.com/neurodata/treeple
 type: work
 date: 2024-05-31
