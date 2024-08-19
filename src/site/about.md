@@ -27,5 +27,6 @@ In my free time, I like to read books and go on hikes!
 - [Google Scholar](https://scholar.google.com/citations?user=-V3CmPoAAAAJ&hl=en)
 - [GitHub](https://github.com/sampan501)
 - [LinkedIn](https://www.linkedin.com/in/sampan501/)
-- [Resume](/pdf/Sambit%20Panda%20Resume.pdf)
+- [Resume](/pdf/Sambit-Panda-Resume.pdf)
+- [CV](/pdf/Sambit-Panda-CV.pdf)
 - [Bio](/txt/bio.txt)
