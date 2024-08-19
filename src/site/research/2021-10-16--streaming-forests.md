@@ -1,6 +1,10 @@
 ---
 title: "Simplest Streaming Trees"
-authors: "Haoyin Xu, Jayanta Dey, <strong>Sambit Panda</strong>, and Joshua T. Vogelstein"
+authors:
+  - Haoyin Xu
+  - Jayanta Dey
+  - me
+  - Joshua T. Vogelstein
 journal: arXiv
 doi: "10.48550/arXiv.2110.08483"
 abstract: |

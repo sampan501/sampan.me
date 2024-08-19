@@ -1,6 +1,15 @@
 ---
 title: "Learning sources of variability from high-dimensional observational studies"
-authors: "Eric W. Bridgeford, Jaewon Chung, Brian Gilbert, <strong>Sambit Panda</strong>, Adam Li, Cencheng Shen, Alexandra Badea, Brian Caffo, and Joshua T. Vogelstein"
+authors:
+  - Eric W. Bridgeford
+  - Jaewon Chung
+  - Brian Gilbert
+  - me
+  - Adam Li
+  - Cencheng Shen
+  - Alexandra Badea
+  - Brian Caffo
+  - Joshua T. Vogelstein
 journal: arXiv
 doi: "10.48550/arXiv.2307.13868"
 abstract: |

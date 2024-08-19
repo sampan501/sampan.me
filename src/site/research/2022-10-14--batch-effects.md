@@ -1,6 +1,17 @@
 ---
 title: "When no answer is better than a wrong answer: a causal perspective on batch effects"
-authors: "Eric W. Bridgeford, Michael Powell, Gregory Kiar, Stephanie Noble, Jaewon Chung, <strong>Sambit Panda</strong>, Ross Lawrence, Ting Xu, Michael Milham, Brian Caffo, and Joshua T. Vogelstein"
+authors:
+  - Eric W. Bridgeford
+  - Michael Powell
+  - Gregory Kiar
+  - Stephanie Noble
+  - Jaewon Chung
+  - me
+  - Ross Lawrence
+  - Ting Xu
+  - Michael Milham
+  - Brian Caffo
+  - Joshua T. Vogelstein
 journal: bioRxiv
 doi: "10.1101/2021.09.03.458920"
 abstract: |

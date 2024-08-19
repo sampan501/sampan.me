@@ -1,6 +1,10 @@
 ---
 title: "Selective and Mechanically Robust Sensors for Electrochemical Measurements of Real-Time Hydrogen Peroxide Dynamics in Vivo"
-authors: "Leslie R. Wilson, <strong>Sambit Panda</strong>, Andreas C. Schmidt, and Leslie A. Sombers"
+authors:
+  - Leslie R. Wilson
+  - me
+  - Andreas C. Schmidt
+  - Leslie A. Sombers
 journal: Analytical Chemistry
 doi: "10.1021/acs.analchem.7b03770"
 abstract: |

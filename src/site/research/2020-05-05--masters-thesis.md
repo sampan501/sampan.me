@@ -1,6 +1,7 @@
 ---
 title: "Multivariate Independence and k-sample Testing"
-authors: "<strong>Sambit Panda</strong>"
+authors:
+  - me
 journal: Johns Hopkins
 doi: "https://jscholarship.library.jhu.edu/items/3296159f-5554-442a-b3a5-f3554317b6ee"
 abstract: |

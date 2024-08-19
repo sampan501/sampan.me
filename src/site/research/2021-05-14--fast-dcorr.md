@@ -1,6 +1,9 @@
 ---
 title: "The Chi-Square Test of Distance Correlation"
-authors: "Cencheng Shen, <strong>Sambit Panda</strong>, and Joshua T. Vogelstein"
+authors:
+  - Cencheng Shen
+  - me
+  - Joshua T. Vogelstein
 journal: JCGS
 doi: "10.1080/10618600.2021.1938585"
 abstract: |

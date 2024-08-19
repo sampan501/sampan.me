@@ -1,6 +1,13 @@
 ---
 title: "hyppo: A Multivariate Hypothesis Testing Python Package"
-authors: "<strong>Sambit Panda</strong>, Satish Palaniappan, Junhao Xiong, Eric W. Bridgeford, Ronak Mehta, Cencheng Shen, and Joshua T. Vogelstein"
+authors:
+  - me
+  - Satish Palaniappan
+  - Junhao Xiong
+  - Eric W. Bridgeford
+  - Ronak Mehta
+  - Cencheng Shen
+  - Joshua T. Vogelstein
 journal: arXiv
 doi: "10.48550/arXiv.1907.02088"
 abstract: |

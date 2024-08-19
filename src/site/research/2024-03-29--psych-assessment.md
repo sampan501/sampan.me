@@ -1,6 +1,14 @@
 ---
 title: "Accurate and Efficient Data-Driven Psychiatric Assessment Using Machine Learning"
-authors: "Kseniia Konishcheva, Bennett Leventhal, Maki Koyama, <strong>Sambit Panda</strong>, Joshua T. Vogelstein, Michael Milham, Ariel Lindner*, and Arno Klein*"
+authors:
+  - Kseniia Konishcheva
+  - Bennett Leventhal
+  - Maki Koyama
+  - me
+  - Joshua T. Vogelstein
+  - Michael Milham
+  - Ariel Lindner*
+  - Arno Klein*
 journal: PsyArXiv
 doi: "10.31234/osf.io/sekfw"
 abstract: |

@@ -23,9 +23,8 @@
     {% if featuredPost %}</h3>{% else %}</h2>{% endif %}
     {% if not featuredPost %}
     <p class="details">
-        <!-- TODO: figure out how to make these markdown instead of raw HTML-->
         {% if post.data.tags.includes('research') %}
-            {{ post.data.authors | safe }}<br>
+            {% include "research-authors.html" %}<br>
         {% endif -%}
         {% if post.data.tags.includes('research') -%}
         {% if post.data.type != "other" -%}

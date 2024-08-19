@@ -6,7 +6,18 @@ layout: base.html
     <h1 itemprop="title headline">{{ title | smart | safe }}</h1>
     <div aria-label="Post details" class="post-details">
         <p>
-            {{ authors | safe }}<br>
+            {%- if authors.length >= 1 %}
+                {% for author in authors %}
+                    {%- if author == "me" %}
+                        <strong>{{ site.author.name }}</strong>
+                    {%- elseif author == "me*"%}
+                        <strong>{{ site.author.name }}</strong>*
+                    {%- else %}
+                        {{ author }}
+                    {%- endif -%}
+                    {%- if loop.length >= 2 %}{%- if not loop.last %},{%- endif -%}{%- endif -%}
+                {%- endfor %}
+            {%- endif -%}<br>
             {% if type != "other" %}
             {{ journal }},
             {% endif -%}

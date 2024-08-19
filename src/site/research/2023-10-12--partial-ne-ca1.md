@@ -1,6 +1,20 @@
 ---
 title: "Partial or Complete Loss of Norepinephrine Differentially Alters Contextual Fear and Catecholamine Release Dynamics in Hippocampal CA1"
-authors: "Leslie R. Wilson*, Nicholas W. Plummer*, Irina Y. Evsyukova, Daniela Patino, Casey L. Stewart, Kathleen G. Smith, Kathryn S. Konrad, Sydney A. Fry, Alex L. Deal, Victor W. Kilonzo, <strong>Sambit Panda</strong>, Natale R. Sciolino, Jesse D. Cushman, and Patricia Jensen"
+authors:
+  - Leslie R. Wilson*
+  - Nicholas W. Plummer*
+  - Irina Y. Evsyukova
+  - Daniela Patino
+  - Casey L. Stewart
+  - Kathleen G. Smith
+  - Kathryn S. Konrad
+  - Sydney A. Fry
+  - Alex L. Deal
+  - Victor W. Kilonzo
+  - me
+  - Natale R. Sciolino
+  - Jesse D. Cushman
+  - Patricia Jensen
 journal: "BP: GOS"
 doi: "10.1016/j.bpsgos.2023.10.001"
 abstract: |

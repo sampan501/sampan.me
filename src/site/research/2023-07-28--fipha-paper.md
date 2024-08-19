@@ -1,6 +1,13 @@
 ---
 title: "FiPhA: An Open-Source Platform for Fiber Photometry Analysis"
-authors: "Matthew F. Bridge, Leslie R. Wilson, <strong>Sambit Panda</strong>, Korey D. Stevanovic, Ayland C. Letsinger, Sandra McBride, and Jesse D. Cushman"
+authors:
+  - Matthew F. Bridge
+  - Leslie R. Wilson
+  - me
+  - Korey D. Stevanovic
+  - Ayland C. Letsinger
+  - Sandra McBride
+  - Jesse D. Cushman
 journal: Neurophotonics
 doi: "10.1117/1.NPh.11.1.014305"
 abstract: |
