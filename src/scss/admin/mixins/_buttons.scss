@@ -1,9 +1,9 @@
 @mixin button {
-    background-color: $colour-primary;
+    background-color: $color-primary;
     border-radius: $border-radius-default;
     border: none;
-    border-bottom: solid 3px $colour-primary-dark;
-    color: $colour-white;
+    border-bottom: solid 3px $color-primary-dark;
+    color: $color-white;
     display: inline-block; // Older browsers
     display: inline-flex;
     align-items: center;
@@ -14,11 +14,11 @@
     padding: calc(.5em + 3px) 1em .5em;
     width: auto;
 
-    @include dark-mode($colour: $colour-dark-mode-main) {
-        border-bottom: solid 3px $colour-dark-mode-primary-dark;
+    @include dark-mode($color: $color-dark-mode-main) {
+        border-bottom: solid 3px $color-dark-mode-primary-dark;
     }
 
-    @include high-contrast($colour-dark-mode-primary-light, $colour-high-contrast-main);
+    @include high-contrast($color-dark-mode-primary-light, $color-high-contrast-main);
 
     @media (max-width: $xs) {
         padding: .25em;
@@ -30,10 +30,10 @@
     }
 
     &:focus {
-        outline: 3px solid $colour-black;
+        outline: 3px solid $color-black;
 
         @include dark-mode() {
-            outline: 3px solid $colour-white;
+            outline: 3px solid $color-white;
         }
     }
 
@@ -46,17 +46,17 @@
     }
 
     &:focus-visible {
-        outline: 3px solid $colour-black;
+        outline: 3px solid $color-black;
 
         @include dark-mode() {
-            outline: 3px solid $colour-white;
+            outline: 3px solid $color-white;
         }
     }
 
     &:hover {
-        background-color: $colour-primary-dark;
-        @include dark-mode($background: $colour-dark-mode-primary-light);
-        @include high-contrast($background: $colour-high-contrast-primary-light);
+        background-color: $color-primary-dark;
+        @include dark-mode($background: $color-dark-mode-primary-light);
+        @include high-contrast($background: $color-high-contrast-primary-light);
     }
 
     &:active {

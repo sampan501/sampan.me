@@ -6,16 +6,16 @@
     margin-bottom: 1em;
 
     &:focus {
-        outline: 3px solid $colour-black;
+        outline: 3px solid $color-black;
         outline-offset: 1px;
 
         @include dark-mode() {
-            outline: 3px solid $colour-white;
+            outline: 3px solid $color-white;
             outline-offset: 1px;
         }
 
         @include high-contrast() {
-            outline: 3px solid $colour-white;
+            outline: 3px solid $color-white;
             outline-offset: 1px;
         }
     }
@@ -33,15 +33,15 @@
     }
 
     &:focus-visible {
-        box-shadow: 0 0 0 4px $colour-black;
+        box-shadow: 0 0 0 4px $color-black;
 
         @include dark-mode() {
-            outline: 3px solid $colour-white;
+            outline: 3px solid $color-white;
             outline-offset: 1px;
         }
 
         @include high-contrast() {
-            outline: 3px solid $colour-white;
+            outline: 3px solid $color-white;
             outline-offset: 1px;
         }
     }

@@ -8,19 +8,19 @@ code {
     font-variant-ligatures: none;
     font-feature-settings: "liga" 0;
     margin-right: .1em; // For when immediately followed by punctuation
-    background-color: $colour-code-background;
-    @include dark-mode($colour-dark-mode-code-background);
-    @include high-contrast($colour-high-contrast-code-background, );
+    background-color: $color-code-background;
+    @include dark-mode($color-dark-mode-code-background);
+    @include high-contrast($color-high-contrast-code-background, );
 }
 
 kbd {
     font-family: system-ui, sans-serif;
     margin-right: .2em;
     margin-left: .2em;
-    box-shadow: 0 0 0 1px $colour-grey, 0 2px 0 1px $colour-grey;
+    box-shadow: 0 0 0 1px $color-grey, 0 2px 0 1px $color-grey;
 
     @include dark-mode() {
-        box-shadow: 0 0 0 1px $colour-dark-mode-grey, 0 2px 0 1px $colour-dark-mode-grey;
+        box-shadow: 0 0 0 1px $color-dark-mode-grey, 0 2px 0 1px $color-dark-mode-grey;
     }
 }
 
@@ -32,14 +32,14 @@ code {
 
 pre code,
 pre {
-    color: $colour-black;
-    @include dark-mode($colour: $colour-dark-mode-white);
+    color: $color-black;
+    @include dark-mode($color: $color-dark-mode-white);
 }
 
 pre {
-    background-color: $colour-code-background;
-    @include dark-mode($background: $colour-dark-mode-code-background);
-    @include high-contrast($background: $colour-high-contrast-code-background);
+    background-color: $color-code-background;
+    @include dark-mode($background: $color-dark-mode-code-background);
+    @include high-contrast($background: $color-high-contrast-code-background);
     padding: 1em;
     white-space: pre-wrap;
     word-spacing: normal;

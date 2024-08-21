@@ -9,13 +9,13 @@
     &.doctype,
     &.cdata,
     &.url {
-        color: $colour-code-grey;
-        @include dark-mode($colour: $colour-dark-mode-code-grey);
+        color: $color-code-grey;
+        @include dark-mode($color: $color-dark-mode-code-grey);
     }
 
     &.punctuation {
-        color: $colour-code-grey;
-        @include dark-mode($colour: $colour-dark-mode-code-grey);
+        color: $color-code-grey;
+        @include dark-mode($color: $color-dark-mode-code-grey);
     }
 
     &.property,
@@ -24,16 +24,16 @@
     &.symbol,
     &.deleted,
     &.keyword {
-        color: $colour-code-magenta;
-        @include dark-mode($colour: $colour-dark-mode-code-magenta);
-        @include high-contrast($colour: $colour-high-contrast-code-magenta);
+        color: $color-code-magenta;
+        @include dark-mode($color: $color-dark-mode-code-magenta);
+        @include high-contrast($color: $color-high-contrast-code-magenta);
     }
 
     &.boolean,
     &.number {
-        color: $colour-code-purple;
-        @include dark-mode($colour: $colour-dark-mode-code-purple);
-        @include high-contrast($colour: $colour-high-contrast-code-purple);
+        color: $color-code-purple;
+        @include dark-mode($color: $color-dark-mode-code-purple);
+        @include high-contrast($color: $color-high-contrast-code-purple);
     }
 
     &.selector,
@@ -48,8 +48,8 @@
     .language-css &.string,
     .style &.string,
     &.variable {
-        color: $colour-code-cyan;
-        @include dark-mode($colour: $colour-dark-mode-code-cyan);
+        color: $color-code-cyan;
+        @include dark-mode($color: $color-dark-mode-code-cyan);
     }
 
     &.atrule,
@@ -57,8 +57,8 @@
     &.function,
     &.regex,
     &.important {
-        color: $colour-code-yellow;
-        @include dark-mode($colour: $colour-dark-mode-code-yellow);
+        color: $color-code-yellow;
+        @include dark-mode($color: $color-dark-mode-code-yellow);
     }
 
     &.important,
@@ -75,7 +75,7 @@
     }
 
     &.url .content {
-        color: $colour-black;
-        @include dark-mode($colour: $colour-dark-mode-white);
+        color: $color-black;
+        @include dark-mode($color: $color-dark-mode-white);
     }
 }

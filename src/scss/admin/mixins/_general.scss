@@ -1,21 +1,21 @@
-@mixin dark-mode($background: null, $colour: null) {
+@mixin dark-mode($background: null, $color: null) {
 
     @media screen and (prefers-color-scheme: dark),
     screen and (prefers-contrast: more) {
 
-        @if ($background !=null and $colour !=null) {
+        @if ($background !=null and $color !=null) {
             background-color: $background;
-            color: $colour;
+            color: $color;
             @content;
         }
 
-        @else if ($background !=null and $colour ==null) {
+        @else if ($background !=null and $color ==null) {
             background-color: $background;
             @content;
         }
 
-        @else if ($colour !=null and $background ==null) {
-            color: $colour;
+        @else if ($color !=null and $background ==null) {
+            color: $color;
             @content;
         }
 
@@ -25,23 +25,23 @@
     }
 }
 
-@mixin high-contrast($background: null, $colour: null) {
+@mixin high-contrast($background: null, $color: null) {
 
     @media screen and (prefers-contrast: more) {
 
-        @if ($background !=null and $colour !=null) {
+        @if ($background !=null and $color !=null) {
             background-color: $background;
-            color: $colour;
+            color: $color;
             @content;
         }
 
-        @else if ($background !=null and $colour ==null) {
+        @else if ($background !=null and $color ==null) {
             background-color: $background;
             @content;
         }
 
-        @else if ($colour !=null and $background ==null) {
-            color: $colour;
+        @else if ($color !=null and $background ==null) {
+            color: $color;
             @content;
         }
 
@@ -72,18 +72,18 @@
 }
 
 @mixin highlight-box {
-    background-color: $colour-highlight;
-    @include dark-mode($background: $colour-dark-mode-highlight);
-    @include high-contrast($background: $colour-high-contrast-highlight);
+    background-color: $color-highlight;
+    @include dark-mode($background: $color-dark-mode-highlight);
+    @include high-contrast($background: $color-high-contrast-highlight);
     border-radius: $border-radius-default;
     padding: 1em;
 
     a {
 
         &:focus {
-            background-color: $colour-highlight;
-            @include dark-mode($background: $colour-dark-mode-highlight);
-            @include high-contrast($background: $colour-high-contrast-highlight);
+            background-color: $color-highlight;
+            @include dark-mode($background: $color-dark-mode-highlight);
+            @include high-contrast($background: $color-high-contrast-highlight);
         }
 
         &:focus:not(:focus-visible) {
@@ -93,9 +93,9 @@
         }
 
         &:focus-visible {
-            background-color: $colour-highlight;
-            @include dark-mode($background: $colour-dark-mode-highlight);
-            @include high-contrast($background: $colour-high-contrast-highlight);
+            background-color: $color-highlight;
+            @include dark-mode($background: $color-dark-mode-highlight);
+            @include high-contrast($background: $color-high-contrast-highlight);
         }
     }
 }
@@ -120,11 +120,11 @@
 
 @mixin embedded-media {
     border-radius: $border-radius-default;
-    background-color: $colour-highlight;
-    @include dark-mode($background: $colour-dark-mode-highlight);
-    @include high-contrast($background: $colour-high-contrast-highlight);
+    background-color: $color-highlight;
+    @include dark-mode($background: $color-dark-mode-highlight);
+    @include high-contrast($background: $color-high-contrast-highlight);
     display: block;
-    box-shadow: 0 0 .25em lighten($colour-black, 50%);
+    box-shadow: 0 0 .25em lighten($color-black, 50%);
     margin-bottom: 1em;
     margin-top: 1em;
     height: auto;
@@ -135,6 +135,6 @@
     }
 
     @include dark-mode() {
-        box-shadow: 0 0 .25em $colour-black;
+        box-shadow: 0 0 .25em $color-black;
     }
 }

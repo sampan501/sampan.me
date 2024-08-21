@@ -15,10 +15,10 @@
     }
 
     &:before {
-        background-color: $colour-black;
+        background-color: $color-black;
         content: '';
         display: block;
-        @include dark-mode($background: $colour-dark-mode-white);
+        @include dark-mode($background: $color-dark-mode-white);
     }
 
     .utility {

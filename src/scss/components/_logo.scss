@@ -10,15 +10,15 @@
 
     &:link,
     &:visited {
-        color: $colour-black;
-        @include dark-mode($colour: $colour-dark-mode-white);
+        color: $color-black;
+        @include dark-mode($color: $color-dark-mode-white);
     }
 
     &:hover,
     &:active {
         border-radius: .2rem;
-        background: $colour-highlight;
-        @include dark-mode($background: $colour-dark-mode-highlight);
+        background: $color-highlight;
+        @include dark-mode($background: $color-dark-mode-highlight);
     }
 
     @media (min-width: $xs) {

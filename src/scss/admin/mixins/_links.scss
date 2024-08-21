@@ -3,35 +3,35 @@
 
     &:link,
     &:visited {
-        color: $colour-primary-darker;
-        @include dark-mode($colour: $colour-primary);
-        @include high-contrast($colour: $colour-dark-mode-primary-light);
+        color: $color-primary-darker;
+        @include dark-mode($color: $color-primary);
+        @include high-contrast($color: $color-dark-mode-primary-light);
     }
 
     &:hover {
-        color: $colour-primary-dark;
-        @include dark-mode($colour: $colour-dark-mode-primary-light);
-        @include high-contrast($colour: $colour-high-contrast-primary-light);
+        color: $color-primary-dark;
+        @include dark-mode($color: $color-dark-mode-primary-light);
+        @include high-contrast($color: $color-high-contrast-primary-light);
     }
 
     &:active {
-        color: $colour-black;
-        @include dark-mode($colour: $colour-dark-mode-white);
+        color: $color-black;
+        @include dark-mode($color: $color-dark-mode-white);
     }
 
     &:focus {
-        background-color: $colour-white;
-        outline: 3px solid $colour-black;
+        background-color: $color-white;
+        outline: 3px solid $color-black;
         outline-offset: 1px;
         box-decoration-break: clone;
 
-        @include dark-mode($background: $colour-dark-mode-main) {
-            outline: 3px solid $colour-white;
+        @include dark-mode($background: $color-dark-mode-main) {
+            outline: 3px solid $color-white;
             outline-offset: 1px;
         }
 
-        @include high-contrast($background: $colour-high-contrast-main) {
-            outline: 3px solid $colour-white;
+        @include high-contrast($background: $color-high-contrast-main) {
+            outline: 3px solid $color-white;
             outline-offset: 1px;
         }
     }
@@ -51,18 +51,18 @@
     }
 
     &:focus-visible {
-        background-color: $colour-white;
-        outline: 3px solid $colour-black;
+        background-color: $color-white;
+        outline: 3px solid $color-black;
         outline-offset: 1px;
         box-decoration-break: clone;
 
-        @include dark-mode($background: $colour-dark-mode-main) {
-            outline: 3px solid $colour-white;
+        @include dark-mode($background: $color-dark-mode-main) {
+            outline: 3px solid $color-white;
             outline-offset: 1px;
         }
 
-        @include high-contrast($background: $colour-high-contrast-main) {
-            outline: 3px solid $colour-white;
+        @include high-contrast($background: $color-high-contrast-main) {
+            outline: 3px solid $color-white;
             outline-offset: 1px;
         }
     }

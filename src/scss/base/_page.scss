@@ -1,7 +1,7 @@
 body {
-    background-color: $colour-main;
-    @include dark-mode($colour-dark-mode-main, $colour-dark-mode-white);
-    @include high-contrast($background: $colour-high-contrast-main);
+    background-color: $color-main;
+    @include dark-mode($color-dark-mode-main, $color-dark-mode-white);
+    @include high-contrast($background: $color-high-contrast-main);
 }
 
 .wrapper {

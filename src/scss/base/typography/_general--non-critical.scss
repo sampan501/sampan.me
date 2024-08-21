@@ -1,12 +1,12 @@
 ::selection {
-    background: $colour-primary;
-    @include dark-mode($colour: $colour-black);
-    @include high-contrast($background: $colour-dark-mode-primary-light);
-    color: $colour-white;
+    background: $color-primary;
+    @include dark-mode($color: $color-black);
+    @include high-contrast($background: $color-dark-mode-primary-light);
+    color: $color-white;
 }
 
 blockquote {
-    border-left: .15em solid $colour-primary;
+    border-left: .15em solid $color-primary;
     margin-left: 0;
     margin-right: 0;
     padding: .25em 0 .25em .85em;
@@ -21,7 +21,7 @@ blockquote {
 
 
     @include high-contrast() {
-        border-left-color: $colour-dark-mode-primary-light;
+        border-left-color: $color-dark-mode-primary-light;
     }
 
     ul,
@@ -65,8 +65,8 @@ ol {
 li {
 
     &::marker {
-        color: $colour-primary;
-        @include high-contrast($colour: $colour-dark-mode-primary-light);
+        color: $color-primary;
+        @include high-contrast($color: $color-dark-mode-primary-light);
     }
 
     ul &::marker {
@@ -93,12 +93,12 @@ hr {
         height: 0.2em;
         margin: 2em auto 1em;
         border-radius: 50%;
-        background: $colour-black;
-        box-shadow: (0.2em * 8) 0 0 0 $colour-black, (0.2em * -8) 0 0 0 $colour-black;
+        background: $color-black;
+        box-shadow: (0.2em * 8) 0 0 0 $color-black, (0.2em * -8) 0 0 0 $color-black;
 
         @include dark-mode() {
-            background: $colour-dark-mode-white;
-            box-shadow: (0.2em * 8) 0 0 0 $colour-dark-mode-white, (0.2em * -8) 0 0 0 $colour-dark-mode-white;
+            background: $color-dark-mode-white;
+            box-shadow: (0.2em * 8) 0 0 0 $color-dark-mode-white, (0.2em * -8) 0 0 0 $color-dark-mode-white;
         }
         
 
