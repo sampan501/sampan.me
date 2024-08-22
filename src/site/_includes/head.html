@@ -2,6 +2,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1, viewport-fit=cover">
+    {%- if description %}
+        {%- set description = description | smart | safe %}
+    {%- elif intro %}
+        {%- set description = intro | markdown | safe | striptags(true) | escape %}
+    {%- else %}
+        {%- set description = content | striptags(true) | escape | truncate(150) %}
+    {%- endif %}
     <meta name="description" content="{{ description }}" />
     <title>{{ title }}</title>
     <meta name="color-scheme" content="dark light" />
