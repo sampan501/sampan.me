@@ -4,20 +4,19 @@ layout: base.html
 
 <h1>
   {%- if heading %}
-  {{- heading | smart | safe }}
+      {{- heading | smart | safe }}
   {%- elif category %}
-  {{- category | smart | safe }}
+      {{- category | smart | safe }}
   {%- elif year %}
-  Blog posts from {{ year }}
+      Blog posts from {{ year }}
   {%- else %}
-  {{- title | smart | safe }}
+      {{- title | smart | safe }}
   {%- endif %}
 </h1>
-<!-- {%- if updated %}
-<p class="post-details">Last updated <span itemprop="dateModified" content="{{ updated | isoDate }}">{{ updated | date
-    }}</span></p>
-{% endif %} -->
+{%- if updated %}
+    <p class="post-details">Updated <span itemprop="dateModified" content="{{ updated | isoDate }}">{{ updated | date }}</span></p>
+{% endif %}
 {% if intro and not hideIntro %}
-{{ intro | markdown | safe }}
+    {{ intro | markdown | safe }}
 {% endif %}
 {{ content | safe }}

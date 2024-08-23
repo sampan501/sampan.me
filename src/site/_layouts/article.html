@@ -6,7 +6,7 @@ layout: base.html
     <h1 itemprop="title headline">{{ title | smart | safe }}</h1>
     <div aria-label="Post details" class="post-details">
         <p>
-            on <span class="entry-published date" itemprop="dateCreated pubdate datePublished" content="{{ date | isoDate }}" >{{ date | date -}}</span>{%- if updated -%}; updated <span itemprop="dateModified" content="{{ updated | isoDate }}">{{- updated | date -}}</span>{% endif %}
+            <span class="entry-published date" itemprop="dateCreated pubdate datePublished" content="{{ date | isoDate }}" >{{ date | date -}}</span>
             <meta itemprop="author" content="{{ site.author.name }}" />
             <meta itemprop="publisher" itemscope itemtype="https://schema.org/Corporation" content="{{ site.company }}" />
         </p>
