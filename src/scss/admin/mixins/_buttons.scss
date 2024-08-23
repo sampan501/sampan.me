@@ -13,6 +13,7 @@
     padding: .5em 1em; // Older browsers
     padding: calc(.5em + 3px) 1em .5em;
     width: auto;
+    cursor: pointer;
 
     @include dark-mode($color: $color-dark-mode-main) {
         border-bottom: solid 3px $color-dark-mode-primary-dark;
