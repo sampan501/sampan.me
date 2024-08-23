@@ -1,0 +1,23 @@
+.accordion {
+    position: relative;
+    text-align: center;
+    margin-top: $section-spacing;
+}
+
+.accordion .accordion-content {
+    display: none;
+}
+
+.accordion input[type="checkbox"] {
+    position: absolute;
+    appearance: none;
+}
+
+.accordion .toggle-btn {
+    @include button;
+}
+
+.accordion input[type="checkbox"]:checked~.accordion-content {
+    margin-top: 1em;
+    display: block;
+}
