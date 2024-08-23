@@ -16,6 +16,23 @@
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:description" content="{{ description }}" />
     <meta property="og:image" content="https://dynamic-og-image-generator.vercel.app/api/generate?title={{ title | replace(' ', '+') }}&author=Sambit+Panda&websiteUrl=https%3A%2F%2Fsampan.me&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F36676569&theme=github" />
+    <meta property="og:image:alt" content="Social image for the {{ title }} page" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="article:author" content="{{ site.author.name }}" />
+
+    <meta name="twitter:card" content="{{ cardType }}" />
+    <meta name="twitter:site" content="{{ site.author.twitter }}" />
+    <meta name="twitter:creator" content="{{ site.author.twitter }}" />
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url | replace('.html', '') }}" />
+    <meta property="twitter:title" content="{{ title }}" />
+    <meta property="twitter:description" content="{{ description }}" />
+    <meta property="twitter:image" content="https://dynamic-og-image-generator.vercel.app/api/generate?title={{ title | replace(' ', '+') }}&author=Sambit+Panda&websiteUrl=https%3A%2F%2Fsampan.me&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F36676569&theme=github" />
+    <meta property="twitter:image:alt" content="Social image for the {{ title }} page" />
+
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+    <meta name="disabled-adaptations" content="watch" />
+    <meta name="format-detection" content="telephone=no" />
     <meta name="color-scheme" content="dark light" />
     
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace('.html', '') }}" />
@@ -29,4 +46,7 @@
     <style>{{- css | safe | replace("", "") -}}</style>
     <link rel="preload" href="/css/non-critical.css?v={{ site.version }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="/css/non-critical.css?v={{ site.version }}" /></noscript>
+    <link rel="stylesheet" media="print" href="/css/print.css?v={{ site.version }}" />
+    <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feeds/main.xml" />
+    <link rel="alternate" type="application/json" href="{{ site.url }}/feeds/main.json" />
 </head>
