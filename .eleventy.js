@@ -5,10 +5,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("date", require("./lib/filters/dates.js") );
   eleventyConfig.addFilter("isoDate", require("./lib/filters/isoDate.js") );
 
-  // Get development environment variable
-  require('dotenv').config()
-  const { ELEVENTY_ENV } = process.env
-
   // Generate assets
   eleventyConfig.addPassthroughCopy({ "src/img": "img" });
   eleventyConfig.addPassthroughCopy({ "src/txt": "txt" });
