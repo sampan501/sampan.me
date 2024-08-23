@@ -13,15 +13,17 @@
     <meta name="description" content="{{ description }}" />
     <meta property="og:site_name" content="Sambit Panda" />
     <meta property="og:url" content="{{ site.url }}{{ page.url | replace('.html', '') }}" />
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:description" content="{{ description }}" />
     <meta property="og:image" content="https://dynamic-og-image-generator.vercel.app/api/generate?title={{ title | replace(' ', '+') }}&author=Sambit+Panda&websiteUrl=https%3A%2F%2Fsampan.me&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F36676569&theme=github" />
     <meta property="og:image:alt" content="Social image for the {{ title }} page" />
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="article:author" content="{{ site.author.name }}" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="sampan.me">
     <meta name="twitter:site" content="{{ site.author.twitter }}" />
     <meta name="twitter:creator" content="{{ site.author.twitter }}" />
     <meta property="twitter:url" content="{{ site.url }}{{ page.url | replace('.html', '') }}" />
