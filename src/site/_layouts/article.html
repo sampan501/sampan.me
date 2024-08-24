@@ -1,12 +1,18 @@
 ---
 layout: base.html
 ---
-
+{% set regExpCode = r/<pre class=(.|\n)*?<\/pre>/gm %}
+{% set fixedContent = content | replace(regExpCode, "") | striptags %}
+{% set wordCount = fixedContent | wordcount %}
+{% set readingRate = 225 %}
+{% set readingTime = (wordCount/readingRate) | round %}
+{% if readingTime < 1 %}{% set readingTime=1 %}{% endif %}
 <div itemscope itemtype="https://schema.org/BlogPosting">
     <h1 itemprop="title headline">{{ title | smart | safe }}</h1>
     <div aria-label="Post details" class="post-details">
         <p>
-            <span class="entry-published date" itemprop="dateCreated pubdate datePublished" content="{{ date | isoDate }}" >{{ date | date -}}</span>
+            <span class="entry-published date" itemprop="dateCreated pubdate datePublished" content="{{ date | isoDate }}" >{{ date | date -}}</span> •
+            <span>{{ readingTime }} min read</span>
             <meta itemprop="author" content="{{ site.author.name }}" />
             <meta itemprop="publisher" itemscope itemtype="https://schema.org/Corporation" content="{{ site.company }}" />
         </p>
