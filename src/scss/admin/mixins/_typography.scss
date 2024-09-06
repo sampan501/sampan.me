@@ -15,6 +15,10 @@ $modularscale: (
     @media (min-width: $s) {
         hyphens: none;
     }
+
+    @media (min-width: $l) {
+        display: flex;
+    }
 }
 
 @mixin heading-line-height-large {

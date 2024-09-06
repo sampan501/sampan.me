@@ -55,15 +55,12 @@
 }
 
 .emoji-title {
-    position: relative;
-    height: 1em;
-    width: auto;
-    vertical-align: bottom;
-    overflow: visible;
+    display: inline-block;
+    cursor: default;
     margin-left: 0;
     margin-right: 0;
 
     @media (min-width: $l) {
-        margin-left: -1.12em;
+        text-indent: -1.15em;
     }
 }

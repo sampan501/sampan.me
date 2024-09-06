@@ -57,4 +57,3 @@ and the following tools/packages:
 - [11ty](https://www.11ty.dev/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [Simple Icons](https://simpleicons.org/)
-- [twemoji](https://github.com/twitter/twemoji)
