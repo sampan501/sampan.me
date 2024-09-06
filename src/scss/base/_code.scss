@@ -1,5 +1,6 @@
 code,
 kbd {
+    overflow: scroll;
     border-radius: $border-radius-small;
     padding: .1em .1em .05em;
 }
@@ -14,7 +15,7 @@ code {
 }
 
 kbd {
-    font-family: system-ui, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     margin-right: .2em;
     margin-left: .2em;
     box-shadow: 0 0 0 1px $color-grey, 0 2px 0 1px $color-grey;

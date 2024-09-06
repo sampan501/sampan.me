@@ -1,24 +1,29 @@
 {%- if home %}
     {%- set featuredPost = true %}
 {%- endif -%}
+{%- if post.data.tags.includes('research') -%}
+    {%- set project = references[post.data.key] -%}
+{% else %}
+    {%- set project = post.data -%}
+{%- endif -%}
 
 <li class="post-in-list">
     {%- if featuredPost %}<h3>{% else %}<h2>{% endif %}
         {% if post.data.tags.includes('research') %}
-            {% if post.data.type == "journal" %}
-            <span class="emoji-title">&#128196;</span>
-            {% elseif post.data.type == "preprint" %}
-            <span class="emoji-title">&#128221;</span>
-            {% elseif post.data.type == "thesis" %}
-            <span class="emoji-title">&#127891;</span>
+            {% if project.type == "article-journal" %}
+                <span class="emoji-title">&#128196;</span>
+            {% elseif project.type == "article" %}
+                <span class="emoji-title">&#128221;</span>
+            {% elseif project.type == "thesis" %}
+                <span class="emoji-title">&#127891;</span>
             {% endif -%}
         {% endif -%}
         {% if post.data.tags.includes('software') %}
-        <a href="{{ post.data.url }}">
+            <a href="{{ project.url }}">
         {% else %}
-        <a href="{{ post.url  | replace(" .html", "" ) }}">
+            <a href="{{ post.url | replace(" .html", "" ) }}">
         {% endif -%}
-        {{ post.data.title | smart | safe }}
+        {{ project.title | smart | safe }}
         </a>
     {% if featuredPost %}</h3>{% else %}</h2>{% endif %}
     {% if not featuredPost %}
@@ -27,12 +32,12 @@
             {% include "research-authors.html" %}<br>
         {% endif -%}
         {% if post.data.tags.includes('research') -%}
-        {% if post.data.type != "other" -%}
-        <em><a href="http://doi.org/{{ post.data.doi }}">{{ post.data.journal }}</a></em>,
-        {% endif -%}
-        {{ post.data.date | date('year') }}
+            {% if project.type != "other" -%}
+                <em><a href="{{ project.URL }}">{{ project.journal }}</a></em>,
+            {% endif -%}
+            {{ post.data.date | date('year') }}
         {% elseif not post.data.tags.includes('software') -%}
-        {{ post.data.date | date }}
+            {{ project.date | date }}
         {% endif -%}
     </p>
     {% endif -%}

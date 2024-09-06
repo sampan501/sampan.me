@@ -1,0 +1,42 @@
+---
+permalink: rss.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ title }}</title>
+    <subtitle>{{ description }}</subtitle>
+    <link rel="self" href="{{ site.url }}/{{ permalink }}" />
+    <link href="{{ site.url }}" />
+    <id>{{ site.url }}/{{ permalink }}</id>
+    <updated>{{ collections.post | rssLastUpdatedDate }}</updated>
+    <rights type="html">&amp;copy; {{ "" | getCurrentYear }}, {{ site.author.name }}</rights>
+    <icon>{{ site.url }}/img/icons/favicon.png</icon>
+    <author>
+        <name>{{ site.author.name }}</name>
+        <email>{{ site.author.email }}</email>
+    </author>
+    {%- for post in collections.post | reverse %}
+    <entry>
+        <title>{{ post.data.title | smart | safe | replace("&nbsp;", " ") }}</title>
+        <link href="{{ site.url }}{{ post.url | replace (" .html", "" ) }}" />
+        <id>{{ site.url }}{{ post.url | replace (".html", "") }}</id>
+        <published>{{ post.date | rssDate }}</published>
+        <updated>{%- if post.updated %}{{ post.updated | rssDate }}{%- else %}{{ post.date | rssDate }}{%- endif %}
+        </updated>
+        <author>
+            <name>{{ site.author.name }}</name>
+            <email>{{ site.author.email }}</email>
+        </author>
+        <summary>{{ post.data.intro | markdown | safe | striptags }}</summary>
+        {%- set postTags = post.data.tags | tagsOnPage %}
+        {%- if postTags.length > 0 %}
+        {% for category in postTags %}<category>{{ category }}</category>{% endfor %}
+        {%- endif %}
+        <content type="html" xml:lang="en">
+            <![CDATA[
+            {{ post.templateContent | safe }}<p>The article <a rel="nofollow" href="{{ site.url }}{{ post.url | replace (".html", "") }}">{{ post.data.title | smart | safe | replace("&nbsp;", " ") }}</a> appeared first on <a rel="nofollow" href="{{ site.url }}">sampan.me</a>.</p>
+            ]]>
+        </content>
+    </entry>
+    {%- endfor %}
+</feed>

@@ -14,7 +14,11 @@
         <p>
             &larr; Previous<br>
             <a href="{{ previousPost.url }}">
-                {{ previousPost.data.title }}
+                {% if tags.includes('research') %}
+                    {{ references[previousPost.data.key].title }}
+                {% else %}
+                    {{ previousPost.data.title }}
+                {% endif %}
             </a>
         </p>
         {% endif %}
@@ -24,7 +28,11 @@
         <p>
             Next &rarr;<br>
             <a href="{{ nextPost.url }}">
-                {{ nextPost.data.title }}
+                {% if tags.includes('research') %}
+                    {{ references[nextPost.data.key].title }}
+                {% else %}
+                    {{ nextPost.data.title }}
+                {% endif %}
             </a>
         </p>
         {% endif %}

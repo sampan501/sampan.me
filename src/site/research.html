@@ -3,14 +3,13 @@ title: Research by Sambit Panda
 heading: Research
 intro: |
     My research encompasses many topics, including causal inference, hypothesis testing, neuroscience, etc. A full list is also available [on Google Scholar](https://scholar.google.com/citations?user=-V3CmPoAAAAJ&hl=en).
-description: Sambit Panda's research organized by type.
 layout: default
 listing: true
 ---
-
 <ol class="hfeed index-list" reversed>
     {%- for post in collections.research | reverse %}
-    {% if post.data.type != "other" %}
+    {%- set project = references[post.data.key] -%}
+    {% if project.type != "other" %}
     {%- include "post-in-list.html" %}
     {%- endif %}
     {%- endfor %}
@@ -21,7 +20,8 @@ listing: true
 
 <ol class="hfeed index-list" reversed>
     {%- for post in collections.research | reverse %}
-    {% if post.data.type == "other" %}
+    {%- set project = references[post.data.key] -%}
+    {% if project.type == "other" %}
     {%- include "post-in-list.html" %}
     {%- endif %}
     {%- endfor %}

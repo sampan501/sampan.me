@@ -51,3 +51,9 @@ The content and design for this website was inspired by a number of people:
 - [stefanzweifel.dev/](https://stefanzweifel.dev/)
 - [bdpedigo.github.io](https://bdpedigo.github.io/)
 - [neurodata.io/about/jovo/](https://neurodata.io/about/jovo/)
+
+and the following tools/packages:
+
+- [11ty](https://www.11ty.dev/)
+- [Cloudflare](https://www.cloudflare.com/)
+- [Simple Icons](https://simpleicons.org/)

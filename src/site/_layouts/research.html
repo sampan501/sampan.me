@@ -1,25 +1,24 @@
 ---
 layout: base.html
 ---
-
-<article itemscope itemtype="https://schema.org/BlogPosting">
-    <h1 itemprop="title headline">{{ title | smart | safe }}</h1>
+{%- set project = references[key] -%}
+<div itemscope itemtype="https://schema.org/BlogPosting">
+    <h1 itemprop="title headline">{{ project.title | smart | safe }}</h1>
     <div aria-label="Post details" class="post-details">
         <p>
-            {%- if authors.length >= 1 %}
-                {% for author in authors %}
-                    {%- if author == "me" %}
-                        <strong>{{ site.author.name }}</strong>
-                    {%- elseif author == "me*"%}
-                        <strong>{{ site.author.name }}</strong>*
+            {%- if project.author.length >= 1 %}
+                {% for author in project.author %}
+                    {%- set name %}{{ author.given }} {{ author.family }}{% endset -%}
+                    {%- if name == site.author.name or name == site.author.name + "*" %}
+                        <strong>{{ name }}</strong>
                     {%- else %}
-                        {{ author }}
+                        {{ name }}
                     {%- endif -%}
                     {%- if loop.length >= 2 %}{%- if not loop.last %},{%- endif -%}{%- endif -%}
                 {%- endfor %}
             {%- endif -%}<br>
-            {% if type != "other" %}
-            {{ journal }},
+            {% if project.type != "other" %}
+                {{ project.journal }},
             {% endif -%}
             <span class="entry-published date" itemprop="dateCreated pubdate datePublished" content="{{ date | isoDate }}" >{{ date | date('year') }}</span>
             <meta itemprop="author" content="{{ site.author.name }}" />
@@ -33,10 +32,12 @@ layout: base.html
     </div>
     <div itemprop="mainEntityOfPage">
         <ul class="research-links">
-        {% if type == "journal" %}
-        <li><a href="http://doi.org/{{ doi }}">Paper</a></li>
-        {% elif type == "preprint" %}
-        <li><a href="http://doi.org/{{ doi }}">{{ journal }}</a></li>
+        {% if project.type == "article-journal" %}
+            <li><a href="{{ project.URL }}">Paper</a></li>
+        {% elif project.type == "article" %}
+            <li><a href="{{ project.URL }}">{{ project.journal }}</a></li>
+        {% elif project.type == "thesis" %}
+            <li><a href="{{ project.URL }}">Thesis</a></li>
         {% endif -%}
         {% if links %}
         {% for link in links %}
@@ -51,12 +52,17 @@ layout: base.html
         {{ content | safe }}
 
         <h2 id="abstract">Abstract</h2>
-        {% if abstract.includes("<sub>") %}
-            {{ abstract | safe }}
-        {% else %}
-            {{ abstract | markdown | safe }}
+        {% set abstract = project.abstract %}
+        {% if replace %}
+            {% for repl in replace %}
+                {% set r = repl.split(": ") %}
+                {%- set abstract = abstract | replace(r[0], r[1]) -%}
+            {% endfor %}
         {% endif %}
+        <p>{{ abstract | safe }}</p>
     </div>
-</article>
+</div>
 
+{% if collections.research.length > 1 %}
 {% include "more-posts.html" %}
+{% endif %}
