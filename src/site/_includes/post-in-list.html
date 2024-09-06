@@ -7,15 +7,15 @@
     {%- set project = post.data -%}
 {%- endif -%}
 
-<li class="post-in-list">
+<li class="post-in-list" style="--emoji: 📝">
     {%- if featuredPost %}<h3>{% else %}<h2>{% endif %}
         {% if post.data.tags.includes('research') %}
             {% if project.type == "article-journal" %}
-            <span class="emoji-title">&#128196;</span>
+            {%- include "svg/1f4c4.svg" -%}
             {% elseif project.type == "article" %}
-            <span class="emoji-title">&#128221;</span>
+            {%- include "svg/1f4dd.svg" -%}
             {% elseif project.type == "thesis" %}
-            <span class="emoji-title">&#127891;</span>
+            {%- include "svg/1f393.svg" -%}
             {% endif -%}
         {% endif -%}
         {% if post.data.tags.includes('software') %}

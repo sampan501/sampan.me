@@ -55,8 +55,11 @@
 }
 
 .emoji-title {
-    display: inline-block;
-    cursor: default;
+    position: relative;
+    height: 1em;
+    width: auto;
+    vertical-align: bottom;
+    overflow: visible;
     margin-left: 0;
     margin-right: 0;
 
