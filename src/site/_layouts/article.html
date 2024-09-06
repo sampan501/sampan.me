@@ -26,6 +26,7 @@ layout: base.html
 {% include "more-posts.html" %}
 {% endif %}
 
+{% if comments %}
 <div class="accordion">
     <input type="checkbox" id="toggle" name="toggle">
     <label class="toggle-btn" for="toggle">Comments</label>
@@ -37,3 +38,4 @@ layout: base.html
             </script>
     </div>
 </div>
+{% endif %}

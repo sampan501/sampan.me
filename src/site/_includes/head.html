@@ -53,6 +53,20 @@
     <noscript><link rel="stylesheet" href="/css/non-critical.css?v={{ site.version }}" /></noscript>
     <link rel="stylesheet" media="print" href="/css/print.css?v={{ site.version }}" />
     <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feeds/main.xml" />
+    {% if comments %}
     <link rel="preconnect" href="https://giscus.app">
     <link rel="dns-prefetch" href="https://giscus.app">
+    {% endif %}
+    {% if math %}
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                processEscapes: true
+            },
+        };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    {% endif %}
 </head>

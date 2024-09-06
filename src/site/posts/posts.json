@@ -2,5 +2,6 @@
   "layout": "article.html",
   "hideIntro": true,
   "tags": ["post"],
-  "permalink": "blog/{{ title | slugify | safe }}.html"
+  "permalink": "blog/{{ title | slugify | safe }}.html",
+  "comments": true
 }

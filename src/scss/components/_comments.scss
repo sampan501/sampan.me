@@ -1,7 +1,7 @@
 .accordion {
     position: relative;
     text-align: center;
-    margin-top: $section-spacing;
+    margin-top: calc($section-spacing - 1em);
 }
 
 .accordion .accordion-content {
