@@ -1,6 +1,6 @@
 ---
 key: panda2021hyppo
-date: 2021-04-01
+date: 2024-09-16
 intro: "Introduces `hyppo`, a package that incorporates conventional and novel multivariate hypothesis tests."
 links:
   - "Code: https://github.com/neurodata/hyppo"
