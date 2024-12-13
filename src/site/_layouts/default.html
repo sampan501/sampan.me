@@ -5,8 +5,8 @@ layout: base.html
 <h1>
   {%- if heading %}
       {{- heading | smart | safe }}
-  {%- elif category %}
-      {{- category | smart | safe }}
+  {%- elif topic %}
+      {{- topic | smart | safe }}
   {%- elif year %}
       Blog posts from {{ year }}
   {%- else %}

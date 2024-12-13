@@ -35,3 +35,8 @@ a {
         align-items: center;
     }
 }
+
+.topics {
+    @include remove-list-styling;
+    @include inline-nav;
+}

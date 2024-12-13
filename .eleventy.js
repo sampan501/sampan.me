@@ -50,6 +50,14 @@ module.exports = function(eleventyConfig) {
   const pluginRss = require("@11ty/eleventy-plugin-rss");
   eleventyConfig.addPlugin(pluginRss);
 
+  // List all topics for a type of content
+  eleventyConfig.addFilter("getTopics", (arr) => {
+    const notRendered = ['all', 'post', 'research', 'software', 'other'];
+    const topics = arr.map(post => post.data.tags).flat().filter(d => !notRendered.includes(d)).sort();
+    const uniqueTopics = [...new Set(topics)];
+    return uniqueTopics;
+  });
+
   // List all tags
   eleventyConfig.addFilter("tags", collection => {
     const notRendered = ['all', 'post', 'research', 'software', 'other'];

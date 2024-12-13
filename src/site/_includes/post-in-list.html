@@ -11,14 +11,21 @@
     {%- if featuredPost %}<h3>{% else %}<h2>{% endif %}
         {% if post.data.tags.includes('research') %}
             {% if project.type == "article-journal" %}
-                <span class="emoji-title">&#128196;</span>
+                <span class="emoji-title">📄</span>
             {% elseif project.type == "article" %}
-                <span class="emoji-title">&#128221;</span>
+                <span class="emoji-title">📝</span>
             {% elseif project.type == "thesis" %}
-                <span class="emoji-title">&#127891;</span>
+                <span class="emoji-title">🎓</span>
+            {% else %}
+                <span class="emoji-title">📁</span>
             {% endif -%}
         {% endif -%}
         {% if post.data.tags.includes('software') %}
+            {% if post.data.type == "research" %}
+                <span class="emoji-title">🔬</span>
+            {% else %}
+                <span class="emoji-title">👤</span>
+            {% endif -%}
             <a href="{{ project.url }}">
         {% else %}
             <a href="{{ post.url | replace(" .html", "" ) }}">

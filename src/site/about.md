@@ -1,7 +1,7 @@
 ---
 title: About Sambit Panda
 heading: About
-descript: About me, Sambit Panda
+description: About me, Sambit Panda
 layout: default
 permalink: about.html
 ---
