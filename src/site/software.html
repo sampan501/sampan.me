@@ -6,10 +6,16 @@ intro: |
 layout: default
 listing: true
 ---
+<ul class="topics" aria-label="software topics">
+    {%- set topics = collections.software | getTopics %}
+    {%- for topic in topics %}
+        <li><a href="/topic/{{ topic | lower | replace(' ', '-') }}">{{ topic }}</a></li>
+    {%- endfor %}
+</ul>
 
 <ol class="hfeed index-list" reversed>
     {%- for post in collections.software | reverse %}
-    {% if post.data.type == "work" %}
+    {% if post.data.type == "research" %}
     {%- include "post-in-list.html" %}
     {%- endif %}
     {%- endfor %}

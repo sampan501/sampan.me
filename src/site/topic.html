@@ -1,0 +1,27 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: topic
+  filter:
+    - all
+    - research
+    - software
+    - other
+    - post
+layout: default
+permalink: /topic/{{ topic | slugify | safe }}.html
+---
+
+<p>
+    All content related to {{ topic }} on my website.
+    Original research/software have <a href="/emojis.html">an emoji</a> next to it.
+    A <a href="/topics">full list of topics</a> is also available.
+</p>
+
+<ol class="hfeed index-list" reversed>
+    {% set topicList = collections[ topic ] %}
+    {% for post in topicList | reverse %}
+        {% include "post-in-list.html" %}
+    {% endfor %}
+</ol>

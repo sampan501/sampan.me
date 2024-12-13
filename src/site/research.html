@@ -2,10 +2,18 @@
 title: Research by Sambit Panda
 heading: Research
 intro: |
-    My research encompasses many topics, including causal inference, hypothesis testing, neuroscience, etc. A full list is also available [on Google Scholar](https://scholar.google.com/citations?user=-V3CmPoAAAAJ&hl=en).
+    If you are interested in extensions of AI and/or how it can be used to improve human health, you are in the right place.
+    You can browse my original research below and [on Google Scholar](https://scholar.google.com/citations?user=-V3CmPoAAAAJ&hl=en).
 layout: default
 listing: true
 ---
+<ul class="topics" aria-label="research topics">
+    {%- set topics = collections.research | getTopics %}
+    {%- for topic in topics %}
+        <li><a href="/topic/{{ topic | lower | replace(' ', '-') }}">{{ topic }}</a></li>
+    {%- endfor %}
+</ul>
+
 <ol class="hfeed index-list" reversed>
     {%- for post in collections.research | reverse %}
     {%- set project = references[post.data.key] -%}
