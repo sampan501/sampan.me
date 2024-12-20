@@ -34,11 +34,9 @@ home: true
     <h2 id="research">Research</h2>
     <p>Here are some of my favorite research articles. If you want to read more, take a look at the <a href="/research/">full publication list.</a></p>
     <ol class="hfeed index-list" reversed>
-        {%- set posts = collections.research | reverse %}
+        {%- set posts = collections.research | selectattr("featured", true) | reverse %}
         {%- for post in posts %}
-        {%- if post.data.featured === true %}
         {%- include "post-in-list.html" -%}
-        {%- endif %}
         {%- endfor %}
     </ol>
 </div>
@@ -47,11 +45,9 @@ home: true
     <h2 id="software">Software</h2>
     <p>I love solving difficult problems, and often times develop software to help. You can see more in the <a href="/software/">full software list.</a></p>
     <ul class="hfeed index-list" reversed>
-        {%- set posts = collections.software | reverse %}
+        {%- set posts = collections.software | selectattr("featured", true) | reverse %}
         {%- for post in posts %}
-        {%- if post.data.featured === true %}
         {%- include "post-in-list.html" -%}
-        {%- endif %}
         {%- endfor %}
     </ul>
 </div>

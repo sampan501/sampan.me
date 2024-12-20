@@ -14,20 +14,15 @@ listing: true
 </ul>
 
 <ol class="hfeed index-list" reversed>
-    {%- for post in collections.software | reverse %}
-    {% if post.data.type == "research" %}
+    {%- for post in collections.software | selectattr("type", "research") | reverse %}
     {%- include "post-in-list.html" %}
-    {%- endif %}
     {%- endfor %}
 </ol>
 
-<!-- TODO: try to get rid of this loop-->
 <hr>
 
 <ol class="hfeed index-list" reversed>
-    {%- for post in collections.software | reverse %}
-    {% if post.data.type == "personal" %}
+    {%- for post in collections.software | selectattr("type", "personal") | reverse %}
     {%- include "post-in-list.html" %}
-    {%- endif %}
     {%- endfor %}
 </ol>

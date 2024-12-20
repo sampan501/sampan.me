@@ -117,6 +117,16 @@ module.exports = function(eleventyConfig) {
     return yyyy + '/' + mm + '/' + dd;
   });
 
+  // Select type filter
+  eleventyConfig.addFilter("selectattr", function (arr, attr, value) {
+    return arr.filter((item) => item.data[attr] === value);
+  });
+
+  // Reject type filter
+  eleventyConfig.addFilter("rejectattr", function (arr, attr, value) {
+    return arr.filter((item) => item.data[attr] !== value);
+  });
+
   // Localhost server config
   eleventyConfig.setServerOptions({
     port: 3000,
