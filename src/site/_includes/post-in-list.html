@@ -40,7 +40,12 @@
         {% endif -%}
         {% if post.data.tags.includes('research') -%}
             {% if project.type != "other" -%}
-                <em><a href="{{ project.URL }}">{{ project.journal }}</a></em>,
+                <em>{%- if project.DOI -%}
+                <a href="https://doi.org/{{ project.DOI }}">
+                {%- else -%}
+                <a href="{{ project.URL }}">
+                {%- endif -%}
+                {{- project.journal -}}</a></em>,
             {% endif -%}
             {{ post.data.date | date('year') }}
         {% elseif not post.data.tags.includes('software') -%}
