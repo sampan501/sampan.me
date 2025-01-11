@@ -33,9 +33,9 @@ layout: base.html
     <div itemprop="mainEntityOfPage">
         <ul class="research-links">
         {% if project.type == "article-journal" %}
-            <li><a href="{{ project.URL }}">Paper</a></li>
+            <li><a href="https://doi.org/{{ project.DOI }}">Paper</a></li>
         {% elif project.type == "article" %}
-            <li><a href="{{ project.URL }}">{{ project.journal }}</a></li>
+            <li><a href="https://doi.org/{{ project.DOI }}">{{ project.journal }}</a></li>
         {% elif project.type == "thesis" %}
             <li><a href="{{ project.URL }}">Thesis</a></li>
         {% endif -%}
