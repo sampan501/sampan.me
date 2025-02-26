@@ -1,9 +1,24 @@
-module.exports = function(eleventyConfig) {
+
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+
+import smartypants from "smartypants";
+import uslug from "uslug";
+import markdownIt from "markdown-it";
+import anchor from "markdown-it-anchor";
+import slugify from "slugify";
+
+import date from "./lib/filters/dates.js";
+import isoDate from "./lib/filters/isoDate.js";
+
+
+export default async function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
 
   // Date filter
-  eleventyConfig.addFilter("date", require("./lib/filters/dates.js") );
-  eleventyConfig.addFilter("isoDate", require("./lib/filters/isoDate.js") );
+  eleventyConfig.addFilter("date", date );
+  eleventyConfig.addFilter("isoDate", isoDate );
 
   // Generate assets
   eleventyConfig.addPassthroughCopy({ "src/img": "img" });
@@ -11,14 +26,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/pdf": "pdf" });
 
   // Smart quotes filter
-  const smartypants = require("smartypants");
-  eleventyConfig.addFilter("smart", str => smartypants.smartypants(str, 'qDe'));
+  eleventyConfig.addFilter("smart", str => smartypants(str, 'qDe'));
 
   // Markdown Plugins
-  var uslug = require('uslug');
   var uslugify = s => uslug(s);
-  var anchor = require('markdown-it-anchor');
-  var markdownIt = require("markdown-it");
   eleventyConfig.setLibrary("md", markdownIt({
     html: true,
     typographer: true
@@ -28,7 +39,6 @@ module.exports = function(eleventyConfig) {
   });
   eleventyConfig.addFilter("markdown", markdown => mdIntro.render(markdown));
 
-  const slugify = require("slugify");
   eleventyConfig.addFilter("slugify", str => {
     return slugify(str, {
       customReplacements: [
@@ -40,14 +50,26 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // Image optimization
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    extensions: 'html', // transform only <img> in html files
+    formats: ['avif', 'auto'], // include avif version and original file type
+    outputDir: './dist/assets/images/processed/', // where to write the image files
+    urlPath: '/assets/images/processed/', // path prefix for the img src attribute
+    widths: ['auto'], // which rendition sizes to generate, auto = original dimensions
+    defaultAttributes: {
+        // default attributes on the final img element
+        loading: 'lazy',
+        decoding: 'async'
+    }
+  });
+
   // Code syntax highlighting
-  const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
   eleventyConfig.addPlugin(syntaxHighlight, {
     templateFormats: ["njk", "md"]
   });
 
   // RSS
-  const pluginRss = require("@11ty/eleventy-plugin-rss");
   eleventyConfig.addPlugin(pluginRss);
 
   // List all topics for a type of content

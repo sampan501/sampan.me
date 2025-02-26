@@ -12,11 +12,7 @@ home: true
 
 <div aria-labelledby="header">
     <div class="profile-header">
-        <picture>
-            <source srcset="../img/profile.avif" type="image/avif">
-            <source srcset="../img/profile.webp" type="image/webp">
-            <img class="profile-img" src="../img/profile.jpg" alt="Sambit Panda profile picture" width="700" height="700">
-        </picture>
+        <img class="profile-img" src="../img/profile.jpeg" alt="Sambit Panda profile picture" width="700" height="700" loading="eager">
         <div class="profile-title">
             <h1>{{- heading | markdown | safe }}</h1>
             <div class="subtitle">{{- subtitle | smart | safe }}</div>

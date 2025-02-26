@@ -1,6 +1,7 @@
 {
   "name": "sampan.me",
   "version": "1.0.0",
+  "type": "module",
   "description": "Personal website for Sambit Panda",
   "scripts": {
     "clear": "rm -rf dist",
@@ -36,7 +37,8 @@
     "url": "https://github.com/sampan501/sampan.me/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^6.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "autoprefixer": "^10.4.12",
