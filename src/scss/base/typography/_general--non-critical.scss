@@ -84,28 +84,12 @@ dt {
 }
 
 hr {
-    border: 0;
-
-    &::before {
-        display: block;
-        content: '';
-        width: 0.2em;
-        height: 0.2em;
-        margin: 2em auto 1em;
-        border-radius: 50%;
-        background: $color-black;
-        box-shadow: (0.2em * 8) 0 0 0 $color-black, (0.2em * -8) 0 0 0 $color-black;
-
-        @include dark-mode() {
-            background: $color-dark-mode-white;
-            box-shadow: (0.2em * 8) 0 0 0 $color-dark-mode-white, (0.2em * -8) 0 0 0 $color-dark-mode-white;
-        }
-        
-
-        @media (max-width: $m) {
-            margin: 1em auto 0;
-        }
-    }
+  margin: $section-spacing auto;
+  max-width: 10em;
+  border-top: 2px solid $color-black;
+  @include dark-mode() {
+    border-color: $color-dark-mode-white;
+  }
 }
 
 small {

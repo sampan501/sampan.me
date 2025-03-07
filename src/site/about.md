@@ -6,7 +6,7 @@ layout: default
 permalink: about.html
 ---
 
-Hi, my name is Sambit! <span class="wave">👋</span>.
+Hi, my name is Sambit! <span class="wave">👋</span>
 
 I currently work as an AI Engineer at the [MATRIX AI Consortium](https://ai.utsa.edu/) where I develop AI solutions to improve trauma care delivery for patients.
 My research interests lie on the intersection of AI and medicine.
