@@ -14,5 +14,4 @@ replace:
   - "Conclusions: <strong>Conclusions</strong>"
 tags:
   - Neuroscience
-  - R
 ---

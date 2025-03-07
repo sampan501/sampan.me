@@ -1,6 +1,49 @@
 summary {
-    @include text-link;
-    color: $color-primary-darker;
-    @include dark-mode($color: $color-primary);
-    @include high-contrast($color: $color-dark-mode-primary-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .3em .6em;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+summary::after {
+  content: "↓";
+}
+
+details[open] > summary::after {
+  content: "↑";
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  border-radius: $border-radius-default;
+}
+
+summary:hover {
+  border-radius: 0;
+  background: $color-highlight;
+  @include dark-mode($background: $color-dark-mode-highlight);
+}
+
+details[open] summary {
+  border-radius: 0;
+  background: $color-highlight;
+  border-bottom: .2em solid $color-primary;
+  @include dark-mode($background: $color-dark-mode-highlight) {
+    border-bottom: .2em solid $color-dark-mode-highlight;
+  };
+}
+
+details {
+  border: .2em solid $color-primary;
+  border-radius: $border-radius-default;
+
+  @include dark-mode() {
+    border: .2em solid $color-dark-mode-highlight;
+  };
 }

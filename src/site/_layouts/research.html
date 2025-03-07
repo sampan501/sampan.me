@@ -49,7 +49,7 @@ layout: base.html
         {% endif %}
         </ul>
 
-        {{ content | safe }}
+        {{ content | smart | safe }}
 
         <h2 id="abstract">Abstract</h2>
         {% set abstract = project.abstract %}
@@ -59,7 +59,7 @@ layout: base.html
                 {%- set abstract = abstract | replace(r[0], r[1]) -%}
             {% endfor %}
         {% endif %}
-        <p>{{ abstract | safe }}</p>
+        <p>{{ abstract | smart | safe }}</p>
     </div>
 </div>
 

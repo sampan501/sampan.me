@@ -30,13 +30,9 @@ a {
 }
 
 .social {
+
     a {
         display: inline-flex;
         align-items: center;
     }
-}
-
-.topics {
-    @include remove-list-styling;
-    @include inline-nav;
 }

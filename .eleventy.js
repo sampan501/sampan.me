@@ -127,6 +127,11 @@ export default async function(eleventyConfig) {
     })
   });
 
+  // Select type filter
+  eleventyConfig.addFilter("filterByTag", function (arr, value) {
+    return arr.filter((item) => item.data.tags.includes(value));
+  });
+
   // Get current year for footer
   eleventyConfig.addFilter("getCurrentYear", () => new Date().getFullYear());
 

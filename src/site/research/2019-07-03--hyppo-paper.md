@@ -11,5 +11,4 @@ replace:
   - "https://hyppo.neurodata.io: <a href='https://hyppo.neurodata.io'>https://hyppo.neurodata.io</a>"
 tags:
   - Hypothesis Testing
-  - Python
 ---

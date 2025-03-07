@@ -8,12 +8,17 @@ layout: default
 listing: true
 ---
 
-<ul class="topics" aria-label="research topics">
-    {%- set topics = collections.research | getTopics %}
-    {%- for topic in topics %}
-        <li><a href="/topic/{{ topic | lower | replace(' ', '-') }}">{{ topic }}</a></li>
-    {%- endfor %}
-</ul>
+<p>
+    <details>
+        <summary>Topics</summary>
+            <ul class="topic-list" aria-label="research topics">
+                {%- set topics = collections.research | getTopics %}
+                {%- for topic in topics %}
+                    <li><a href="/research/topic/{{ topic | lower | replace(' ', '-') }}">{{ topic }}</a></li>
+                {%- endfor %}
+            </ul>
+    </details>
+</p>
 
 <ol class="hfeed index-list" reversed>
     {%- for post in collections.research | rejectattr("type", "other") | reverse %}

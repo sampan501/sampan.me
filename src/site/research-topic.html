@@ -10,17 +10,16 @@ pagination:
     - other
     - post
 layout: default
-permalink: /topic/{{ topic | slugify | safe }}.html
+permalink: /research/topic/{{ topic | slugify | safe }}.html
 ---
 
 <p>
-    All content related to {{ topic }} on my website.
-    Original research/software have <a href="/emojis.html">an emoji</a> next to it.
-    A <a href="/topics">full list of topics</a> is also available.
+    All research related to {{ topic }}.
+    A full list of topics is available <a href="/research">on my research page</a>.
 </p>
 
 <ol class="hfeed index-list" reversed>
-    {% set topicList = collections[ topic ] %}
+    {% set topicList = collections[ topic ] | filterByTag("research") %}
     {% for post in topicList | reverse %}
         {% include "post-in-list.html" %}
     {% endfor %}
