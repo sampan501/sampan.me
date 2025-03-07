@@ -1,15 +1,21 @@
 .profile-header {
-    margin-top: 4em;
-    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
-    @media (max-width: $m) {
-        margin-top: 2em;
-        margin-bottom: 1em;
+    @media (min-width: $l) {
+        margin-top: 4em;
+        margin-bottom: 2em;
+        flex-direction: row;
+        text-align: left;
     }
 }
 
 .profile-title {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     vertical-align: center;
 
     h1 {
@@ -38,13 +44,12 @@
 }
 
 .profile-img {
-    font-size: 0;
-    display: inline-block;
+    display: inline-flex;
     max-width: 8rem;
     height: auto;
     border-radius: 50%;
-    vertical-align: text-bottom;
-    margin-right: 1rem;
+    vertical-align: middle;
+    margin: .5em 1em 0 0;
 
     @media (max-width: $m) {
         max-width: 6rem;

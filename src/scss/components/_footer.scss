@@ -1,17 +1,44 @@
 .footer {
     font-size: 90%;
     clear: both;
-    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 2em;
     margin-top: calc($section-spacing + 1em);
     text-align: center;
+    border-top: 4px solid $color-primary;
+    background: $color-highlight;
+    @include dark-mode($background: $color-high-contrast-highlight);
+
+    @media (max-width: $s) {
+        margin-top: $section-spacing;
+    }
 
     ul,
     ol {
         display: flex;
-        justify-content: center;
+        text-align: center;
         max-width: none;
         @include remove-list-styling;
-        @include inline-nav;
+        
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            margin-right: 1em;
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            display: inline-flex;
+            min-height: 30px;
+            align-items: center;
+        }
     }
 
     &:before {
@@ -23,7 +50,24 @@
 
     .utility {
         @include remove-list-styling;
-        @include inline-nav;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            margin-right: 1em;
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            display: inline-flex;
+            min-height: 30px;
+            align-items: center;
+        }
     }
 
     .copyright {

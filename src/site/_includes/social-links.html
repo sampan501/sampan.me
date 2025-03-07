@@ -8,8 +8,8 @@
     {%- for item in social %}
     <li>
         <a href="{{ item.url | url }}" aria-current="social link">
-            {{ item.title }}
             {%- include "svg/" + item.icon + ".svg" -%}
+            {{ item.title }}
         </a>
     </li>
     {%- endfor %}
