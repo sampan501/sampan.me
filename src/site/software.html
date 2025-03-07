@@ -6,23 +6,11 @@ intro: |
 layout: default
 listing: true
 ---
-<ul class="topics" aria-label="software topics">
-    {%- set topics = collections.software | getTopics %}
-    {%- for topic in topics %}
-        <li><a href="/topic/{{ topic | lower | replace(' ', '-') }}">{{ topic }}</a></li>
-    {%- endfor %}
-</ul>
-
-<ol class="hfeed index-list" reversed>
-    {%- for post in collections.software | selectattr("type", "research") | reverse %}
-    {%- include "post-in-list.html" %}
-    {%- endfor %}
-</ol>
-
-<hr>
-
-<ol class="hfeed index-list" reversed>
-    {%- for post in collections.software | selectattr("type", "personal") | reverse %}
-    {%- include "post-in-list.html" %}
-    {%- endfor %}
-</ol>
+<div aria-labelledby="software" class="teaser-software">
+    <ul class="hfeed index-list" reversed>
+        {%- set posts = collections.software | reverse %}
+        {%- for post in posts %}
+        {%- include "post-in-list.html" -%}
+        {%- endfor %}
+    </ul>
+</div>

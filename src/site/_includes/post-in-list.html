@@ -7,38 +7,32 @@
     {%- set project = post.data -%}
 {%- endif -%}
 
-<li class="post-in-list">
-    {%- if featuredPost %}<h3>{% else %}<h2>{% endif %}
+<li class="post-in-list {% if post.data.featured == true and not home %}featured{% endif %}">
+    {% if post.data.tags.includes('software') %}<div>{%- endif -%}
+    {%- if featuredPost or post.data.tags.includes('software') %}<h3>{% else %}<h2>{% endif %}
         {% if post.data.tags.includes('research') %}
-            {% if project.type == "article-journal" %}
+            {% if post.data.featured == true and not home %}
+                <span class="emoji-title">⭐</span>
+            {% elseif project.type == "article-journal" %}
                 <span class="emoji-title">📄</span>
             {% elseif project.type == "article" %}
                 <span class="emoji-title">📝</span>
             {% elseif project.type == "thesis" %}
                 <span class="emoji-title">🎓</span>
-            {% else %}
-                <span class="emoji-title">📁</span>
             {% endif -%}
         {% endif -%}
         {% if post.data.tags.includes('software') %}
-            {% if post.data.type == "research" %}
-                <span class="emoji-title">🔬</span>
-            {% else %}
-                <span class="emoji-title">👤</span>
-            {% endif -%}
             <a href="{{ project.url }}">
         {% else %}
             <a href="{{ post.url | replace(" .html", "" ) }}">
         {% endif -%}
         {{ project.title | smart | safe }}
         </a>
-    {% if featuredPost %}</h3>{% else %}</h2>{% endif %}
+    {% if featuredPost or post.data.tags.includes('software') %}</h3>{% else %}</h2>{% endif %}
     {% if not featuredPost %}
     <p class="details">
-        {% if post.data.tags.includes('research') %}
-            {% include "research-authors.html" %}<br>
-        {% endif -%}
         {% if post.data.tags.includes('research') -%}
+            {% include "research-authors.html" %}<br>
             {% if project.type != "other" -%}
                 <em>{%- if project.DOI -%}
                 <a href="https://doi.org/{{ project.DOI }}">
@@ -56,6 +50,20 @@
     {% if post.data.intro %}
     <div class="description entry-summary">
         {{ post.data.intro  | markdown | safe }}
+    </div>
+    {% endif -%}
+    {% if post.data.tags.includes('software') %}</div>{%- endif -%}
+    {% if post.data.tags.includes('software') %}
+    <div class="techTags">
+        {%- set tags = post.data.tags | tagsOnPage %}
+        {%- for tag in tags %}
+        <code class="tags">{{ tag }}</code>
+        {%- if loop.length >= 2 %}
+            {%- if not loop.last %}
+                &ensp;
+            {%- endif -%}
+        {%- endif -%}
+        {%- endfor %}
     </div>
     {% endif -%}
 </li>

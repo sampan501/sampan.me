@@ -11,7 +11,12 @@ code {
     margin-right: .1em; // For when immediately followed by punctuation
     background-color: $color-code-background;
     @include dark-mode($color-dark-mode-code-background);
-    @include high-contrast($color-high-contrast-code-background, );
+    @include high-contrast($color-high-contrast-code-background);
+}
+
+code.tags {
+    background-color: transparent;
+    font-display: normal;
 }
 
 kbd {
