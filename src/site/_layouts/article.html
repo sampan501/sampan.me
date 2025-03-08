@@ -25,17 +25,3 @@ layout: base.html
 {% if collections.posts.length > 1 %}
 {% include "more-posts.html" %}
 {% endif %}
-
-{% if comments %}
-<div class="accordion">
-    <input type="checkbox" id="toggle" name="toggle">
-    <label class="toggle-btn" for="toggle">Comments</label>
-    <div class="accordion-content">
-        <script src="https://giscus.app/client.js" data-repo="sampan501/sampan.me" data-repo-id="R_kgDOMeycGA"
-            data-category="Comments" data-category-id="DIC_kwDOMeycGM4ChYJ0" data-mapping="title" data-strict="0"
-            data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme"
-            data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
-        </script>
-    </div>
-</div>
-{% endif %}
