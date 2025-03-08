@@ -33,14 +33,14 @@ summary:hover {
 details[open] summary {
   border-radius: 0;
   background: $color-highlight;
-  border-bottom: .2em solid $color-high-contrast-primary-light;
+  border-bottom: .2em solid $color-primary;
   @include dark-mode($background: $color-dark-mode-highlight) {
     border-bottom: .2em solid $color-code-grey;
   };
 }
 
 details {
-  border: .2em solid $color-high-contrast-primary-light;
+  border: .2em solid $color-primary;
   border-radius: $border-radius-default;
 
   @include dark-mode() {
