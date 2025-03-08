@@ -115,17 +115,3 @@
     }
   }
 }
-
-.profile-img {
-    display: inline-flex;
-    width: 8rem;
-    height: auto;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin: .25em 1em 0 0;
-
-    @media (max-width: $m) {
-        width: 6rem;
-        margin: 0;
-    }
-}
