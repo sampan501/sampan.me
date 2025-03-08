@@ -42,7 +42,6 @@ details[open] summary {
 details {
   border: .2em solid $color-high-contrast-primary-light;
   border-radius: $border-radius-default;
-  margin-top: 1em;
 
   @include dark-mode() {
     border: .2em solid $color-code-grey;

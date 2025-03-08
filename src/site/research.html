@@ -9,6 +9,7 @@ layout: default
 listing: true
 ---
 
+<p>
 <details>
     <summary>Topics</summary>
         <ul class="topic-list" aria-label="research topics">
@@ -18,6 +19,7 @@ listing: true
             {%- endfor %}
         </ul>
 </details>
+</p>
 
 <ol class="hfeed index-list" reversed>
     {%- for post in collections.research | rejectattr("type", "other") | reverse %}
