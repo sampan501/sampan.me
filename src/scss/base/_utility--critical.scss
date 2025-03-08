@@ -2,11 +2,6 @@
     @include remove-list-styling;
 }
 
-code.tags {
-    background-color: transparent;
-    font-display: normal;
-}
-
 .teaser-software {
   margin-top: $section-spacing;
 
@@ -30,6 +25,7 @@ code.tags {
       margin-top: 1em;
       display: flex;
       flex-wrap: wrap;
+      font-family: $code--font;
     }
 
     &:focus {
