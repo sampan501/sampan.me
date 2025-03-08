@@ -97,3 +97,11 @@ small {
     font-size: 100%;
     font-style: italic;
 }
+
+.featured-project {
+  background-color: $color-highlight-featured;
+
+  @include dark-mode() {
+    background-color: $color-dark-mode-highlight-featured;
+  }
+}

@@ -1,11 +1,11 @@
 .logo {
     display: inline-block;
-    margin-right: .5em;
-    margin-bottom: .5em;
+    margin-right: 1em;
     margin-top: -.2em;
+    margin-left: -.3em;
     text-decoration: none;
-    padding-left: .4em;
-    padding-right: .4em;
+    padding-left: .3em;
+    padding-right: .3em;
     font-weight: bold;
 
     &:link,
@@ -27,5 +27,6 @@
 
     @media (max-width: $xs) {
         padding: 0;
+        margin-left: 0;
     }
 }

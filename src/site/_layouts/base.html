@@ -9,6 +9,7 @@
         <main id="main" tabindex="-1">
             {{ content | safe }}
         </main>
+        {% include "footer.html" %}
         <style>
             @supports (color-scheme: dark light) {
                 @media screen and (prefers-color-scheme: dark) {
@@ -23,7 +24,6 @@
             }
         </style>
     </div>
-    {% include "footer.html" %}
 </body>
 
 </html>

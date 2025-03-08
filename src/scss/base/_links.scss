@@ -20,9 +20,25 @@ a {
 
 .research-links {
     font-size: ms(1);
-    justify-content: center;
     @include remove-list-styling;
-    @include inline-nav;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+        margin-right: 1em;
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+
+    a {
+        display: inline-flex;
+        min-height: 30px;
+        align-items: center;
+    }
 
     @media (min-width: $m) {
         font-size: ms(2);

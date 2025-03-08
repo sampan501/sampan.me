@@ -35,6 +35,7 @@ export default async function(eleventyConfig) {
     typographer: true
   }).use(anchor, {slugify: uslugify, tabIndex: false}));
   var mdIntro = markdownIt({
+    html: true,
     typographer: true
   });
   eleventyConfig.addFilter("markdown", markdown => mdIntro.render(markdown));

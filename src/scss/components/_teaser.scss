@@ -102,7 +102,8 @@
     }
   }
 
-  h3 {
+  h2, h3 {
+    @include heading-m;
     margin-top: 0;
     word-break: break-all;
   }
