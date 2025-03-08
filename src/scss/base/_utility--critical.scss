@@ -2,6 +2,11 @@
     @include remove-list-styling;
 }
 
+code.tags {
+    background-color: transparent;
+    font-display: normal;
+}
+
 .teaser-software {
   margin-top: $section-spacing;
 
