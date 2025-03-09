@@ -6,4 +6,6 @@ date: 2024-05-31
 featured: true
 tags:
   - Python
+  - Cython
+  - scikit-learn
 ---
