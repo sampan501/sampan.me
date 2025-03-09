@@ -97,6 +97,13 @@ export default async function(eleventyConfig) {
       .sort();
   });
 
+  // List tags belonging to a page (not sorted)
+  eleventyConfig.addFilter("tagsOnPageNoSort", tags => {
+    const notRendered = ['all', 'post', 'research', 'software', 'other'];
+    return tags
+      .filter(d => !notRendered.includes(d));
+  });
+
   // Sort by order in front matter
   eleventyConfig.addFilter("ordered", collection => {
     return collection.sort((a, b) => a.data.order - b.data.order);
