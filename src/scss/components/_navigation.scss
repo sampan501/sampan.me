@@ -4,6 +4,5 @@ nav {
         margin-top: 0;
         @include remove-list-styling;
         @include inline-nav;
-        justify-content: left;
     }
 }

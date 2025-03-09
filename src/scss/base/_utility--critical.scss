@@ -3,7 +3,11 @@
 }
 
 .teaser-software {
-  margin-top: $section-spacing;
+  margin-top: 2em;
+
+  @media (max-width: $m) {
+    margin-top: 0;
+  }
 
   .featured {
     background-color: $color-highlight-featured;
@@ -21,11 +25,18 @@
     flex-direction: column; // Make images and text go above one another
     justify-content: space-between; // If the parent is bigger than image + text, add space between them
 
+    h2, h3 {
+        @include heading-m;
+        margin-top: 0;
+        word-break: break-all;
+    }
+
     .techTags {
-      margin-top: 1em;
+      margin-top: 2em;
       display: flex;
       flex-wrap: wrap;
       font-family: $code--font;
+      font-size: 80%;
     }
 
     &:focus {
@@ -89,12 +100,6 @@
         margin-top: 0;
       }
     }
-  }
-
-  h2, h3 {
-    @include heading-m;
-    margin-top: 0;
-    word-break: break-all;
   }
 
   .index-list {
