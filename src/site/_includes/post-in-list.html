@@ -57,13 +57,13 @@
     <div class="techTags">
         {%- set tags = post.data.tags | tagsOnPage %}
         {%- for tag in tags %}
-        <code class="tags">{{ tag }}</code>
+        {{- tag -}}
         {%- if loop.length >= 2 %}
             {%- if not loop.last %}
-                &ensp;
+                &nbsp;
             {%- endif -%}
         {%- endif -%}
-        {%- endfor %}
+        {% endfor -%}
     </div>
     {% endif -%}
 </li>
