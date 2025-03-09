@@ -21,10 +21,6 @@
         @include dark-mode($background: $color-dark-mode-highlight);
     }
 
-    @media (min-width: $xs) {
-        margin-bottom: 0;
-    }
-
     @media (max-width: $xs) {
         padding: 0;
         margin-left: 0;
