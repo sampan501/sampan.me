@@ -33,17 +33,17 @@ summary:hover {
 details[open] summary {
   border-radius: 0;
   background: $color-highlight;
-  border-bottom: .2em solid $color-primary;
+  border-bottom: $border-outline-thickness solid $color-primary;
   @include dark-mode($background: $color-dark-mode-highlight) {
-    border-bottom: .2em solid $color-code-grey;
+    border-bottom: $border-outline-thickness solid $color-code-grey;
   };
 }
 
 details {
-  border: .2em solid $color-primary;
+  border: $border-outline-thickness solid $color-primary;
   border-radius: $border-radius-default;
 
   @include dark-mode() {
-    border: .2em solid $color-code-grey;
+    border: $border-outline-thickness solid $color-code-grey;
   };
 }

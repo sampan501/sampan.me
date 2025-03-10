@@ -40,10 +40,10 @@
     }
 
     &:focus {
-        outline: .2em solid $color-black;
+        outline: $border-outline-thickness solid $color-black;
 
         @include dark-mode() {
-            outline: .2em solid $color-white;
+            outline: $border-outline-thickness solid $color-white;
         }
     }
 
@@ -56,30 +56,30 @@
     }
 
     &:focus-visible {
-        outline: .2em solid $color-black;
+        outline: $border-outline-thickness solid $color-black;
 
         @include dark-mode() {
-            outline: .2em solid $color-white;
+            outline: $border-outline-thickness solid $color-white;
         }
     }
 
     &:hover {
-        outline: .2em solid $color-primary-darker;
+        outline: $border-outline-thickness solid $color-primary-darker;
 
         @include dark-mode() {
-            outline: .2em solid $color-primary;
+            outline: $border-outline-thickness solid $color-primary;
         }
 
         @include high-contrast() {
-            outline: .2em solid $color-dark-mode-primary-light;
+            outline: $border-outline-thickness solid $color-dark-mode-primary-light;
         }
     }
 
     &:active {
-        outline: .2em solid $color-black;
+        outline: $border-outline-thickness solid $color-black;
 
         @include dark-mode() {
-            outline: .2em solid $color-white;
+            outline: $border-outline-thickness solid $color-white;
         }
     }
 
