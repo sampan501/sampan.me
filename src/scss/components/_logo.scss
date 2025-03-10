@@ -1,28 +1,23 @@
 .logo {
     display: inline-block;
-    margin-right: 1em;
-    margin-top: -.2em;
-    margin-left: -.3em;
+    margin-right: 2em;
+    margin-left: -.25em;
     text-decoration: none;
-    padding-left: .3em;
-    padding-right: .3em;
-    font-weight: bold;
+    padding-left: .25em;
+    padding-right: .25em;
+    font-weight: 600;
+    font-size: 120%;
 
     &:link,
     &:visited {
+        border-radius: $border-radius-default;
         color: $color-black;
         @include dark-mode($color: $color-dark-mode-white);
     }
 
-    &:hover,
-    &:active {
-        border-radius: .2rem;
+    &:hover{
+        border-radius: $border-radius-default;
         background: $color-highlight;
         @include dark-mode($background: $color-dark-mode-highlight);
-    }
-
-    @media (max-width: $xs) {
-        padding: 0;
-        margin-left: 0;
     }
 }

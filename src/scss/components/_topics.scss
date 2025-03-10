@@ -5,7 +5,7 @@
     @include remove-list-styling;
     margin: .5em;
 
-    @media (min-width: $s) {
+    @media (min-width: $xs) {
         max-width: none;
         display: grid;
         grid-template-columns: 1fr 1fr;
