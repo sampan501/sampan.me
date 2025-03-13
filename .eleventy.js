@@ -54,7 +54,7 @@ export default async function(eleventyConfig) {
   // Image optimization
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: 'html', // transform only <img> in html files
-    formats: ['avif', 'auto'], // include avif version and original file type
+    formats: ['avif', 'webp', 'auto'], // include avif version and original file type
     outputDir: './dist/assets/images/processed/', // where to write the image files
     urlPath: '/assets/images/processed/', // path prefix for the img src attribute
     widths: ['auto'], // which rendition sizes to generate, auto = original dimensions
