@@ -1,31 +1,31 @@
 html {
-    font-family: $system--font;
-    @include font-body;
-    color: $color-black;
-    font-size: 120%;
-    font-feature-settings: "liga";
+  font-family: $system--font;
+  @include font-body;
+  color: $color-black;
+  font-size: 120%;
+  font-feature-settings: "liga";
 
-    @media (max-width: $xxs) {
-        font-size: 100%;
-        line-height: 1.2;
-    }
+  @media (max-width: $xxs) {
+    font-size: 100%;
+    line-height: 1.2;
+  }
 
-    @media (min-width: $s) {
-        font-size: 130%;
-    }
+  @media (min-width: $s) {
+    font-size: 130%;
+  }
 
-    @media (min-width: $m) {
-        font-size: 150%;
-    }
+  @media (min-width: $m) {
+    font-size: 150%;
+  }
 
-    @media (min-width: $xl) {
-        font-size: 180%;
-    }
+  @media (min-width: $xl) {
+    font-size: 180%;
+  }
 }
 
 p,
 ul,
 ol,
 blockquote {
-    max-width: 35em;
+  max-width: 35em;
 }

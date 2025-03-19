@@ -1,86 +1,83 @@
 ::selection {
-    background: $color-primary;
-    @include dark-mode($color: $color-black);
-    @include high-contrast($background: $color-dark-mode-primary-light);
-    color: $color-white;
+  background: $color-primary;
+  @include dark-mode($color: $color-black);
+  @include high-contrast($background: $color-dark-mode-primary-light);
+  color: $color-white;
 }
 
 blockquote {
-    border-left: .15em solid $color-primary;
-    margin-left: 0;
-    margin-right: 0;
-    padding: .25em 0 .25em .85em;
+  border-left: 0.15em solid $color-primary;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0.25em 0 0.25em 0.85em;
 
-    @media (min-width: $l) {
-        margin-left: -1em;
+  @media (min-width: $l) {
+    margin-left: -1em;
 
-        blockquote {
-            margin-left: 0;
-        }
+    blockquote {
+      margin-left: 0;
     }
+  }
 
+  @include high-contrast() {
+    border-left-color: $color-dark-mode-primary-light;
+  }
 
-    @include high-contrast() {
-        border-left-color: $color-dark-mode-primary-light;
-    }
+  ul,
+  ol {
+    padding-left: 1em;
+  }
 
-    ul,
-    ol {
-        padding-left: 1em;
-    }
+  *:first-child {
+    margin-top: 0;
+  }
 
-    *:first-child {
-        margin-top: 0;
-    }
+  *:last-child {
+    margin-bottom: 0;
+  }
 
-    *:last-child {
-        margin-bottom: 0;
-    }
-
-    img:last-child {
-        margin-bottom: .5em;
-    }
+  img:last-child {
+    margin-bottom: 0.5em;
+  }
 }
 
 ul,
 ol {
+  @media (max-width: $l) {
+    padding-left: 1.5em;
+  }
 
-    @media (max-width: $l) {
-        padding-left: 1.5em;
-    }
+  ul {
+    padding-left: 1em;
+  }
 
-    ul {
-        padding-left: 1em;
-    }
+  ol {
+    padding-left: 1.25em;
+  }
 
-    ol {
-        padding-left: 1.25em;
-    }
-
-    ul {
-        list-style-type: disc;
-    }
+  ul {
+    list-style-type: disc;
+  }
 }
 
 li {
+  &::marker {
+    color: $color-primary;
+    @include high-contrast($color: $color-dark-mode-primary-light);
+  }
 
-    &::marker {
-        color: $color-primary;
-        @include high-contrast($color: $color-dark-mode-primary-light);
-    }
+  ul &::marker {
+    font-size: 1em;
+    line-height: 1;
+  }
 
-    ul &::marker {
-        font-size: 1em;
-        line-height: 1;
-    }
-
-    ul ol &::marker {
-        font-size: 1em;
-    }
+  ul ol &::marker {
+    font-size: 1em;
+  }
 }
 
 dt {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 hr {
@@ -93,9 +90,9 @@ hr {
 }
 
 small {
-    display: block;
-    font-size: 100%;
-    font-style: italic;
+  display: block;
+  font-size: 100%;
+  font-style: italic;
 }
 
 .featured-project {

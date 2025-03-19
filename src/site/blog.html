@@ -2,15 +2,14 @@
 title: Blog by Sambit Panda
 heading: Blog
 intro: |
-    Welcome to my blog!
-    Here, I write about plain-language summaries of research papers, solutions to my coding problems, and other things that interest me.
-    You can browse my blog posts below, or [on Medium](https://medium.com/@bitapanda).
+  Welcome to my blog!
+  Here, I write about plain-language summaries of research papers, solutions to my coding problems, and other things that interest me.
+  You can browse my blog posts below, or [on Medium](https://medium.com/@bitapanda).
 layout: default
 listing: true
 ---
 
 <ol class="hfeed index-list" reversed>
-    {%- for post in collections.post | reverse %}
-    {%- include "post-in-list.html" %}
-    {%- endfor %}
+  {%- for post in collections.post | reverse %} {%- include "post-in-list.html"
+  %} {%- endfor %}
 </ol>

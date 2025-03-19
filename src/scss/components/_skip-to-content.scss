@@ -1,23 +1,24 @@
 .skip-to-content {
-    @include visually-hidden;
+  @include visually-hidden;
 
-    &:focus {
-        top: .5em;
-        left: .25em;
-        overflow: visible;
-        clip: initial;
-        height: auto;
-        width: auto;
-        margin: 0;
-        box-shadow: 0 0 0 3px $color-black, 0 0 .4em .0em $color-dark-mode-black;
-        padding: 0.5em .5em;
+  &:focus {
+    top: 0.5em;
+    left: 0.25em;
+    overflow: visible;
+    clip: initial;
+    height: auto;
+    width: auto;
+    margin: 0;
+    box-shadow: 0 0 0 3px $color-black, 0 0 0.4em 0em $color-dark-mode-black;
+    padding: 0.5em 0.5em;
 
-        @include dark-mode() {
-            box-shadow: 0 0 0 3px $color-white, .2em .2em .4em .1em $color-dark-mode-black;
-        }
+    @include dark-mode() {
+      box-shadow: 0 0 0 3px $color-white,
+        0.2em 0.2em 0.4em 0.1em $color-dark-mode-black;
     }
+  }
 }
 
 main:focus {
-    outline: none;
+  outline: none;
 }

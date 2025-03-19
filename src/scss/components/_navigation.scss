@@ -1,8 +1,8 @@
 nav {
-    ul {
-        margin-bottom: 0;
-        margin-top: 0;
-        @include remove-list-styling;
-        @include inline-nav;
-    }
+  ul {
+    margin-bottom: 0;
+    margin-top: 0;
+    @include remove-list-styling;
+    @include inline-nav;
+  }
 }

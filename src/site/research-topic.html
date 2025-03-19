@@ -14,13 +14,11 @@ permalink: /research/topic/{{ topic | slugify | safe }}.html
 ---
 
 <p>
-All research related to {{ topic }}.
-A full list of topics is available <a href="/research">on my research page</a>.
+  All research related to {{ topic }}. A full list of topics is available
+  <a href="/research">on my research page</a>.
 </p>
 
 <ol class="hfeed index-list" reversed>
-    {% set topicList = collections[ topic ] | filterByTag("research") %}
-    {% for post in topicList | reverse %}
-        {% include "post-in-list.html" %}
-    {% endfor %}
+  {% set topicList = collections[ topic ] | filterByTag("research") %} {% for
+  post in topicList | reverse %} {% include "post-in-list.html" %} {% endfor %}
 </ol>

@@ -2,35 +2,37 @@
 title: Research by Sambit Panda
 heading: Research
 intro: |
-    If you are interested in extensions of AI and/or how it can be used to improve human health, you are in the right place.
-    Selected projects have a ⭐ next to them.
-    A full list is also availabile [on Google Scholar](https://scholar.google.com/citations?user=-V3CmPoAAAAJ&hl=en).
+  If you are interested in extensions of AI and/or how it can be used to improve human health, you are in the right place.
+  Selected projects have a ⭐ next to them.
+  A full list is also available [on Google Scholar](https://scholar.google.com/citations?user=-V3CmPoAAAAJ&hl=en).
 layout: default
 listing: true
 ---
 
 <p>
-<details>
+  <details>
     <summary>Topics</summary>
-        <ul class="topic-list" aria-label="research topics">
-            {%- set topics = collections.research | getTopics %}
-            {%- for topic in topics %}
-                <li><a href="/research/topic/{{ topic | lower | replace(' ', '-') }}">{{ topic }}</a></li>
-            {%- endfor %}
-        </ul>
-</details>
+    <ul class="topic-list" aria-label="research topics">
+      {%- set topics = collections.research | getTopics %} {%- for topic in
+      topics %}
+      <li>
+        <a href="/research/topic/{{ topic | lower | replace(' ', '-') }}"
+          >{{ topic }}</a
+        >
+      </li>
+      {%- endfor %}
+    </ul>
+  </details>
 </p>
 
 <ol class="hfeed index-list" reversed>
-    {%- for post in collections.research | rejectattr("type", "other") | reverse %}
-    {%- include "post-in-list.html" %}
-    {%- endfor %}
+  {%- for post in collections.research | rejectattr("type", "other") | reverse
+  %} {%- include "post-in-list.html" %} {%- endfor %}
 </ol>
 
-<hr>
+<hr />
 
 <ol class="hfeed index-list" reversed>
-    {%- for post in collections.research | selectattr("type", "other") | reverse %}
-    {%- include "post-in-list.html" %}
-    {%- endfor %}
+  {%- for post in collections.research | selectattr("type", "other") | reverse
+  %} {%- include "post-in-list.html" %} {%- endfor %}
 </ol>

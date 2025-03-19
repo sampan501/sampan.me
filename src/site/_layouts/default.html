@@ -3,20 +3,16 @@ layout: base.html
 ---
 
 <h1>
-  {%- if heading %}
-      {{- heading | smart | safe }}
-  {%- elif topic %}
-      {{- topic | smart | safe }}
-  {%- elif year %}
-      Blog posts from {{ year }}
-  {%- else %}
-      {{- title | smart | safe }}
-  {%- endif %}
+  {%- if heading %} {{- heading | smart | safe }} {%- elif topic %} {{- topic |
+  smart | safe }} {%- elif year %} Blog posts from {{ year }} {%- else %} {{-
+  title | smart | safe }} {%- endif %}
 </h1>
 {%- if updated %}
-    <p class="post-details">Updated <span itemprop="dateModified" content="{{ updated | isoDate }}">{{ updated | date }}</span></p>
-{% endif %}
-{% if intro and not hideIntro %}
-    {{ intro | markdown | safe }}
-{% endif %}
-{{ content | safe }}
+<p class="post-details">
+  Updated
+  <span itemprop="dateModified" content="{{ updated | isoDate }}"
+    >{{ updated | date }}</span
+  >
+</p>
+{% endif %} {% if intro and not hideIntro %} {{ intro | markdown | safe }} {%
+endif %} {{ content | safe }}

@@ -2,7 +2,7 @@ summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .3em .6em;
+  padding: 0.3em 0.6em;
   font-weight: bold;
   cursor: pointer;
   user-select: none;
@@ -36,7 +36,7 @@ details[open] summary {
   border-bottom: $border-outline-thickness solid $color-primary;
   @include dark-mode($background: $color-dark-mode-highlight) {
     border-bottom: $border-outline-thickness solid $color-code-grey;
-  };
+  }
 }
 
 details {
@@ -45,5 +45,5 @@ details {
 
   @include dark-mode() {
     border: $border-outline-thickness solid $color-code-grey;
-  };
+  }
 }

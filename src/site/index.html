@@ -3,47 +3,57 @@ heading: Sambit Panda
 subtitle: AI Engineer (PhD) @ MATRIX AI Consortium
 title: Sambit Panda's personal website
 intro: |
-    I'm an AI Engineer at the [MATRIX AI Consortium](https://ai.utsa.edu/) where I am developing a end-to-end solution for trauma care using AI.
-    Previously, I completed my PhD at [Johns Hopkins](https://www.bme.jhu.edu/academics/graduate/phd-program/), where I was advised by [Joshua T. Vogelstein](https://jovo.me/).
-    Here's a little bit more [about me](/about/).
+  I'm an AI Engineer at the [MATRIX AI Consortium](https://ai.utsa.edu/) where I am developing a end-to-end solution for trauma care using AI.
+  Previously, I completed my PhD at [Johns Hopkins](https://www.bme.jhu.edu/academics/graduate/phd-program/), where I was advised by [Joshua T. Vogelstein](https://jovo.me/).
+  Here's a little bit more [about me](/about/).
 layout: base
 home: true
 ---
 
 <div aria-labelledby="header">
-    <div class="profile-header">
-        <img class="profile-img" src="../img/profile.jpeg" alt="Sambit Panda profile picture" width="700" height="700" loading="eager" decoding="auto">
-        <div class="profile-title">
-            <h1>{{- heading | markdown | safe }}</h1>
-            <div class="subtitle">{{- subtitle | smart | safe }}</div>
-            <div class="social" aria-label="repeated social links">
-                {% include "social-links.html" -%}
-            </div>
-        </div>
+  <div class="profile-header">
+    <img
+      class="profile-img"
+      src="../img/profile.jpeg"
+      alt="Sambit Panda profile picture"
+      width="700"
+      height="700"
+      loading="eager"
+      decoding="auto"
+    />
+    <div class="profile-title">
+      <h1>{{- heading | markdown | safe }}</h1>
+      <div class="subtitle">{{- subtitle | smart | safe }}</div>
+      <div class="social" aria-label="repeated social links">
+        {% include "social-links.html" -%}
+      </div>
     </div>
-    {%- if intro %}
-    {{- intro | markdown | safe }}
-    {%- endif %}
+  </div>
+  {%- if intro %} {{- intro | markdown | safe }} {%- endif %}
 </div>
 
 <div aria-labelledby="research" class="teaser">
-    <h2 id="research">Research</h2>
-    <p>Here are some of my favorite research articles. If you want to read more, take a look at the <a href="/research/">full publication list.</a></p>
-    <ol class="hfeed index-list" reversed>
-        {%- set posts = collections.research | selectattr("featured", true) | reverse %}
-        {%- for post in posts %}
-        {%- include "post-in-list.html" -%}
-        {%- endfor %}
-    </ol>
+  <h2 id="research">Research</h2>
+  <p>
+    Here are some of my favorite research articles. If you want to read more,
+    take a look at the <a href="/research/">full publication list.</a>
+  </p>
+  <ol class="hfeed index-list" reversed>
+    {%- set posts = collections.research | selectattr("featured", true) |
+    reverse %} {%- for post in posts %} {%- include "post-in-list.html" -%} {%-
+    endfor %}
+  </ol>
 </div>
 
 <div aria-labelledby="software" class="teaser-software">
-    <h2 id="software">Software</h2>
-    <p>I love solving difficult problems, and often times develop software to help. You can see more in the <a href="/software/">full software list.</a></p>
-    <ul class="hfeed index-list" reversed>
-        {%- set posts = collections.software | selectattr("featured", true) | reverse %}
-        {%- for post in posts %}
-        {%- include "post-in-list.html" -%}
-        {%- endfor %}
-    </ul>
+  <h2 id="software">Software</h2>
+  <p>
+    I love solving difficult problems, and often times develop software to help.
+    You can see more in the <a href="/software/">full software list.</a>
+  </p>
+  <ul class="hfeed index-list" reversed>
+    {%- set posts = collections.software | selectattr("featured", true) |
+    reverse %} {%- for post in posts %} {%- include "post-in-list.html" -%} {%-
+    endfor %}
+  </ul>
 </div>

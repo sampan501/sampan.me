@@ -1,34 +1,32 @@
 a {
-    @include text-link;
+  @include text-link;
 
-    p & {
-        padding-top: .25em;
+  p & {
+    padding-top: 0.25em;
+  }
+
+  > code {
+    padding: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: $m) {
+    h2 & {
+      text-decoration-thickness: 0.06em;
     }
-
-    >code {
-        padding: 0;
-        margin-right: 0;
-    }
-
-    @media (min-width: $m) {
-
-        h2 & {
-            text-decoration-thickness: .06em;
-        }
-    }
+  }
 }
 
 .research-links {
-    font-size: ms(1);
-    justify-content: center;
-    @include remove-list-styling;
-    @include inline-nav;
+  font-size: ms(1);
+  justify-content: center;
+  @include remove-list-styling;
+  @include inline-nav;
 }
 
 .social {
-
-    a {
-        display: inline-flex;
-        align-items: center;
-    }
+  a {
+    display: inline-flex;
+    align-items: center;
+  }
 }

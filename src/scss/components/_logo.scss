@@ -1,23 +1,23 @@
 .logo {
-    display: inline-block;
-    margin-right: 2em;
-    margin-left: -.25em;
-    text-decoration: none;
-    padding-left: .25em;
-    padding-right: .25em;
-    font-weight: 600;
-    font-size: 120%;
+  display: inline-block;
+  margin-right: 2em;
+  margin-left: -0.25em;
+  text-decoration: none;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  font-weight: 600;
+  font-size: 120%;
 
-    &:link,
-    &:visited {
-        border-radius: $border-radius-default;
-        color: $color-black;
-        @include dark-mode($color: $color-dark-mode-white);
-    }
+  &:link,
+  &:visited {
+    border-radius: $border-radius-default;
+    color: $color-black;
+    @include dark-mode($color: $color-dark-mode-white);
+  }
 
-    &:hover{
-        border-radius: $border-radius-default;
-        background: $color-highlight;
-        @include dark-mode($background: $color-dark-mode-highlight);
-    }
+  &:hover {
+    border-radius: $border-radius-default;
+    background: $color-highlight;
+    @include dark-mode($background: $color-dark-mode-highlight);
+  }
 }

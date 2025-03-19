@@ -1,5 +1,5 @@
 .index-list {
-    @include remove-list-styling;
+  @include remove-list-styling;
 }
 
 .teaser-software {
@@ -25,10 +25,11 @@
     flex-direction: column; // Make images and text go above one another
     justify-content: space-between; // If the parent is bigger than image + text, add space between them
 
-    h2, h3 {
-        @include heading-m;
-        margin-top: 0;
-        word-break: break-all;
+    h2,
+    h3 {
+      @include heading-m;
+      margin-top: 0;
+      word-break: break-all;
     }
 
     .techTags {
@@ -40,53 +41,53 @@
     }
 
     &:focus {
-        outline: $border-outline-thickness solid $color-black;
+      outline: $border-outline-thickness solid $color-black;
 
-        @include dark-mode() {
-            outline: $border-outline-thickness solid $color-white;
-        }
+      @include dark-mode() {
+        outline: $border-outline-thickness solid $color-white;
+      }
     }
 
     &:focus:not(:focus-visible) {
-        outline: none;
+      outline: none;
 
-        @include dark-mode() {
-            outline: none;
-        }
+      @include dark-mode() {
+        outline: none;
+      }
     }
 
     &:focus-visible {
-        outline: $border-outline-thickness solid $color-black;
+      outline: $border-outline-thickness solid $color-black;
 
-        @include dark-mode() {
-            outline: $border-outline-thickness solid $color-white;
-        }
+      @include dark-mode() {
+        outline: $border-outline-thickness solid $color-white;
+      }
     }
 
     &:hover {
-        outline: $border-outline-thickness solid $color-primary-darker;
+      outline: $border-outline-thickness solid $color-primary-darker;
 
-        @include dark-mode() {
-            outline: $border-outline-thickness solid $color-primary;
-        }
+      @include dark-mode() {
+        outline: $border-outline-thickness solid $color-primary;
+      }
 
-        @include high-contrast() {
-            outline: $border-outline-thickness solid $color-dark-mode-primary-light;
-        }
+      @include high-contrast() {
+        outline: $border-outline-thickness solid $color-dark-mode-primary-light;
+      }
     }
 
     &:active {
-        outline: $border-outline-thickness solid $color-black;
+      outline: $border-outline-thickness solid $color-black;
 
-        @include dark-mode() {
-            outline: $border-outline-thickness solid $color-white;
-        }
+      @include dark-mode() {
+        outline: $border-outline-thickness solid $color-white;
+      }
     }
 
     a[href]::after {
       display: block;
       bottom: 0;
-      content: '';
+      content: "";
       left: 0;
       position: absolute;
       right: 0;
@@ -112,8 +113,7 @@
       grid-template-rows: 1fr;
       gap: 1em;
       grid-auto-flow: row;
-      grid-template-areas:
-      ". .";
+      grid-template-areas: ". .";
 
       @media (min-width: $l) {
         @include overspill;

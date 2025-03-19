@@ -1,68 +1,62 @@
 ---
 layout: base.html
 ---
+
 {%- set project = references[key] -%}
 <div itemscope itemtype="https://schema.org/BlogPosting">
-    <h1 itemprop="title headline">{{ project.title | smart | safe }}</h1>
-    <div aria-label="Post details" class="post-details">
-        <p>
-            {%- if project.author.length >= 1 %}
-                {% for author in project.author %}
-                    {%- set name %}{{ author.given }} {{ author.family }}{% endset -%}
-                    {%- if name == site.author.name or name == site.author.name + "*" %}
-                        <strong>{{ name }}</strong>
-                    {%- else %}
-                        {{ name }}
-                    {%- endif -%}
-                    {%- if loop.length >= 2 %}{%- if not loop.last %},{%- endif -%}{%- endif -%}
-                {%- endfor %}
-            {%- endif -%}<br>
-            {% if project.type != "other" %}
-                {{ project.journal }},
-            {% endif -%}
-            <span class="entry-published date" itemprop="dateCreated pubdate datePublished" content="{{ date | isoDate }}" >{{ date | date('year') }}</span>
-            <meta itemprop="author" content="{{ site.author.name }}" />
-            <meta itemprop="publisher" itemscope itemtype="https://schema.org/Corporation" content="{{ site.company }}" />
-        </p>
-        <p>
-            {% if equalContribution %}
-            *Equal Contribution
-            {% endif -%}
-        </p>
-    </div>
-    <div itemprop="mainEntityOfPage">
-        <ul class="research-links">
-        {% if project.type == "article-journal" %}
-            <li><a href="https://doi.org/{{ project.DOI }}">Paper</a></li>
-        {% elif project.type == "article" %}
-            <li><a href="https://doi.org/{{ project.DOI }}">{{ project.journal }}</a></li>
-        {% elif project.type == "thesis" %}
-            <li><a href="{{ project.URL }}">Thesis</a></li>
-        {% endif -%}
-        {% if links %}
-        {% for link in links %}
-            {% set linkslist =  link.split(": ") %}
-            <li>
-            <a href="{{ linkslist[1] }}">{{ linkslist[0] }}</a>
-            </li>
-        {% endfor %}
-        {% endif %}
-        </ul>
+  <h1 itemprop="title headline">{{ project.title | smart | safe }}</h1>
+  <div aria-label="Post details" class="post-details">
+    <p>
+      {%- if project.author.length >= 1 %} {% for author in project.author %}
+      {%- set name %}{{ author.given }} {{ author.family }}{% endset -%} {%- if
+      name == site.author.name or name == site.author.name + "*" %}
+      <strong>{{ name }}</strong>
+      {%- else %} {{ name }} {%- endif -%} {%- if loop.length >= 2 %}{%- if not
+      loop.last %},{%- endif -%}{%- endif -%} {%- endfor %} {%- endif -%}<br />
+      {% if project.type != "other" %} {{ project.journal }}, {% endif -%}
+      <span
+        class="entry-published date"
+        itemprop="dateCreated pubdate datePublished"
+        content="{{ date | isoDate }}"
+        >{{ date | date('year') }}</span
+      >
+      <meta itemprop="author" content="{{ site.author.name }}" />
+      <meta
+        itemprop="publisher"
+        itemscope
+        itemtype="https://schema.org/Corporation"
+        content="{{ site.company }}"
+      />
+    </p>
+    <p>{% if equalContribution %} *Equal Contribution {% endif -%}</p>
+  </div>
+  <div itemprop="mainEntityOfPage">
+    <ul class="research-links">
+      {% if project.type == "article-journal" %}
+      <li><a href="https://doi.org/{{ project.DOI }}">Paper</a></li>
+      {% elif project.type == "article" %}
+      <li>
+        <a href="https://doi.org/{{ project.DOI }}">{{ project.journal }}</a>
+      </li>
+      {% elif project.type == "thesis" %}
+      <li><a href="{{ project.URL }}">Thesis</a></li>
+      {% endif -%} {% if links %} {% for link in links %} {% set linkslist =
+      link.split(": ") %}
+      <li>
+        <a href="{{ linkslist[1] }}">{{ linkslist[0] }}</a>
+      </li>
+      {% endfor %} {% endif %}
+    </ul>
 
-        {{ content | smart | safe }}
+    {{ content | smart | safe }}
 
-        <h2 id="abstract">Abstract</h2>
-        {% set abstract = project.abstract %}
-        {% if replace %}
-            {% for repl in replace %}
-                {% set r = repl.split(": ") %}
-                {%- set abstract = abstract | replace(r[0], r[1]) -%}
-            {% endfor %}
-        {% endif %}
-        <p>{{ abstract | smart | safe }}</p>
-    </div>
+    <h2 id="abstract">Abstract</h2>
+    {% set abstract = project.abstract %} {% if replace %} {% for repl in
+    replace %} {% set r = repl.split(": ") %} {%- set abstract = abstract |
+    replace(r[0], r[1]) -%} {% endfor %} {% endif %}
+    <p>{{ abstract | smart | safe }}</p>
+  </div>
 </div>
 
-{% if collections.research.length > 1 %}
-{% include "more-posts.html" %}
-{% endif %}
+{% if collections.research.length > 1 %} {% include "more-posts.html" %} {%
+endif %}

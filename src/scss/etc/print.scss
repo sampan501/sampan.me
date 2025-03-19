@@ -1,25 +1,24 @@
 @page {
-    margin: 1in;
-    /* 1 inch margin for all sides */
+  margin: 1in;
+  /* 1 inch margin for all sides */
 }
 
 body {
-    font-size: 10pt;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  font-size: 10pt;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .utility {
-    display: none;
+  display: none;
 }
 
 a {
-
-    &:link,
-    &:visited {
-        color: inherit;
-    }
+  &:link,
+  &:visited {
+    color: inherit;
+  }
 }
 
 h1,
@@ -28,12 +27,12 @@ h3,
 h4,
 h5,
 h6 {
-    page-break-after: avoid;
+  page-break-after: avoid;
 }
 
 ul,
 img,
 blockquote,
 pre {
-    page-break-inside: avoid;
+  page-break-inside: avoid;
 }

@@ -1,40 +1,32 @@
-{%- if tags.includes('post') %}
-    {%- set linkToList = '/blog/' %}
-    {%- set items = collections.post %}
-{%- elif tags.includes('research') %}
-    {%- set linkToList = '/research/' %}
-    {%- set items = collections.research %}
-{%- endif %}
-<hr>
+{%- if tags.includes('post') %} {%- set linkToList = '/blog/' %} {%- set items =
+collections.post %} {%- elif tags.includes('research') %} {%- set linkToList =
+'/research/' %} {%- set items = collections.research %} {%- endif %}
+<hr />
 <div aria-labelledby="further-reading-heading" class="post-nav">
-    {% set previousPost = items | getPreviousCollectionItem %}
-    {% set nextPost = items | getNextCollectionItem %}
-    <div>
-        {% if previousPost %}
-        <p>
-            &larr; Previous<br>
-            <a href="{{ previousPost.url }}">
-                {% if tags.includes('research') %}
-                    {{ references[previousPost.data.key].title }}
-                {% else %}
-                    {{ previousPost.data.title }}
-                {% endif %}
-            </a>
-        </p>
-        {% endif %}
-    </div>
-    <div>
-        {% if nextPost %}
-        <p>
-            Next &rarr;<br>
-            <a href="{{ nextPost.url }}">
-                {% if tags.includes('research') %}
-                    {{ references[nextPost.data.key].title }}
-                {% else %}
-                    {{ nextPost.data.title }}
-                {% endif %}
-            </a>
-        </p>
-        {% endif %}
-    </div>
+  {% set previousPost = items | getPreviousCollectionItem %} {% set nextPost =
+  items | getNextCollectionItem %}
+  <div>
+    {% if previousPost %}
+    <p>
+      &larr; Previous<br />
+      <a href="{{ previousPost.url }}">
+        {% if tags.includes('research') %} {{
+        references[previousPost.data.key].title }} {% else %} {{
+        previousPost.data.title }} {% endif %}
+      </a>
+    </p>
+    {% endif %}
+  </div>
+  <div>
+    {% if nextPost %}
+    <p>
+      Next &rarr;<br />
+      <a href="{{ nextPost.url }}">
+        {% if tags.includes('research') %} {{
+        references[nextPost.data.key].title }} {% else %} {{ nextPost.data.title
+        }} {% endif %}
+      </a>
+    </p>
+    {% endif %}
+  </div>
 </div>

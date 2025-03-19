@@ -2,17 +2,16 @@
 title: Software by Sambit Panda
 heading: Software
 intro: |
-    I enjoy developing software, many of which help solve difficult research problems.
-    Selected projects are <span class="featured-project">highlighted</span>, and
-    you can find many of them [on GitHub](https://github.com/sampan501).
+  I enjoy developing software, many of which help solve difficult research problems.
+  Selected projects are <span class="featured-project">highlighted</span>, and
+  you can find many of them [on GitHub](https://github.com/sampan501).
 layout: default
 listing: true
 ---
+
 <div aria-labelledby="software" class="teaser-software">
-    <ul class="hfeed index-list" reversed>
-        {%- set posts = collections.software | reverse %}
-        {%- for post in posts %}
-        {%- include "post-in-list.html" -%}
-        {%- endfor %}
-    </ul>
+  <ul class="hfeed index-list" reversed>
+    {%- set posts = collections.software | reverse %} {%- for post in posts %}
+    {%- include "post-in-list.html" -%} {%- endfor %}
+  </ul>
 </div>

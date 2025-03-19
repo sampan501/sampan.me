@@ -1,15 +1,15 @@
 .teaser {
-    li {
-        +li {
-            margin-top: 1em;
+  li {
+    + li {
+      margin-top: 1em;
 
-            @media (min-width: $m) {
-                margin-top: 0;
-            }
-        }
+      @media (min-width: $m) {
+        margin-top: 0;
+      }
     }
+  }
 
-    h3 {
-        margin-top: .75em;
-    }
+  h3 {
+    margin-top: 0.75em;
+  }
 }

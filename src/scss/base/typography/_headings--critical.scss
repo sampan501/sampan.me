@@ -1,17 +1,17 @@
 h1,
 h2,
 h3 {
-    @include heading-style;
+  @include heading-style;
 }
 
 h1 {
-    @include heading-xl;
+  @include heading-xl;
 }
 
 h2 {
-    @include heading-l;
+  @include heading-l;
 }
 
 h3 {
-    @include heading-m;
+  @include heading-m;
 }

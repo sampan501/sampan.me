@@ -1,597 +1,597 @@
 {
-	"panda2020multivariate" : {
-		"type": "thesis",
-		"abstract": "With the increase in the amount of data in many fields, a method to consistently and efficiently decipher relationships within high dimensional data sets is important. Because many modern datasets are multivariate, univariate tests are not applicable. While many multivariate independence tests have R packages available, the interfaces are inconsistent and most are not available in Python. We introduce hyppo, which includes many state of the art multivariate testing procedures. This thesis provides details for the implementations of each of the tests within a test hyppo as well as extensive power and run-time benchmarks on a suite of high-dimensional simulations previously used in different publications. The documentation and all releases for hyppo are available at https://hyppo.neurodata.io.",
-		"language": "en_US",
-		"license": "All rights reserved",
-		"journal": "Johns Hopkins",
-		"source": "jscholarship.library.jhu.edu",
-		"title": "Multivariate Independence and k-sample Testing",
-		"URL": "http://jhir.library.jhu.edu/handle/1774.2/62706",
-		"author": [
-			{
-				"family": "Panda",
-				"given": "Sambit"
-			}
-		]
-	},
-	"wilson2018selective" : {
-		"type": "article-journal",
-		"abstract": "Hydrogen peroxide (H2O2) is an endogenous molecule that plays several important roles in brain function: it is generated in cellular respiration, serves as a modulator of dopaminergic signaling, and its presence can indicate the upstream production of more aggressive reactive oxygen species (ROS). H2O2 has been implicated in several neurodegenerative diseases, including Parkinson’s disease (PD), creating a critical need to identify mechanisms by which H2O2 modulates cellular processes in general and how it affects the dopaminergic nigrostriatal pathway, in particular. Furthermore, there is broad interest in selective electrochemical quantification of H2O2, because it is often enzymatically generated at biosensors as a reporter for the presence of nonelectroactive target molecules. H2O2 fluctuations can be monitored in real time using fast-scan cyclic voltammetry (FSCV) coupled with carbon-fiber microelectrodes. However, selective identification is a critical issue when working in the presence of other molecules that generate similar voltammograms, such as adenosine and histamine. We have addressed this problem by fabricating a robust, H2O2-selective electrode. 1,3-Phenylenediamine (mPD) was electrodeposited on a carbon-fiber microelectrode to create a size-exclusion membrane, rendering the electrode sensitive to H2O2 fluctuations and pH shifts but not to other commonly studied neurochemicals. The electrodes are described and characterized herein. The data demonstrate that this technology can be used to ensure the selective detection of H2O2, enabling confident characterization of the role this molecule plays in normal physiological function as well as in the progression of PD and other neuropathies involving oxidative stress.",
-		"journal": "Analytical Chemistry",
-		"DOI": "10.1021/acs.analchem.7b03770",
-		"ISSN": "0003-2700",
-		"issue": "1",
-		"journalAbbreviation": "Anal. Chem.",
-		"license": "All rights reserved",
-		"note": "publisher: American Chemical Society",
-		"page": "888-895",
-		"source": "ACS Publications",
-		"title": "Selective and Mechanically Robust Sensors for Electrochemical Measurements of Real-Time Hydrogen Peroxide Dynamics in Vivo",
-		"URL": "https://doi.org/10.1021/acs.analchem.7b03770",
-		"volume": "90",
-		"author": [
-			{
-				"family": "Wilson",
-				"given": "Leslie R."
-			},
-			{
-				"family": "Panda",
-				"given": "Sambit"
-			},
-			{
-				"family": "Schmidt",
-				"given": "Andreas C."
-			},
-			{
-				"family": "Sombers",
-				"given": "Leslie A."
-			}
-		]
-	},
-	"panda2021hyppo" : {
-		"type": "article",
-		"abstract": "We introduce hyppo, a unified library for performing multivariate hypothesis testing, including independence, two-sample, and k-sample testing. While many multivariate independence tests have R packages available, the interfaces are inconsistent and most are not available in Python. hyppo includes many state of the art multivariate testing procedures. The package is easy-to-use and is flexible enough to enable future extensions. The documentation and all releases are available at https://hyppo.neurodata.io.",
-		"DOI": "10.48550/arXiv.1907.02088",
-		"license": "All rights reserved",
-		"note": "arXiv:1907.02088 [cs, stat]",
-		"number": "arXiv:1907.02088",
-		"journal": "arXiv",
-		"source": "arXiv.org",
-		"title": "hyppo: A Multivariate Hypothesis Testing Python Package",
-		"title-short": "hyppo",
-		"URL": "http://arxiv.org/abs/1907.02088",
-		"author": [
-			{
-				"family": "Panda",
-				"given": "Sambit"
-			},
-			{
-				"family": "Palaniappan",
-				"given": "Satish"
-			},
-			{
-				"family": "Xiong",
-				"given": "Junhao"
-			},
-			{
-				"family": "Bridgeford",
-				"given": "Eric W."
-			},
-			{
-				"family": "Mehta",
-				"given": "Ronak"
-			},
-			{
-				"family": "Shen",
-				"given": "Cencheng"
-			},
-			{
-				"family": "Vogelstein",
-				"given": "Joshua T."
-			}
-		]
-	},
-	"xu2021when" : {
-		"type": "article",
-		"abstract": "Deep networks and decision forests (such as random forests and gradient boosted trees) are the leading machine learning methods for structured and tabular data, respectively. Many papers have empirically compared large numbers of classifiers on one or two different domains (e.g., on 100 different tabular data settings). However, a careful conceptual and empirical comparison of these two strategies using the most contemporary best practices has yet to be performed. Conceptually, we illustrate that both can be profitably viewed as \"partition and vote\" schemes. Specifically, the representation space that they both learn is a partitioning of feature space into a union of convex polytopes. For inference, each decides on the basis of votes from the activated nodes. This formulation allows for a unified basic understanding of the relationship between these methods. Empirically, we compare these two strategies on hundreds of tabular data settings, as well as several vision and auditory settings. Our focus is on datasets with at most 10,000 samples, which represent a large fraction of scientific and biomedical datasets. In general, we found forests to excel at tabular and structured data (vision and audition) with small sample sizes, whereas deep nets performed better on structured data with larger sample sizes. This suggests that further gains in both scenarios may be realized via further combining aspects of forests and networks. We will continue revising this technical report in the coming months with updated results.",
-		"DOI": "10.48550/arXiv.2108.13637",
-		"license": "All rights reserved",
-		"note": "arXiv:2108.13637 [cs, q-bio, stat]",
-		"number": "arXiv:2108.13637",
-		"journal": "arXiv",
-		"source": "arXiv.org",
-		"title": "When are Deep Networks really better than Decision Forests at small sample sizes, and how?",
-		"URL": "http://arxiv.org/abs/2108.13637",
-		"author": [
-			{
-				"family": "Xu",
-				"given": "Haoyin"
-			},
-			{
-				"family": "Kinfu",
-				"given": "Kaleab A."
-			},
-			{
-				"family": "LeVine",
-				"given": "Will"
-			},
-			{
-				"family": "Panda",
-				"given": "Sambit"
-			},
-			{
-				"family": "Dey",
-				"given": "Jayanta"
-			},
-			{
-				"family": "Ainsworth",
-				"given": "Michael"
-			},
-			{
-				"family": "Peng",
-				"given": "Yu-Chung"
-			},
-			{
-				"family": "Kusmanov",
-				"given": "Madi"
-			},
-			{
-				"family": "Engert",
-				"given": "Florian"
-			},
-			{
-				"family": "White",
-				"given": "Christopher M."
-			},
-			{
-				"family": "Vogelstein",
-				"given": "Joshua T."
-			},
-			{
-				"family": "Priebe",
-				"given": "Carey E."
-			}
-		]
-	},
-	"shen2022chisquare" : {
-		"type": "article-journal",
-		"abstract": "Distance correlation has gained much recent attention in the data science community: the sample statistic is straightforward to compute and asymptotically equals zero if and only if independence, making it an ideal choice to discover any type of dependency structure given sufficient sample size. One major bottleneck is the testing process: because the null distribution of distance correlation depends on the underlying random variables and metric choice, it typically requires a permutation test to estimate the null and compute the p-value, which is very costly for large amount of data. To overcome the difficulty, in this article, we propose a chi-squared test for distance correlation. Method-wise, the chi-squared test is nonparametric, extremely fast, and applicable to bias-corrected distance correlation using any strong negative type metric or characteristic kernel. The test exhibits a similar testing power as the standard permutation test, and can be used for K-sample and partial testing. Theory-wise, we show that the underlying chi-squared distribution well approximates and dominates the limiting null distribution in upper tail, prove the chi-squared test can be valid and universally consistent for testing independence, and establish a testing power inequality with respect to the permutation test. Supplementary files for this article are available online.",
-		"journal": "JCGS",
-		"DOI": "10.1080/10618600.2021.1938585",
-		"ISSN": "1061-8600",
-		"issue": "1",
-		"license": "All rights reserved",
-		"note": "publisher: Taylor & Francis\n_eprint: https://doi.org/10.1080/10618600.2021.1938585\nPMID: 35707063",
-		"page": "254-262",
-		"source": "Taylor and Francis+NEJM",
-		"title": "The Chi-Square Test of Distance Correlation",
-		"URL": "https://doi.org/10.1080/10618600.2021.1938585",
-		"volume": "31",
-		"author": [
-			{
-				"family": "Shen",
-				"given": "Cencheng"
-			},
-			{
-				"family": "Panda",
-				"given": "Sambit"
-			},
-			{
-				"family": "Vogelstein",
-				"given": "Joshua T."
-			}
-		]
-	},
-	"xu2023simplest" : {
-		"type": "article",
-		"abstract": "Decision forests, including random forests and gradient boosting trees, remain the leading machine learning methods for many real-world data problems, especially on tabular data. However, most of the current implementations only operate in batch mode, and therefore cannot incrementally update when more data arrive. Several previous works developed streaming trees and ensembles to overcome this limitation. Nonetheless, we found that those state-of-the-art algorithms suffer from a number of drawbacks, including low accuracy on some problems and high memory usage on others. We therefore developed the simplest possible extension of decision trees: given new data, simply update existing trees by continuing to grow them, and replace some old trees with new ones to control the total number of trees. In a benchmark suite containing 72 classification problems (the OpenML-CC18 data suite), we illustrate that our approach, Stream Decision Forest (SDF), does not suffer from either of the aforementioned limitations. On those datasets, we also demonstrate that our approach often performs as well, and sometimes even better, than conventional batch decision forest algorithm. Thus, SDFs establish a simple standard for streaming trees and forests that could readily be applied to many real-world problems.",
-		"DOI": "10.48550/arXiv.2110.08483",
-		"license": "All rights reserved",
-		"note": "arXiv:2110.08483 [cs]",
-		"number": "arXiv:2110.08483",
-		"journal": "arXiv",
-		"source": "arXiv.org",
-		"title": "Simplest Streaming Trees",
-		"URL": "http://arxiv.org/abs/2110.08483",
-		"author": [
-			{
-				"family": "Xu",
-				"given": "Haoyin"
-			},
-			{
-				"family": "Dey",
-				"given": "Jayanta"
-			},
-			{
-				"family": "Panda",
-				"given": "Sambit"
-			},
-			{
-				"family": "Vogelstein",
-				"given": "Joshua T."
-			}
-		]
-	},
-	"bridgeford2023learning" : {
-		"type": "article",
-		"abstract": "Causal inference studies whether the presence of a variable influences an observed outcome. As measured by quantities such as the \"average treatment effect,\" this paradigm is employed across numerous biological fields, from vaccine and drug development to policy interventions. Unfortunately, the majority of these methods are often limited to univariate outcomes. Our work generalizes causal estimands to outcomes with any number of dimensions or any measurable space, and formulates traditional causal estimands for nominal variables as causal discrepancy tests. We propose a simple technique for adjusting universally consistent conditional independence tests and prove that these tests are universally consistent causal discrepancy tests. Numerical experiments illustrate that our method, Causal CDcorr, leads to improvements in both finite sample validity and power when compared to existing strategies. Our methods are all open source and available at github.com/ebridge2/cdcorr.",
-		"DOI": "10.48550/arXiv.2307.13868",
-		"license": "All rights reserved",
-		"note": "arXiv:2307.13868 [cs, stat]",
-		"number": "arXiv:2307.13868",
-		"journal": "arXiv",
-		"source": "arXiv.org",
-		"title": "Learning sources of variability from high-dimensional observational studies",
-		"URL": "http://arxiv.org/abs/2307.13868",
-		"author": [
-			{
-				"family": "Bridgeford",
-				"given": "Eric W."
-			},
-			{
-				"family": "Chung",
-				"given": "Jaewon"
-			},
-			{
-				"family": "Gilbert",
-				"given": "Brian"
-			},
-			{
-				"family": "Panda",
-				"given": "Sambit"
-			},
-			{
-				"family": "Li",
-				"given": "Adam"
-			},
-			{
-				"family": "Shen",
-				"given": "Cencheng"
-			},
-			{
-				"family": "Badea",
-				"given": "Alexandra"
-			},
-			{
-				"family": "Caffo",
-				"given": "Brian"
-			},
-			{
-				"family": "Vogelstein",
-				"given": "Joshua T."
-			}
-		]
-	},
-	"bridgeford2024when" : {
-		"type": "article-journal",
-		"abstract": "Batch effects, undesirable sources of variability across multiple experiments, present significant challenges for scientific and clinical discoveries. Batch effects can (i) produce spurious signals and/or (ii) obscure genuine signals, contributing to the ongoing reproducibility crisis. Because batch effects are typically modeled as classical statistical effects, they often cannot differentiate between sources of variability due to confounding biases, which may lead them to erroneously conclude batch effects are present (or not). We formalize batch effects as causal effects, and introduce algorithms leveraging causal machinery, to address these concerns. Simulations illustrate that when non-causal methods provide the wrong answer, our methods either produce more accurate answers or “no answer”, meaning they assert the data are an inadequate to confidently conclude on the presence of a batch effect. Applying our causal methods to 27 neuroimaging datasets yields qualitatively similar results: in situations where it is unclear whether batch effects are present, non-causal methods confidently identify (or fail to identify) batch effects, whereas our causal methods assert that it is unclear whether there are batch effects or not. In instances where batch effects should be discernable, our techniques produce different results from prior art, each of which produce results more qualitatively similar to not applying any batch effect correction to the data at all. This work therefore provides a causal framework for understanding the potential capabilities and limitations of analysis of multi-site data.",
-		"DOI": "10.1162/imag_a_00458",
-		"language": "en",
-		"note": "page: 2021.09.03.458920\nsection: New Results",
-		"journal": "Imaging Neuroscience",
-		"journalAbbreviation": "Imaging Neuroscience",
-		"title": "When no answer is better than a wrong answer: a causal perspective on batch effects",
-		"title-short": "When no answer is better than a wrong answer",
-		"URL": "https://direct.mit.edu/imag/article-pdf/doi/10.1162/imag_a_00458/2495863/imag_a_00458.pdf",
-		"ISSN": "2837-6056",
-		"issue": "",
-		"page": "imag_a_00458",
-		"volume": "3",
-		"author": [
-			{
-				"family": "Bridgeford",
-				"given": "Eric W."
-			},
-			{
-				"family": "Powell",
-				"given": "Michael"
-			},
-			{
-				"family": "Kiar",
-				"given": "Gregory"
-			},
-			{
-				"family": "Noble",
-				"given": "Stephanie"
-			},
-			{
-				"family": "Chung",
-				"given": "Jaewon"
-			},
-			{
-				"family": "Panda",
-				"given": "Sambit"
-			},
-			{
-				"family": "Lawrence",
-				"given": "Ross"
-			},
-			{
-				"family": "Xu",
-				"given": "Ting"
-			},
-			{
-				"family": "Milham",
-				"given": "Michael"
-			},
-			{
-				"family": "Caffo",
-				"given": "Brian"
-			},
-			{
-				"family": "Vogelstein",
-				"given": "Joshua T."
-			}
-		]
-	},
-	"panda2023learning" : {
-		"type": "article",
-		"abstract": "Decision forests are widely used for classification and regression tasks. A lesser known property of tree-based methods is that one can construct a proximity matrix from the tree(s), and these proximity matrices are induced kernels. While there has been extensive research on the applications and properties of kernels, there is relatively little research on kernels induced by decision forests. We construct Kernel Mean Embedding Random Forests (KMERF), which induce kernels from random trees and/or forests using leaf-node proximity. We introduce the notion of an asymptotically characteristic kernel, and prove that KMERF kernels are asymptotically characteristic for both discrete and continuous data. Because KMERF is data-adaptive, we suspected it would outperform kernels selected a priori on finite sample data. We illustrate that KMERF nearly dominates current state-of-the-art kernel-based tests across a diverse range of high-dimensional two-sample and independence testing settings. Furthermore, our forest-based approach is interpretable, and provides feature importance metrics that readily distinguish important dimensions, unlike other high-dimensional non-parametric testing procedures. Hence, this work demonstrates the decision forest-based kernel can be more powerful and more interpretable than existing methods, flying in the face of conventional wisdom of the trade-off between the two.",
-		"DOI": "10.48550/arXiv.1812.00029",
-		"license": "All rights reserved",
-		"note": "arXiv:1812.00029 [cs, stat]",
-		"number": "arXiv:1812.00029",
-		"journal": "arXiv",
-		"source": "arXiv.org",
-		"title": "Learning Interpretable Characteristic Kernels via Decision Forests",
-		"URL": "http://arxiv.org/abs/1812.00029",
-		"author": [
-			{
-				"family": "Panda*",
-				"given": "Sambit"
-			},
-			{
-				"family": "Shen*",
-				"given": "Cencheng"
-			},
-			{
-				"family": "Vogelstein",
-				"given": "Joshua T."
-			}
-		]
-	},
-	"panda2023highdimensional" : {
-		"type": "article-journal",
-		"abstract": "The K-sample testing problem involves determining whether K groups of data points are each drawn from the same distribution. Analysis of variance is arguably the most classical method to test mean differences, along with several recent methods to test distributional differences. In this paper, we demonstrate the existence of a transformation that allows K-sample testing to be carried out using any dependence measure. Consequently, universally consistent K-sample testing can be achieved using a universally consistent dependence measure, such as distance correlation and the Hilbert-Schmidt independence criterion. This enables a wide range of dependence measures to be easily applied to K-sample testing.",
-		"DOI": "10.1016/j.spl.2024.110278",
-		"license": "All rights reserved",
-		"note": "arXiv:1910.08883 [cs, stat]",
-		"number": "arXiv:1910.08883",
-		"journal": "Statistics & Probability Letters",
-		"journalAbbreviation": "Statistics and Probability Letters",
-		"ISSN": "0167-7152",
-		"issue": "1",
-		"page": "110278",
-		"volume": "216",
-		"source": "ScienceDirect",
-		"title": "Universally Consistent K-Sample Tests via Dependence Measures",
-		"URL": "https://www.sciencedirect.com/science/article/abs/pii/S0167715224002475",
-		"author": [
-			{
-				"family": "Panda*",
-				"given": "Sambit"
-			},
-			{
-				"family": "Shen*",
-				"given": "Cencheng"
-			},
-			{
-				"family": "Perry",
-				"given": "Ronan"
-			},
-			{
-				"family": "Zorn",
-				"given": "Jelle"
-			},
-			{
-				"family": "Lutz",
-				"given": "Antoine"
-			},
-			{
-				"family": "Priebe",
-				"given": "Carey E."
-			},
-			{
-				"family": "Vogelstein",
-				"given": "Joshua T."
-			}
-		]
-	},
-	"wilson2024partial" : {
-		"type": "article-journal",
-		"abstract": "Background\nContextual fear learning is heavily dependent on the hippocampus. Despite evidence that catecholamines contribute to contextual encoding and memory retrieval, the precise temporal dynamics of their release in the hippocampus during behavior is unknown. In addition, new animal models are required to probe the effects of altered catecholamine synthesis on release dynamics and contextual learning.\nMethods\nWe generated 2 new mouse models of altered locus coeruleus–norepinephrine (NE) synthesis and utilized them together with GRABNE and GRABDA sensors and in vivo fiber photometry to investigate NE and dopamine (DA) release dynamics in the dorsal hippocampal CA1 during contextual fear conditioning.\nResults\nAversive foot shock increased both NE and DA release in the dorsal CA1, while freezing behavior associated with recall of fear memory was accompanied by decreased release. Moreover, we found that freezing at the recent time point was sensitive to both partial and complete loss of locus coeruleus–NE synthesis throughout prenatal and postnatal development, similar to previous observations of mice with global loss of NE synthesis beginning postnatally. In contrast, freezing at the remote time point was compromised only by complete loss of locus coeruleus–NE synthesis beginning prenatally.\nConclusions\nOverall, these findings provide novel insights into the role of NE in contextual fear and the precise temporal dynamics of both NE and DA during freezing behavior and highlight complex relationships between genotype, sex, and NE signaling.",
-		"journal": "Biological Psychiatry: Global Open Science",
-		"DOI": "10.1016/j.bpsgos.2023.10.001",
-		"ISSN": "2667-1743",
-		"issue": "1",
-		"journalAbbreviation": "Biological Psychiatry Global Open Science",
-		"license": "All rights reserved",
-		"page": "51-60",
-		"source": "ScienceDirect",
-		"title": "Partial or Complete Loss of Norepinephrine Differentially Alters Contextual Fear and Catecholamine Release Dynamics in Hippocampal CA1",
-		"URL": "https://www.sciencedirect.com/science/article/pii/S2667174323001398",
-		"volume": "4",
-		"author": [
-			{
-				"family": "Wilson*",
-				"given": "Leslie R."
-			},
-			{
-				"family": "Plummer*",
-				"given": "Nicholas W."
-			},
-			{
-				"family": "Evsyukova",
-				"given": "Irina Y."
-			},
-			{
-				"family": "Patino",
-				"given": "Daniela"
-			},
-			{
-				"family": "Stewart",
-				"given": "Casey L."
-			},
-			{
-				"family": "Smith",
-				"given": "Kathleen G."
-			},
-			{
-				"family": "Konrad",
-				"given": "Kathryn S."
-			},
-			{
-				"family": "Fry",
-				"given": "Sydney A."
-			},
-			{
-				"family": "Deal",
-				"given": "Alex L."
-			},
-			{
-				"family": "Kilonzo",
-				"given": "Victor W."
-			},
-			{
-				"family": "Panda",
-				"given": "Sambit"
-			},
-			{
-				"family": "Sciolino",
-				"given": "Natale R."
-			},
-			{
-				"family": "Cushman",
-				"given": "Jesse D."
-			},
-			{
-				"family": "Jensen",
-				"given": "Patricia"
-			}
-		]
-	},
-	"bridge2024fipha" : {
-		"type": "article-journal",
-		"abstract": "SignificanceFiber photometry (FP) is a widely used technique in modern behavioral neuroscience, employing genetically encoded fluorescent sensors to monitor neural activity and neurotransmitter release in awake-behaving animals. However, analyzing photometry data can be both laborious and time-consuming.AimWe propose the fiber photometry analysis (FiPhA) app, which is a general-purpose FP analysis application. The goal is to develop a pipeline suitable for a wide range of photometry approaches, including spectrally resolved, camera-based, and lock-in demodulation.ApproachFiPhA was developed using the R Shiny framework and offers interactive visualization, quality control, and batch processing functionalities in a user-friendly interface.ResultsThis application simplifies and streamlines the analysis process, thereby reducing labor and time requirements. It offers interactive visualizations, event-triggered average processing, powerful tools for filtering behavioral events, and quality control features.ConclusionsFiPhA is a valuable tool for behavioral neuroscientists working with discrete, event-based FP data. It addresses the challenges associated with analyzing and investigating such data, offering a robust and user-friendly solution without the complexity of having to hand-design custom analysis pipelines. This application thus helps standardize an approach to FP analysis.",
-		"journal": "Neurophotonics",
-		"DOI": "10.1117/1.NPh.11.1.014305",
-		"ISSN": "2329-423X, 2329-4248",
-		"issue": "1",
-		"journalAbbreviation": "NPh",
-		"license": "All rights reserved",
-		"note": "publisher: SPIE",
-		"page": "014305",
-		"source": "www.spiedigitallibrary.org",
-		"title": "FiPhA: an open-source platform for fiber photometry analysis",
-		"title-short": "FiPhA",
-		"URL": "https://www.spiedigitallibrary.org/journals/neurophotonics/volume-11/issue-1/014305/FiPhA-an-open-source-platform-for-fiber-photometry-analysis/10.1117/1.NPh.11.1.014305.full",
-		"volume": "11",
-		"author": [
-			{
-				"family": "Bridge",
-				"given": "Matthew F."
-			},
-			{
-				"family": "Wilson",
-				"given": "Leslie R."
-			},
-			{
-				"family": "Panda",
-				"given": "Sambit"
-			},
-			{
-				"family": "Stevanovic",
-				"given": "Korey D."
-			},
-			{
-				"family": "Letsinger",
-				"given": "Ayland C."
-			},
-			{
-				"family": "McBride",
-				"given": "Sandra"
-			},
-			{
-				"family": "Cushman",
-				"given": "Jesse D."
-			}
-		]
-	},
-	"konishcheva2024accurate" : {
-		"type": "article",
-		"abstract": "Background: Accurate assessment of mental disorders and learning disabilities is essential for timely intervention. Machine learning and feature selection techniques have demonstrated potential in improving the accuracy and efficiency of mental health assessments. However, limited research has explored the use of large transdiagnostic datasets containing a vast number of items (exceeding 1000), as well as the application of these techniques in developing quick, question-based learning disability assessments. The goals of this study are to apply machine learning and feature selection techniques to a large transdiagnostic dataset featuring a high number of input items, and to create a tool for the streamlined creation of efficient and effective assessment using existing datasets.\nMethods: This study leverages the Healthy Brain Network (HBN) dataset to develop a tool for creation of efficient and effective machine learning-based assessment of mental disorders and learning disabilities. Feature selection algorithms were applied to identify parsimonious item subsets. Modular architecture ensures straightforward application to other datasets. \nResults: Machine learning models trained on the HBN data exhibited improved performance over existing assessments. Using only non-proprietary assessments did not significantly impact model performance. \nDiscussion: This study demonstrates the feasibility of using existing large-scale datasets for creating accurate and efficient assessments for mental disorders and learning disabilities. The performance values of the machine learning models provide estimates of the performance of the new assessments in a population similar to HBN. The trained models can be used in a new population after validation and acquiring consent of the authors of the original assessments. The modular architecture of the developed tool ensures seamless application to diverse clinical and research contexts.",
-		"DOI": "10.31234/osf.io/sekfw",
-		"language": "en-us",
-		"license": "All rights reserved",
-		"journal": "PsyArXiv",
-		"source": "OSF Preprints",
-		"title": "Accurate and efficient data-driven psychiatric assessment using machine learning",
-		"URL": "https://osf.io/sekfw",
-		"author": [
-			{
-				"family": "Konishcheva",
-				"given": "Kseniia"
-			},
-			{
-				"family": "Leventhal",
-				"given": "Bennett"
-			},
-			{
-				"family": "Koyama",
-				"given": "Maki"
-			},
-			{
-				"family": "Panda",
-				"given": "Sambit"
-			},
-			{
-				"family": "Vogelstein",
-				"given": "Joshua T."
-			},
-			{
-				"family": "Milham",
-				"given": "Michael"
-			},
-			{
-				"family": "Lindner*",
-				"given": "Ariel"
-			},
-			{
-				"family": "Klein*",
-				"given": "Arno"
-			}
-		]
-	},
-	"panda2023elucidating" : {
-		"type": "other",
-		"abstract": "Background: SHIRPA is a general neurological screening battery used to quantify behavioral and functional deficits within mice. It consists of up to 40 tests, with multiple screens of increasing complexity and specialization. Analyzing these data are challenging due their quantity and complexity, and existing approaches can make inappropriate assumptions or fail to decipher underlying relationships between groups.\nObjective: This study applies a novel, random forest-based hypothesis test to jointly analyze SHIRPA screens and empirically rank each screen within two mouse studies where neurological functions were disrupted.\nMethods: SHIRPA screens were performed in two studies to compile datasets: (1) mice were dosed with 5 mg/kg chlorpyrifos (CPF), which is a banned organophosphate pesticide linked to neurological, developmental, and autoimmune disorders and (2) L141F*Smchd1 mouse line that models Arhinia, or absent nose (SMCHD1). Hypothesis testing was performed using kernel mean embedding random forest (KMERF), and further testing using KMERF testing was done on an open-field battery separately and jointly with the other SHIRPA screens.\nResults: For the CPF study, we found that there was not a significant difference between the dosed and wild type mice when consider just the SHIRPA screens, likely due to the small sample size of the experiment. When evaluating the open field test with and without the other SHIRPA screens, this difference becomes significant. We showed that locomotor activity and average grip strength were the most important tests when looking just at the SHIRPA screens, but open field results indicate that motor related tests were significantly more important than any other SHIRPA screen. For the SMCHD1 study, the same analysis revealed that the homomorph mice were driving the significance in the test. Once again, the model determined that feature locomotor activity and average grip strength were driving that difference the most.\nConclusions: In these studies, looking at the SHIRPA screens alone seem to be a good metric to determine differences between groups, and significant differences exist in all groups studied. KMERF discovered novel behavioral features in the open field results that had previously been ignored. This preliminary study shows the utility of machine-learning approaches like KMERF to find underlying dependencies that conventional approaches cannot, and how we can apply these methods to improve current neurological screening batteries.",
-		"title": "Elucidating Relationships within Neurological Screening Batteries via Random Forest-Based Hypothesis Testing",
-		"author": [
-			{
-				"family": "Panda",
-				"given": "Sambit"
-			},
-			{
-				"family": "Wilson",
-				"given": "Leslie R."
-			},
-			{
-				"family": "Stallone",
-				"given": "Jariatu"
-			},
-			{
-				"family": "Kendricks",
-				"given": "Dalisa"
-			},
-			{
-				"family": "Stevanovic",
-				"given": "Korey"
-			},
-			{
-				"family": "Cushman",
-				"given": "Jesse D."
-			}
-		]
-	}
+  "panda2020multivariate": {
+    "type": "thesis",
+    "abstract": "With the increase in the amount of data in many fields, a method to consistently and efficiently decipher relationships within high dimensional data sets is important. Because many modern datasets are multivariate, univariate tests are not applicable. While many multivariate independence tests have R packages available, the interfaces are inconsistent and most are not available in Python. We introduce hyppo, which includes many state of the art multivariate testing procedures. This thesis provides details for the implementations of each of the tests within a test hyppo as well as extensive power and run-time benchmarks on a suite of high-dimensional simulations previously used in different publications. The documentation and all releases for hyppo are available at https://hyppo.neurodata.io.",
+    "language": "en_US",
+    "license": "All rights reserved",
+    "journal": "Johns Hopkins",
+    "source": "jscholarship.library.jhu.edu",
+    "title": "Multivariate Independence and k-sample Testing",
+    "URL": "http://jhir.library.jhu.edu/handle/1774.2/62706",
+    "author": [
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      }
+    ]
+  },
+  "wilson2018selective": {
+    "type": "article-journal",
+    "abstract": "Hydrogen peroxide (H2O2) is an endogenous molecule that plays several important roles in brain function: it is generated in cellular respiration, serves as a modulator of dopaminergic signaling, and its presence can indicate the upstream production of more aggressive reactive oxygen species (ROS). H2O2 has been implicated in several neurodegenerative diseases, including Parkinson’s disease (PD), creating a critical need to identify mechanisms by which H2O2 modulates cellular processes in general and how it affects the dopaminergic nigrostriatal pathway, in particular. Furthermore, there is broad interest in selective electrochemical quantification of H2O2, because it is often enzymatically generated at biosensors as a reporter for the presence of nonelectroactive target molecules. H2O2 fluctuations can be monitored in real time using fast-scan cyclic voltammetry (FSCV) coupled with carbon-fiber microelectrodes. However, selective identification is a critical issue when working in the presence of other molecules that generate similar voltammograms, such as adenosine and histamine. We have addressed this problem by fabricating a robust, H2O2-selective electrode. 1,3-Phenylenediamine (mPD) was electrodeposited on a carbon-fiber microelectrode to create a size-exclusion membrane, rendering the electrode sensitive to H2O2 fluctuations and pH shifts but not to other commonly studied neurochemicals. The electrodes are described and characterized herein. The data demonstrate that this technology can be used to ensure the selective detection of H2O2, enabling confident characterization of the role this molecule plays in normal physiological function as well as in the progression of PD and other neuropathies involving oxidative stress.",
+    "journal": "Analytical Chemistry",
+    "DOI": "10.1021/acs.analchem.7b03770",
+    "ISSN": "0003-2700",
+    "issue": "1",
+    "journalAbbreviation": "Anal. Chem.",
+    "license": "All rights reserved",
+    "note": "publisher: American Chemical Society",
+    "page": "888-895",
+    "source": "ACS Publications",
+    "title": "Selective and Mechanically Robust Sensors for Electrochemical Measurements of Real-Time Hydrogen Peroxide Dynamics in Vivo",
+    "URL": "https://doi.org/10.1021/acs.analchem.7b03770",
+    "volume": "90",
+    "author": [
+      {
+        "family": "Wilson",
+        "given": "Leslie R."
+      },
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Schmidt",
+        "given": "Andreas C."
+      },
+      {
+        "family": "Sombers",
+        "given": "Leslie A."
+      }
+    ]
+  },
+  "panda2021hyppo": {
+    "type": "article",
+    "abstract": "We introduce hyppo, a unified library for performing multivariate hypothesis testing, including independence, two-sample, and k-sample testing. While many multivariate independence tests have R packages available, the interfaces are inconsistent and most are not available in Python. hyppo includes many state of the art multivariate testing procedures. The package is easy-to-use and is flexible enough to enable future extensions. The documentation and all releases are available at https://hyppo.neurodata.io.",
+    "DOI": "10.48550/arXiv.1907.02088",
+    "license": "All rights reserved",
+    "note": "arXiv:1907.02088 [cs, stat]",
+    "number": "arXiv:1907.02088",
+    "journal": "arXiv",
+    "source": "arXiv.org",
+    "title": "hyppo: A Multivariate Hypothesis Testing Python Package",
+    "title-short": "hyppo",
+    "URL": "http://arxiv.org/abs/1907.02088",
+    "author": [
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Palaniappan",
+        "given": "Satish"
+      },
+      {
+        "family": "Xiong",
+        "given": "Junhao"
+      },
+      {
+        "family": "Bridgeford",
+        "given": "Eric W."
+      },
+      {
+        "family": "Mehta",
+        "given": "Ronak"
+      },
+      {
+        "family": "Shen",
+        "given": "Cencheng"
+      },
+      {
+        "family": "Vogelstein",
+        "given": "Joshua T."
+      }
+    ]
+  },
+  "xu2021when": {
+    "type": "article",
+    "abstract": "Deep networks and decision forests (such as random forests and gradient boosted trees) are the leading machine learning methods for structured and tabular data, respectively. Many papers have empirically compared large numbers of classifiers on one or two different domains (e.g., on 100 different tabular data settings). However, a careful conceptual and empirical comparison of these two strategies using the most contemporary best practices has yet to be performed. Conceptually, we illustrate that both can be profitably viewed as \"partition and vote\" schemes. Specifically, the representation space that they both learn is a partitioning of feature space into a union of convex polytopes. For inference, each decides on the basis of votes from the activated nodes. This formulation allows for a unified basic understanding of the relationship between these methods. Empirically, we compare these two strategies on hundreds of tabular data settings, as well as several vision and auditory settings. Our focus is on datasets with at most 10,000 samples, which represent a large fraction of scientific and biomedical datasets. In general, we found forests to excel at tabular and structured data (vision and audition) with small sample sizes, whereas deep nets performed better on structured data with larger sample sizes. This suggests that further gains in both scenarios may be realized via further combining aspects of forests and networks. We will continue revising this technical report in the coming months with updated results.",
+    "DOI": "10.48550/arXiv.2108.13637",
+    "license": "All rights reserved",
+    "note": "arXiv:2108.13637 [cs, q-bio, stat]",
+    "number": "arXiv:2108.13637",
+    "journal": "arXiv",
+    "source": "arXiv.org",
+    "title": "When are Deep Networks really better than Decision Forests at small sample sizes, and how?",
+    "URL": "http://arxiv.org/abs/2108.13637",
+    "author": [
+      {
+        "family": "Xu",
+        "given": "Haoyin"
+      },
+      {
+        "family": "Kinfu",
+        "given": "Kaleab A."
+      },
+      {
+        "family": "LeVine",
+        "given": "Will"
+      },
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Dey",
+        "given": "Jayanta"
+      },
+      {
+        "family": "Ainsworth",
+        "given": "Michael"
+      },
+      {
+        "family": "Peng",
+        "given": "Yu-Chung"
+      },
+      {
+        "family": "Kusmanov",
+        "given": "Madi"
+      },
+      {
+        "family": "Engert",
+        "given": "Florian"
+      },
+      {
+        "family": "White",
+        "given": "Christopher M."
+      },
+      {
+        "family": "Vogelstein",
+        "given": "Joshua T."
+      },
+      {
+        "family": "Priebe",
+        "given": "Carey E."
+      }
+    ]
+  },
+  "shen2022chisquare": {
+    "type": "article-journal",
+    "abstract": "Distance correlation has gained much recent attention in the data science community: the sample statistic is straightforward to compute and asymptotically equals zero if and only if independence, making it an ideal choice to discover any type of dependency structure given sufficient sample size. One major bottleneck is the testing process: because the null distribution of distance correlation depends on the underlying random variables and metric choice, it typically requires a permutation test to estimate the null and compute the p-value, which is very costly for large amount of data. To overcome the difficulty, in this article, we propose a chi-squared test for distance correlation. Method-wise, the chi-squared test is nonparametric, extremely fast, and applicable to bias-corrected distance correlation using any strong negative type metric or characteristic kernel. The test exhibits a similar testing power as the standard permutation test, and can be used for K-sample and partial testing. Theory-wise, we show that the underlying chi-squared distribution well approximates and dominates the limiting null distribution in upper tail, prove the chi-squared test can be valid and universally consistent for testing independence, and establish a testing power inequality with respect to the permutation test. Supplementary files for this article are available online.",
+    "journal": "JCGS",
+    "DOI": "10.1080/10618600.2021.1938585",
+    "ISSN": "1061-8600",
+    "issue": "1",
+    "license": "All rights reserved",
+    "note": "publisher: Taylor & Francis\n_eprint: https://doi.org/10.1080/10618600.2021.1938585\nPMID: 35707063",
+    "page": "254-262",
+    "source": "Taylor and Francis+NEJM",
+    "title": "The Chi-Square Test of Distance Correlation",
+    "URL": "https://doi.org/10.1080/10618600.2021.1938585",
+    "volume": "31",
+    "author": [
+      {
+        "family": "Shen",
+        "given": "Cencheng"
+      },
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Vogelstein",
+        "given": "Joshua T."
+      }
+    ]
+  },
+  "xu2023simplest": {
+    "type": "article",
+    "abstract": "Decision forests, including random forests and gradient boosting trees, remain the leading machine learning methods for many real-world data problems, especially on tabular data. However, most of the current implementations only operate in batch mode, and therefore cannot incrementally update when more data arrive. Several previous works developed streaming trees and ensembles to overcome this limitation. Nonetheless, we found that those state-of-the-art algorithms suffer from a number of drawbacks, including low accuracy on some problems and high memory usage on others. We therefore developed the simplest possible extension of decision trees: given new data, simply update existing trees by continuing to grow them, and replace some old trees with new ones to control the total number of trees. In a benchmark suite containing 72 classification problems (the OpenML-CC18 data suite), we illustrate that our approach, Stream Decision Forest (SDF), does not suffer from either of the aforementioned limitations. On those datasets, we also demonstrate that our approach often performs as well, and sometimes even better, than conventional batch decision forest algorithm. Thus, SDFs establish a simple standard for streaming trees and forests that could readily be applied to many real-world problems.",
+    "DOI": "10.48550/arXiv.2110.08483",
+    "license": "All rights reserved",
+    "note": "arXiv:2110.08483 [cs]",
+    "number": "arXiv:2110.08483",
+    "journal": "arXiv",
+    "source": "arXiv.org",
+    "title": "Simplest Streaming Trees",
+    "URL": "http://arxiv.org/abs/2110.08483",
+    "author": [
+      {
+        "family": "Xu",
+        "given": "Haoyin"
+      },
+      {
+        "family": "Dey",
+        "given": "Jayanta"
+      },
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Vogelstein",
+        "given": "Joshua T."
+      }
+    ]
+  },
+  "bridgeford2023learning": {
+    "type": "article",
+    "abstract": "Causal inference studies whether the presence of a variable influences an observed outcome. As measured by quantities such as the \"average treatment effect,\" this paradigm is employed across numerous biological fields, from vaccine and drug development to policy interventions. Unfortunately, the majority of these methods are often limited to univariate outcomes. Our work generalizes causal estimands to outcomes with any number of dimensions or any measurable space, and formulates traditional causal estimands for nominal variables as causal discrepancy tests. We propose a simple technique for adjusting universally consistent conditional independence tests and prove that these tests are universally consistent causal discrepancy tests. Numerical experiments illustrate that our method, Causal CDcorr, leads to improvements in both finite sample validity and power when compared to existing strategies. Our methods are all open source and available at github.com/ebridge2/cdcorr.",
+    "DOI": "10.48550/arXiv.2307.13868",
+    "license": "All rights reserved",
+    "note": "arXiv:2307.13868 [cs, stat]",
+    "number": "arXiv:2307.13868",
+    "journal": "arXiv",
+    "source": "arXiv.org",
+    "title": "Learning sources of variability from high-dimensional observational studies",
+    "URL": "http://arxiv.org/abs/2307.13868",
+    "author": [
+      {
+        "family": "Bridgeford",
+        "given": "Eric W."
+      },
+      {
+        "family": "Chung",
+        "given": "Jaewon"
+      },
+      {
+        "family": "Gilbert",
+        "given": "Brian"
+      },
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Li",
+        "given": "Adam"
+      },
+      {
+        "family": "Shen",
+        "given": "Cencheng"
+      },
+      {
+        "family": "Badea",
+        "given": "Alexandra"
+      },
+      {
+        "family": "Caffo",
+        "given": "Brian"
+      },
+      {
+        "family": "Vogelstein",
+        "given": "Joshua T."
+      }
+    ]
+  },
+  "bridgeford2024when": {
+    "type": "article-journal",
+    "abstract": "Batch effects, undesirable sources of variability across multiple experiments, present significant challenges for scientific and clinical discoveries. Batch effects can (i) produce spurious signals and/or (ii) obscure genuine signals, contributing to the ongoing reproducibility crisis. Because batch effects are typically modeled as classical statistical effects, they often cannot differentiate between sources of variability due to confounding biases, which may lead them to erroneously conclude batch effects are present (or not). We formalize batch effects as causal effects, and introduce algorithms leveraging causal machinery, to address these concerns. Simulations illustrate that when non-causal methods provide the wrong answer, our methods either produce more accurate answers or “no answer”, meaning they assert the data are an inadequate to confidently conclude on the presence of a batch effect. Applying our causal methods to 27 neuroimaging datasets yields qualitatively similar results: in situations where it is unclear whether batch effects are present, non-causal methods confidently identify (or fail to identify) batch effects, whereas our causal methods assert that it is unclear whether there are batch effects or not. In instances where batch effects should be discernable, our techniques produce different results from prior art, each of which produce results more qualitatively similar to not applying any batch effect correction to the data at all. This work therefore provides a causal framework for understanding the potential capabilities and limitations of analysis of multi-site data.",
+    "DOI": "10.1162/imag_a_00458",
+    "language": "en",
+    "note": "page: 2021.09.03.458920\nsection: New Results",
+    "journal": "Imaging Neuroscience",
+    "journalAbbreviation": "Imaging Neuroscience",
+    "title": "When no answer is better than a wrong answer: a causal perspective on batch effects",
+    "title-short": "When no answer is better than a wrong answer",
+    "URL": "https://direct.mit.edu/imag/article-pdf/doi/10.1162/imag_a_00458/2495863/imag_a_00458.pdf",
+    "ISSN": "2837-6056",
+    "issue": "",
+    "page": "imag_a_00458",
+    "volume": "3",
+    "author": [
+      {
+        "family": "Bridgeford",
+        "given": "Eric W."
+      },
+      {
+        "family": "Powell",
+        "given": "Michael"
+      },
+      {
+        "family": "Kiar",
+        "given": "Gregory"
+      },
+      {
+        "family": "Noble",
+        "given": "Stephanie"
+      },
+      {
+        "family": "Chung",
+        "given": "Jaewon"
+      },
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Lawrence",
+        "given": "Ross"
+      },
+      {
+        "family": "Xu",
+        "given": "Ting"
+      },
+      {
+        "family": "Milham",
+        "given": "Michael"
+      },
+      {
+        "family": "Caffo",
+        "given": "Brian"
+      },
+      {
+        "family": "Vogelstein",
+        "given": "Joshua T."
+      }
+    ]
+  },
+  "panda2023learning": {
+    "type": "article",
+    "abstract": "Decision forests are widely used for classification and regression tasks. A lesser known property of tree-based methods is that one can construct a proximity matrix from the tree(s), and these proximity matrices are induced kernels. While there has been extensive research on the applications and properties of kernels, there is relatively little research on kernels induced by decision forests. We construct Kernel Mean Embedding Random Forests (KMERF), which induce kernels from random trees and/or forests using leaf-node proximity. We introduce the notion of an asymptotically characteristic kernel, and prove that KMERF kernels are asymptotically characteristic for both discrete and continuous data. Because KMERF is data-adaptive, we suspected it would outperform kernels selected a priori on finite sample data. We illustrate that KMERF nearly dominates current state-of-the-art kernel-based tests across a diverse range of high-dimensional two-sample and independence testing settings. Furthermore, our forest-based approach is interpretable, and provides feature importance metrics that readily distinguish important dimensions, unlike other high-dimensional non-parametric testing procedures. Hence, this work demonstrates the decision forest-based kernel can be more powerful and more interpretable than existing methods, flying in the face of conventional wisdom of the trade-off between the two.",
+    "DOI": "10.48550/arXiv.1812.00029",
+    "license": "All rights reserved",
+    "note": "arXiv:1812.00029 [cs, stat]",
+    "number": "arXiv:1812.00029",
+    "journal": "arXiv",
+    "source": "arXiv.org",
+    "title": "Learning Interpretable Characteristic Kernels via Decision Forests",
+    "URL": "http://arxiv.org/abs/1812.00029",
+    "author": [
+      {
+        "family": "Panda*",
+        "given": "Sambit"
+      },
+      {
+        "family": "Shen*",
+        "given": "Cencheng"
+      },
+      {
+        "family": "Vogelstein",
+        "given": "Joshua T."
+      }
+    ]
+  },
+  "panda2023highdimensional": {
+    "type": "article-journal",
+    "abstract": "The K-sample testing problem involves determining whether K groups of data points are each drawn from the same distribution. Analysis of variance is arguably the most classical method to test mean differences, along with several recent methods to test distributional differences. In this paper, we demonstrate the existence of a transformation that allows K-sample testing to be carried out using any dependence measure. Consequently, universally consistent K-sample testing can be achieved using a universally consistent dependence measure, such as distance correlation and the Hilbert-Schmidt independence criterion. This enables a wide range of dependence measures to be easily applied to K-sample testing.",
+    "DOI": "10.1016/j.spl.2024.110278",
+    "license": "All rights reserved",
+    "note": "arXiv:1910.08883 [cs, stat]",
+    "number": "arXiv:1910.08883",
+    "journal": "Statistics & Probability Letters",
+    "journalAbbreviation": "Statistics and Probability Letters",
+    "ISSN": "0167-7152",
+    "issue": "1",
+    "page": "110278",
+    "volume": "216",
+    "source": "ScienceDirect",
+    "title": "Universally Consistent K-Sample Tests via Dependence Measures",
+    "URL": "https://www.sciencedirect.com/science/article/abs/pii/S0167715224002475",
+    "author": [
+      {
+        "family": "Panda*",
+        "given": "Sambit"
+      },
+      {
+        "family": "Shen*",
+        "given": "Cencheng"
+      },
+      {
+        "family": "Perry",
+        "given": "Ronan"
+      },
+      {
+        "family": "Zorn",
+        "given": "Jelle"
+      },
+      {
+        "family": "Lutz",
+        "given": "Antoine"
+      },
+      {
+        "family": "Priebe",
+        "given": "Carey E."
+      },
+      {
+        "family": "Vogelstein",
+        "given": "Joshua T."
+      }
+    ]
+  },
+  "wilson2024partial": {
+    "type": "article-journal",
+    "abstract": "Background\nContextual fear learning is heavily dependent on the hippocampus. Despite evidence that catecholamines contribute to contextual encoding and memory retrieval, the precise temporal dynamics of their release in the hippocampus during behavior is unknown. In addition, new animal models are required to probe the effects of altered catecholamine synthesis on release dynamics and contextual learning.\nMethods\nWe generated 2 new mouse models of altered locus coeruleus–norepinephrine (NE) synthesis and utilized them together with GRABNE and GRABDA sensors and in vivo fiber photometry to investigate NE and dopamine (DA) release dynamics in the dorsal hippocampal CA1 during contextual fear conditioning.\nResults\nAversive foot shock increased both NE and DA release in the dorsal CA1, while freezing behavior associated with recall of fear memory was accompanied by decreased release. Moreover, we found that freezing at the recent time point was sensitive to both partial and complete loss of locus coeruleus–NE synthesis throughout prenatal and postnatal development, similar to previous observations of mice with global loss of NE synthesis beginning postnatally. In contrast, freezing at the remote time point was compromised only by complete loss of locus coeruleus–NE synthesis beginning prenatally.\nConclusions\nOverall, these findings provide novel insights into the role of NE in contextual fear and the precise temporal dynamics of both NE and DA during freezing behavior and highlight complex relationships between genotype, sex, and NE signaling.",
+    "journal": "Biological Psychiatry: Global Open Science",
+    "DOI": "10.1016/j.bpsgos.2023.10.001",
+    "ISSN": "2667-1743",
+    "issue": "1",
+    "journalAbbreviation": "Biological Psychiatry Global Open Science",
+    "license": "All rights reserved",
+    "page": "51-60",
+    "source": "ScienceDirect",
+    "title": "Partial or Complete Loss of Norepinephrine Differentially Alters Contextual Fear and Catecholamine Release Dynamics in Hippocampal CA1",
+    "URL": "https://www.sciencedirect.com/science/article/pii/S2667174323001398",
+    "volume": "4",
+    "author": [
+      {
+        "family": "Wilson*",
+        "given": "Leslie R."
+      },
+      {
+        "family": "Plummer*",
+        "given": "Nicholas W."
+      },
+      {
+        "family": "Evsyukova",
+        "given": "Irina Y."
+      },
+      {
+        "family": "Patino",
+        "given": "Daniela"
+      },
+      {
+        "family": "Stewart",
+        "given": "Casey L."
+      },
+      {
+        "family": "Smith",
+        "given": "Kathleen G."
+      },
+      {
+        "family": "Konrad",
+        "given": "Kathryn S."
+      },
+      {
+        "family": "Fry",
+        "given": "Sydney A."
+      },
+      {
+        "family": "Deal",
+        "given": "Alex L."
+      },
+      {
+        "family": "Kilonzo",
+        "given": "Victor W."
+      },
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Sciolino",
+        "given": "Natale R."
+      },
+      {
+        "family": "Cushman",
+        "given": "Jesse D."
+      },
+      {
+        "family": "Jensen",
+        "given": "Patricia"
+      }
+    ]
+  },
+  "bridge2024fipha": {
+    "type": "article-journal",
+    "abstract": "SignificanceFiber photometry (FP) is a widely used technique in modern behavioral neuroscience, employing genetically encoded fluorescent sensors to monitor neural activity and neurotransmitter release in awake-behaving animals. However, analyzing photometry data can be both laborious and time-consuming.AimWe propose the fiber photometry analysis (FiPhA) app, which is a general-purpose FP analysis application. The goal is to develop a pipeline suitable for a wide range of photometry approaches, including spectrally resolved, camera-based, and lock-in demodulation.ApproachFiPhA was developed using the R Shiny framework and offers interactive visualization, quality control, and batch processing functionalities in a user-friendly interface.ResultsThis application simplifies and streamlines the analysis process, thereby reducing labor and time requirements. It offers interactive visualizations, event-triggered average processing, powerful tools for filtering behavioral events, and quality control features.ConclusionsFiPhA is a valuable tool for behavioral neuroscientists working with discrete, event-based FP data. It addresses the challenges associated with analyzing and investigating such data, offering a robust and user-friendly solution without the complexity of having to hand-design custom analysis pipelines. This application thus helps standardize an approach to FP analysis.",
+    "journal": "Neurophotonics",
+    "DOI": "10.1117/1.NPh.11.1.014305",
+    "ISSN": "2329-423X, 2329-4248",
+    "issue": "1",
+    "journalAbbreviation": "NPh",
+    "license": "All rights reserved",
+    "note": "publisher: SPIE",
+    "page": "014305",
+    "source": "www.spiedigitallibrary.org",
+    "title": "FiPhA: an open-source platform for fiber photometry analysis",
+    "title-short": "FiPhA",
+    "URL": "https://www.spiedigitallibrary.org/journals/neurophotonics/volume-11/issue-1/014305/FiPhA-an-open-source-platform-for-fiber-photometry-analysis/10.1117/1.NPh.11.1.014305.full",
+    "volume": "11",
+    "author": [
+      {
+        "family": "Bridge",
+        "given": "Matthew F."
+      },
+      {
+        "family": "Wilson",
+        "given": "Leslie R."
+      },
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Stevanovic",
+        "given": "Korey D."
+      },
+      {
+        "family": "Letsinger",
+        "given": "Ayland C."
+      },
+      {
+        "family": "McBride",
+        "given": "Sandra"
+      },
+      {
+        "family": "Cushman",
+        "given": "Jesse D."
+      }
+    ]
+  },
+  "konishcheva2024accurate": {
+    "type": "article",
+    "abstract": "Background: Accurate assessment of mental disorders and learning disabilities is essential for timely intervention. Machine learning and feature selection techniques have demonstrated potential in improving the accuracy and efficiency of mental health assessments. However, limited research has explored the use of large transdiagnostic datasets containing a vast number of items (exceeding 1000), as well as the application of these techniques in developing quick, question-based learning disability assessments. The goals of this study are to apply machine learning and feature selection techniques to a large transdiagnostic dataset featuring a high number of input items, and to create a tool for the streamlined creation of efficient and effective assessment using existing datasets.\nMethods: This study leverages the Healthy Brain Network (HBN) dataset to develop a tool for creation of efficient and effective machine learning-based assessment of mental disorders and learning disabilities. Feature selection algorithms were applied to identify parsimonious item subsets. Modular architecture ensures straightforward application to other datasets. \nResults: Machine learning models trained on the HBN data exhibited improved performance over existing assessments. Using only non-proprietary assessments did not significantly impact model performance. \nDiscussion: This study demonstrates the feasibility of using existing large-scale datasets for creating accurate and efficient assessments for mental disorders and learning disabilities. The performance values of the machine learning models provide estimates of the performance of the new assessments in a population similar to HBN. The trained models can be used in a new population after validation and acquiring consent of the authors of the original assessments. The modular architecture of the developed tool ensures seamless application to diverse clinical and research contexts.",
+    "DOI": "10.31234/osf.io/sekfw",
+    "language": "en-us",
+    "license": "All rights reserved",
+    "journal": "PsyArXiv",
+    "source": "OSF Preprints",
+    "title": "Accurate and efficient data-driven psychiatric assessment using machine learning",
+    "URL": "https://osf.io/sekfw",
+    "author": [
+      {
+        "family": "Konishcheva",
+        "given": "Kseniia"
+      },
+      {
+        "family": "Leventhal",
+        "given": "Bennett"
+      },
+      {
+        "family": "Koyama",
+        "given": "Maki"
+      },
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Vogelstein",
+        "given": "Joshua T."
+      },
+      {
+        "family": "Milham",
+        "given": "Michael"
+      },
+      {
+        "family": "Lindner*",
+        "given": "Ariel"
+      },
+      {
+        "family": "Klein*",
+        "given": "Arno"
+      }
+    ]
+  },
+  "panda2023elucidating": {
+    "type": "other",
+    "abstract": "Background: SHIRPA is a general neurological screening battery used to quantify behavioral and functional deficits within mice. It consists of up to 40 tests, with multiple screens of increasing complexity and specialization. Analyzing these data are challenging due their quantity and complexity, and existing approaches can make inappropriate assumptions or fail to decipher underlying relationships between groups.\nObjective: This study applies a novel, random forest-based hypothesis test to jointly analyze SHIRPA screens and empirically rank each screen within two mouse studies where neurological functions were disrupted.\nMethods: SHIRPA screens were performed in two studies to compile datasets: (1) mice were dosed with 5 mg/kg chlorpyrifos (CPF), which is a banned organophosphate pesticide linked to neurological, developmental, and autoimmune disorders and (2) L141F*Smchd1 mouse line that models Arhinia, or absent nose (SMCHD1). Hypothesis testing was performed using kernel mean embedding random forest (KMERF), and further testing using KMERF testing was done on an open-field battery separately and jointly with the other SHIRPA screens.\nResults: For the CPF study, we found that there was not a significant difference between the dosed and wild type mice when consider just the SHIRPA screens, likely due to the small sample size of the experiment. When evaluating the open field test with and without the other SHIRPA screens, this difference becomes significant. We showed that locomotor activity and average grip strength were the most important tests when looking just at the SHIRPA screens, but open field results indicate that motor related tests were significantly more important than any other SHIRPA screen. For the SMCHD1 study, the same analysis revealed that the homomorph mice were driving the significance in the test. Once again, the model determined that feature locomotor activity and average grip strength were driving that difference the most.\nConclusions: In these studies, looking at the SHIRPA screens alone seem to be a good metric to determine differences between groups, and significant differences exist in all groups studied. KMERF discovered novel behavioral features in the open field results that had previously been ignored. This preliminary study shows the utility of machine-learning approaches like KMERF to find underlying dependencies that conventional approaches cannot, and how we can apply these methods to improve current neurological screening batteries.",
+    "title": "Elucidating Relationships within Neurological Screening Batteries via Random Forest-Based Hypothesis Testing",
+    "author": [
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Wilson",
+        "given": "Leslie R."
+      },
+      {
+        "family": "Stallone",
+        "given": "Jariatu"
+      },
+      {
+        "family": "Kendricks",
+        "given": "Dalisa"
+      },
+      {
+        "family": "Stevanovic",
+        "given": "Korey"
+      },
+      {
+        "family": "Cushman",
+        "given": "Jesse D."
+      }
+    ]
+  }
 }

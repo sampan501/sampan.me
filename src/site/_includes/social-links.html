@@ -1,16 +1,15 @@
 <ul>
-    {%- set social = [
-    { title: 'Google Scholar', url: 'https://scholar.google.com/citations?user=-V3CmPoAAAAJ&hl=en', icon: 'google-scholar' },
-    { title: 'GitHub', url: 'https://github.com/sampan501', icon: 'github' },
-    { title: 'LinkedIn', url: 'https://www.linkedin.com/in/sampan501/', icon: 'linkedin' },
-    { title: 'Resume', url: 'pdf/Sambit-Panda-Resume.pdf', icon: 'resume' }
-    ] %}
-    {%- for item in social %}
-    <li>
-        <a href="{{ item.url | url }}" aria-current="social link">
-            {%- include "svg/" + item.icon + ".svg" -%}
-            {{ item.title }}
-        </a>
-    </li>
-    {%- endfor %}
+  {%- set social = [ { title: 'Google Scholar', url:
+  'https://scholar.google.com/citations?user=-V3CmPoAAAAJ&hl=en', icon:
+  'google-scholar' }, { title: 'GitHub', url: 'https://github.com/sampan501',
+  icon: 'github' }, { title: 'LinkedIn', url:
+  'https://www.linkedin.com/in/sampan501/', icon: 'linkedin' }, { title:
+  'Resume', url: 'pdf/Sambit-Panda-Resume.pdf', icon: 'resume' } ] %} {%- for
+  item in social %}
+  <li>
+    <a href="{{ item.url | url }}" aria-current="social link">
+      {%- include "svg/" + item.icon + ".svg" -%} {{ item.title }}
+    </a>
+  </li>
+  {%- endfor %}
 </ul>

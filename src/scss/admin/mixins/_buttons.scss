@@ -1,70 +1,73 @@
 @mixin button {
-    background-color: $color-primary;
-    border-radius: $border-radius-default;
-    border: none;
-    border-bottom: solid 3px $color-primary-dark;
-    color: $color-white;
-    display: inline-block; // Older browsers
-    display: inline-flex;
-    align-items: center;
-    font-family: inherit;
-    font-weight: 700;
-    margin-top: 1em;
-    padding: .5em 1em; // Older browsers
-    padding: calc(.5em + 3px) 1em .5em;
-    width: auto;
-    cursor: pointer;
+  background-color: $color-primary;
+  border-radius: $border-radius-default;
+  border: none;
+  border-bottom: solid 3px $color-primary-dark;
+  color: $color-white;
+  display: inline-block; // Older browsers
+  display: inline-flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 700;
+  margin-top: 1em;
+  padding: 0.5em 1em; // Older browsers
+  padding: calc(0.5em + 3px) 1em 0.5em;
+  width: auto;
+  cursor: pointer;
 
-    @include dark-mode($color: $color-dark-mode-main) {
-        border-bottom: solid 3px $color-dark-mode-primary-dark;
+  @include dark-mode($color: $color-dark-mode-main) {
+    border-bottom: solid 3px $color-dark-mode-primary-dark;
+  }
+
+  @include high-contrast(
+    $color-dark-mode-primary-light,
+    $color-high-contrast-main
+  );
+
+  @media (max-width: $xs) {
+    padding: 0.25em;
+  }
+
+  svg {
+    margin-right: 0.3em;
+    margin-top: -0.3em;
+  }
+
+  &:focus {
+    outline: 3px solid $color-black;
+
+    @include dark-mode() {
+      outline: 3px solid $color-white;
     }
+  }
 
-    @include high-contrast($color-dark-mode-primary-light, $color-high-contrast-main);
+  &:focus:not(:focus-visible) {
+    outline: none;
 
-    @media (max-width: $xs) {
-        padding: .25em;
+    @include dark-mode() {
+      outline: none;
     }
+  }
 
-    svg {
-        margin-right: .3em;
-        margin-top: -.3em;
+  &:focus-visible {
+    outline: 3px solid $color-black;
+
+    @include dark-mode() {
+      outline: 3px solid $color-white;
     }
+  }
 
-    &:focus {
-        outline: 3px solid $color-black;
+  &:hover {
+    background-color: $color-primary-dark;
+    @include dark-mode($background: $color-dark-mode-primary-light);
+    @include high-contrast($background: $color-high-contrast-primary-light);
+  }
 
-        @include dark-mode() {
-            outline: 3px solid $color-white;
-        }
-    }
-
-    &:focus:not(:focus-visible) {
-        outline: none;
-
-        @include dark-mode() {
-            outline: none;
-        }
-    }
-
-    &:focus-visible {
-        outline: 3px solid $color-black;
-
-        @include dark-mode() {
-            outline: 3px solid $color-white;
-        }
-    }
-
-    &:hover {
-        background-color: $color-primary-dark;
-        @include dark-mode($background: $color-dark-mode-primary-light);
-        @include high-contrast($background: $color-high-contrast-primary-light);
-    }
-
-    &:active {
-        position: relative;
-        top: 3px;
-        border-bottom: none;
-        margin-bottom: 3px;
-        // border-top: solid 2px transparent;
-    }
+  &:active {
+    position: relative;
+    top: 3px;
+    border-bottom: none;
+    margin-bottom: 3px;
+    // border-top: solid 2px transparent;
+  }
 }

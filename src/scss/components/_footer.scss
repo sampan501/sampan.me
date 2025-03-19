@@ -1,36 +1,37 @@
 .footer {
-    font-size: 80%;
-    clear: both;
-    padding-top: 1em;
-    padding-bottom: 2em;
-    margin-top: $section-spacing;
-    text-align: center;
+  font-size: 80%;
+  clear: both;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  margin-top: $section-spacing;
+  text-align: center;
 
-    ul,
-    ol {
-        max-width: none;
+  ul,
+  ol {
+    max-width: none;
 
-        li {
-            margin-right: 1em;
-        }
-
-        li:last-child {
-            margin-right: 0;
-        }
+    li {
+      margin-right: 1em;
     }
 
-    .utility, .social {
-        @include remove-list-styling;
-        margin: .5em 0;
-
-        li {
-            @include inline-nav;
-            display: inline-flex;
-        }
-
-        ul {
-            margin: 0;
-            padding: 0;
-        }
+    li:last-child {
+      margin-right: 0;
     }
+  }
+
+  .utility,
+  .social {
+    @include remove-list-styling;
+    margin: 0.5em 0;
+
+    li {
+      @include inline-nav;
+      display: inline-flex;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
 }

@@ -1,12 +1,7 @@
-{%- set project = references[post.data.key] -%}
-{%- if project.author.length >= 1 %}
-    {% for author in project.author %}
-        {%- set name %}{{ author.given }} {{ author.family }}{% endset -%}
-        {%- if name == site.author.name or name == site.author.name + "*" %}
-            <strong>{{ name }}</strong>
-        {%- else %}
-            {{ name }}
-        {%- endif -%}
-        {%- if loop.length >= 2 %}{%- if not loop.last %},{%- endif -%}{%- endif -%}
-    {%- endfor %}
-{%- endif -%}
+{%- set project = references[post.data.key] -%} {%- if project.author.length >=
+1 %} {% for author in project.author %} {%- set name %}{{ author.given }} {{
+author.family }}{% endset -%} {%- if name == site.author.name or name ==
+site.author.name + "*" %}
+<strong>{{ name }}</strong>
+{%- else %} {{ name }} {%- endif -%} {%- if loop.length >= 2 %}{%- if not
+loop.last %},{%- endif -%}{%- endif -%} {%- endfor %} {%- endif -%}

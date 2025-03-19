@@ -1,19 +1,19 @@
 .social-logo {
-    display: inline-block;
-    height: 1em;
-    width: auto;
-    margin-right: .25em;
-    overflow: visible;
-    fill: currentColor;
+  display: inline-block;
+  height: 1em;
+  width: auto;
+  margin-right: 0.25em;
+  overflow: visible;
+  fill: currentColor;
 }
 
 .emoji-title {
-    display: inline-block;
-    cursor: default;
-    margin-left: 0;
-    margin-right: 0;
+  display: inline-block;
+  cursor: default;
+  margin-left: 0;
+  margin-right: 0;
 
-    @media (min-width: $l) {
-        text-indent: -1.15em;
-    }
+  @media (min-width: $l) {
+    text-indent: -1.15em;
+  }
 }
