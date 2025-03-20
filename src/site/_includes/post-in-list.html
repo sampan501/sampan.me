@@ -54,12 +54,11 @@
     {% endif -%}
     {% if post.data.tags.includes('software') %}</div>{%- endif -%}
     {% if post.data.tags.includes('software') %}
-    <p class="techTags">
+    <ul class="techTags">
         {%- set tags = post.data.tags | tagsOnPageNoSort %}
         {%- for tag in tags %}
-        {{- tag -}}
-        {%- if loop.length >= 2 %}{%- if not loop.last %}&nbsp;&nbsp;{%- endif -%}{%- endif -%}
+        <li>{{- tag -}}</li>
         {% endfor -%}
-    </p>
+    </ul>
     {% endif -%}
 </li>

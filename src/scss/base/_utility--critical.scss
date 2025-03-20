@@ -17,6 +17,26 @@
     }
   }
 
+  .techTags {
+    @include remove-list-styling;
+    @include inline-nav;
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $code--font;
+    font-size: 80%;
+
+    li {
+      background-color: transparent;
+      border-radius: 0;
+      padding: 0 0.5em 0.5em 0;
+    }
+
+    li:hover {
+      outline: 0;
+    }
+  }
+
   li {
     @include highlight-box;
     cursor: pointer;
@@ -30,14 +50,6 @@
       @include heading-m;
       margin-top: 0;
       word-break: break-all;
-    }
-
-    .techTags {
-      margin-top: 2em;
-      display: flex;
-      flex-wrap: wrap;
-      font-family: $code--font;
-      font-size: 80%;
     }
 
     &:focus {
