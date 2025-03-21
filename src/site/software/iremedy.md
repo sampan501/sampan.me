@@ -1,6 +1,6 @@
 ---
 title: "iRemedyACT"
-intro: "A AI-driven tool to inform trauma care policy and an assistant for trauma care physicians at point of care."
+intro: "An AI-driven tool to inform trauma care policy and an assistant for trauma care physicians at point of care."
 url: https://ai.utsa.edu/iremedyact/
 date: 2024-12-02
 tags:

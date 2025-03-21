@@ -30,6 +30,10 @@
       background-color: transparent;
       border-radius: 0;
       padding: 0 0.5em 0.5em 0;
+
+      + li {
+        margin-top: 0;
+      }
     }
 
     li:hover {
