@@ -1,9 +1,9 @@
 ---
 heading: Sambit Panda
-subtitle: AI Engineer (PhD) @ MATRIX AI Consortium
+subtitle: AI Research Scientist @ MATRIX AI Consortium
 title: Sambit Panda's personal website
 intro: |
-  I'm an AI Engineer at the [MATRIX AI Consortium](https://ai.utsa.edu/) where I am developing a end-to-end solution for trauma care using AI.
+  I'm an AI Research Scientist at the [MATRIX AI Consortium](https://ai.utsa.edu/) where I am developing a end-to-end solution for trauma care using AI.
   Previously, I completed my PhD at [Johns Hopkins](https://www.bme.jhu.edu/academics/graduate/phd-program/), where I was advised by [Joshua T. Vogelstein](https://jovo.me/).
   Here's a little bit more [about me](/about/).
 layout: base
@@ -29,7 +29,9 @@ home: true
       </div>
     </div>
   </div>
-  {%- if intro %} {{- intro | markdown | safe }} {%- endif %}
+  {%- if intro %}
+  <p>{{- intro | markdown | safe }}</p>
+  {%- endif %}
 </div>
 
 <div aria-labelledby="research" class="teaser">
