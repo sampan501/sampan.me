@@ -1,13 +1,12 @@
 ---
 permalink: rss.xml
 ---
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ title }}</title>
   <subtitle>{{ description }}</subtitle>
-  <link rel="self" href="{{ site.url }}/{{ permalink }}" />
   <link href="{{ site.url }}" />
+  <link rel="self" href="{{ site.url }}/{{ permalink }}" />
   <id>{{ site.url }}/{{ permalink }}</id>
   <updated>{{ collections.post | rssLastUpdatedDate }}</updated>
   <rights type="html"
