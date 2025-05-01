@@ -111,7 +111,7 @@
   margin-bottom: 1em;
   margin-top: 1em;
   height: auto;
-  width: 100%;
+  width: auto;
 
   @media (min-width: $l) {
     @include overspill;

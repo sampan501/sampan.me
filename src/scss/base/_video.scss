@@ -9,6 +9,10 @@ video {
   height: 0;
   overflow: hidden;
 
+  @media (min-width: $l) {
+    padding-bottom: 59.25%;
+  }
+
   iframe,
   object,
   embed {
