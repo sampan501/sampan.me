@@ -42,6 +42,7 @@ details[open] summary {
 details {
   border: $border-outline-thickness solid $color-primary;
   border-radius: $border-radius-default;
+  margin-top: 1em;
 
   @include dark-mode() {
     border: $border-outline-thickness solid $color-code-grey;

@@ -9,30 +9,21 @@ layout: default
 listing: true
 ---
 
-<p>
-  <details>
-    <summary>Topics</summary>
-    <ul class="topic-list" aria-label="research topics">
-      {%- set topics = collections.research | getTopics %} {%- for topic in
-      topics %}
-      <li>
-        <a href="/research/topic/{{ topic | lower | replace(' ', '-') }}"
-          >{{ topic }}</a
-        >
-      </li>
-      {%- endfor %}
-    </ul>
-  </details>
-</p>
+<details>
+  <summary>Topics</summary>
+  <ul class="topic-list" aria-label="research topics">
+    {%- set topics = collections.research | getTopics %} {%- for topic in topics
+    %}
+    <li>
+      <a href="/research/topic/{{ topic | lower | replace(' ', '-') }}"
+        >{{ topic }}</a
+      >
+    </li>
+    {%- endfor %}
+  </ul>
+</details>
 
 <ol class="hfeed index-list" reversed>
-  {%- for post in collections.research | rejectattr("type", "other") | reverse
-  %} {%- include "post-in-list.html" %} {%- endfor %}
-</ol>
-
-<hr />
-
-<ol class="hfeed index-list" reversed>
-  {%- for post in collections.research | selectattr("type", "other") | reverse
-  %} {%- include "post-in-list.html" %} {%- endfor %}
+  {%- for post in collections.research | reverse %} {%- include
+  "post-in-list.html" %} {%- endfor %}
 </ol>
