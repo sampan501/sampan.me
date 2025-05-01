@@ -564,7 +564,7 @@
     ]
   },
   "panda2023elucidating": {
-    "type": "other",
+    "type": "poster",
     "abstract": "Background: SHIRPA is a general neurological screening battery used to quantify behavioral and functional deficits within mice. It consists of up to 40 tests, with multiple screens of increasing complexity and specialization. Analyzing these data are challenging due their quantity and complexity, and existing approaches can make inappropriate assumptions or fail to decipher underlying relationships between groups.\nObjective: This study applies a novel, random forest-based hypothesis test to jointly analyze SHIRPA screens and empirically rank each screen within two mouse studies where neurological functions were disrupted.\nMethods: SHIRPA screens were performed in two studies to compile datasets: (1) mice were dosed with 5 mg/kg chlorpyrifos (CPF), which is a banned organophosphate pesticide linked to neurological, developmental, and autoimmune disorders and (2) L141F*Smchd1 mouse line that models Arhinia, or absent nose (SMCHD1). Hypothesis testing was performed using kernel mean embedding random forest (KMERF), and further testing using KMERF testing was done on an open-field battery separately and jointly with the other SHIRPA screens.\nResults: For the CPF study, we found that there was not a significant difference between the dosed and wild type mice when consider just the SHIRPA screens, likely due to the small sample size of the experiment. When evaluating the open field test with and without the other SHIRPA screens, this difference becomes significant. We showed that locomotor activity and average grip strength were the most important tests when looking just at the SHIRPA screens, but open field results indicate that motor related tests were significantly more important than any other SHIRPA screen. For the SMCHD1 study, the same analysis revealed that the homomorph mice were driving the significance in the test. Once again, the model determined that feature locomotor activity and average grip strength were driving that difference the most.\nConclusions: In these studies, looking at the SHIRPA screens alone seem to be a good metric to determine differences between groups, and significant differences exist in all groups studied. KMERF discovered novel behavioral features in the open field results that had previously been ignored. This preliminary study shows the utility of machine-learning approaches like KMERF to find underlying dependencies that conventional approaches cannot, and how we can apply these methods to improve current neurological screening batteries.",
     "title": "Elucidating Relationships within Neurological Screening Batteries via Random Forest-Based Hypothesis Testing",
     "author": [
@@ -591,6 +591,21 @@
       {
         "family": "Cushman",
         "given": "Jesse D."
+      }
+    ]
+  },
+  "panda2025generative": {
+    "type": "talk",
+    "abstract": "Increasingly, generative AI models have shown a lot of promise in a variety of biomedical applications, such as Alpha-Fold for generating sequences of proteins and Evo for generating DNA sequences. This workshop gives an overview of current state-of-the-art methods for biomedical applications and how users can get started using code.",
+    "title": "Generative AI for Biomedical Decisions",
+    "author": [
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Cruz",
+        "given": "Christian"
       }
     ]
   }

@@ -13,7 +13,7 @@ layout: base.html
       <strong>{{ name }}</strong>
       {%- else %} {{ name }} {%- endif -%} {%- if loop.length >= 2 %}{%- if not
       loop.last %},{%- endif -%}{%- endif -%} {%- endfor %} {%- endif -%}<br />
-      {% if project.type != "other" %} {{ project.journal }}, {% endif -%}
+      {% if project.journal %} {{ project.journal }}, {% endif -%}
       <span
         class="entry-published date"
         itemprop="dateCreated pubdate datePublished"
@@ -48,13 +48,18 @@ layout: base.html
       {% endfor %} {% endif %}
     </ul>
 
-    {{ content | smart | safe }}
-
+    {% if content %} {{ content | smart | safe }} {% endif %} {% if
+    project.abstract %}
     <h2 id="abstract">Abstract</h2>
     {% set abstract = project.abstract %} {% if replace %} {% for repl in
     replace %} {% set r = repl.split(": ") %} {%- set abstract = abstract |
     replace(r[0], r[1]) -%} {% endfor %} {% endif %}
     <p>{{ abstract | smart | safe }}</p>
+    {% endif %} {% if youtubeVideoID %} {% if not youtubeVideoTitle %}
+    <p style="color: red">Video title cannot be empty.</p>
+    {% else %}
+    <h2 id="technical-talk">Technical Talk</h2>
+    {% include "youtube-embed.html" %} {% endif %} {% endif %}
   </div>
 </div>
 

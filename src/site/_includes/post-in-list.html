@@ -19,6 +19,10 @@
                 <span class="emoji-title">📝</span>
             {% elseif project.type == "thesis" %}
                 <span class="emoji-title">🎓</span>
+            {% elseif project.type == "talk" %}
+                <span class="emoji-title">🗣️</span>
+            {% elseif project.type == "poster" %}
+                <span class="emoji-title">🪧</span>
             {% endif -%}
         {% endif -%}
         {% if post.data.tags.includes('software') %}
@@ -33,7 +37,7 @@
     <p class="details">
         {% if post.data.tags.includes('research') -%}
             {% include "research-authors.html" %}<br>
-            {% if project.type != "other" -%}
+            {% if project.journal -%}
                 <em>{%- if project.DOI -%}
                 <a href="https://doi.org/{{ project.DOI }}">
                 {%- else -%}
