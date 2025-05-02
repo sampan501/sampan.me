@@ -7,7 +7,7 @@ links:
   - "About: https://healthyhuman.tech/"
   - "Resources: https://github.com/qutublab/MATCH?tab=readme-ov-file#workshop-2"
   - "Slides: ../pdf/2025-aim-ahead-workshop.pdf"
-  - "Code: https://nbviewer.org/github/qutublab/MATCH/blob/main/2025-09-29-Gen-AI/genai-biomedical-code.ipynb"
+  - "Code: https://nbviewer.org/github/qutublab/MATCH/blob/main/2025-04-29-Gen-AI/genai-biomedical-code.ipynb"
 tags:
   - LLMs
   - Diffusion Models
