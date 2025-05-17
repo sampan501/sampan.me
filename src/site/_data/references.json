@@ -608,5 +608,39 @@
         "given": "Christian"
       }
     ]
+  },
+  "bridgeford2025applications": {
+    "type": "chapter",
+    "abstract": "Bridging theory and practice in network data analysis, this guide offers an intuitive approach to understanding and analyzing complex networks. It covers foundational concepts, practical tools, and real-world applications using Python frameworks including NumPy, SciPy, scikit-learn, graspologic, and NetworkX. Readers will learn to apply network machine learning techniques to real-world problems, transform complex network structures into meaningful representations, leverage Python libraries for efficient network analysis, and interpret network data and results. The book explores methods for extracting valuable insights across various domains such as social networks, ecological systems, and brain connectivity. Hands-on tutorials and concrete examples develop intuition through visualization and mathematical reasoning.The book will equip data scientists, students, and researchers in applications using network data with the skills to confidently tackle network machine learning projects, providing a robust toolkit for data science applications involving network-structured data.",
+    "journal": "Hands-On Network Machine Learning with Python",
+    "event-place": "Cambridge",
+    "ISBN": "978-1-009-40539-3",
+    "publisher": "Cambridge University Press",
+    "publisher-place": "Cambridge",
+    "source": "Cambridge University Press",
+    "title": "Applications for two networks",
+    "URL": "https://www.cambridge.org/core/books/handson-network-machine-learning-with-python/9735741A096973A9C963E930BBAF5368",
+    "author": [
+      {
+        "family": "Bridgeford",
+        "given": "Eric W."
+      },
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      },
+      {
+        "family": "Saad-Eldin",
+        "given": "Ali"
+      },
+      {
+        "family": "Loftus",
+        "given": "Alexander R."
+      },
+      {
+        "family": "Vogelstein",
+        "given": "Joshua T."
+      }
+    ]
   }
 }

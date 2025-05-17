@@ -19,10 +19,14 @@
                 <span class="emoji-title">📝</span>
             {% elseif project.type == "thesis" %}
                 <span class="emoji-title">🎓</span>
+            {% elseif project.type == "paper-conference" %}
+                <span class="emoji-title">📘</span>
+            {% elseif project.type == "chapter" %}
+                <span class="emoji-title">📖</span>
             {% elseif project.type == "talk" %}
                 <span class="emoji-title">🗣️</span>
             {% elseif project.type == "poster" %}
-                <span class="emoji-title">🪧</span>
+                <span class="emoji-title">🖼️</span>
             {% endif -%}
         {% endif -%}
         {% if post.data.tags.includes('software') %}
