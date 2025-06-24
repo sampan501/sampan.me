@@ -642,5 +642,22 @@
         "given": "Joshua T."
       }
     ]
+  },
+  "panda2024random": {
+    "type": "thesis",
+    "abstract": "Hypothesis testing is the foundation of scientific inquiry. Contemporary data for hypothesis testing includes thousands of variables collected on a cohort composed of a small number of samples. From these data, machine learning technologies are employed to evaluate various hypotheses and statistics about an outcome, such as the presence or absence of a disease. We here ask a question that has been challenging to answer: does a set of variables provide enough relevant information about an outcome? We answer this question in this thesis by: (1) reducing this question (also known as the k-sample testing problem) to the well-known independence testing problem, (2) using a kernel decision forests, which are popular tools for classification and regression, to develop a new hypothesis test, and (3) estimate information-theoretic quantities directly from random forest which allows us to quantify uncertainty within the data set. We show the value of these approaches through extensive mathematical theory, simulated experiments, and applications to cancer detection. Specifically, when developing cancer detection models, we find that combinations of variable sets often decrease rather than increase sensitivity over the optimal single variable set. Based on these results, we suggest that our algorithms can more efficiently and reliably answer this question than existing approaches.",
+    "language": "en_US",
+    "license": "All rights reserved",
+    "journal": "Johns Hopkins",
+    "source": "jscholarship.library.jhu.edu",
+    "title": "Random Forest for Hypothesis Testing: Development and Application to Cancer Detection",
+    "title-short": "Random Forest for Hypothesis Testing",
+    "URL": "https://jscholarship.library.jhu.edu/handle/1774.2/70609",
+    "author": [
+      {
+        "family": "Panda",
+        "given": "Sambit"
+      }
+    ]
   }
 }
