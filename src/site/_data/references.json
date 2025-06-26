@@ -609,40 +609,6 @@
       }
     ]
   },
-  "bridgeford2025applications": {
-    "type": "chapter",
-    "abstract": "Bridging theory and practice in network data analysis, this guide offers an intuitive approach to understanding and analyzing complex networks. It covers foundational concepts, practical tools, and real-world applications using Python frameworks including NumPy, SciPy, scikit-learn, graspologic, and NetworkX. Readers will learn to apply network machine learning techniques to real-world problems, transform complex network structures into meaningful representations, leverage Python libraries for efficient network analysis, and interpret network data and results. The book explores methods for extracting valuable insights across various domains such as social networks, ecological systems, and brain connectivity. Hands-on tutorials and concrete examples develop intuition through visualization and mathematical reasoning.The book will equip data scientists, students, and researchers in applications using network data with the skills to confidently tackle network machine learning projects, providing a robust toolkit for data science applications involving network-structured data.",
-    "journal": "Hands-On Network Machine Learning with Python",
-    "event-place": "Cambridge",
-    "ISBN": "978-1-009-40539-3",
-    "publisher": "Cambridge University Press",
-    "publisher-place": "Cambridge",
-    "source": "Cambridge University Press",
-    "title": "Applications for Two Networks",
-    "URL": "https://www.cambridge.org/core/books/handson-network-machine-learning-with-python/9735741A096973A9C963E930BBAF5368",
-    "author": [
-      {
-        "family": "Bridgeford",
-        "given": "Eric W."
-      },
-      {
-        "family": "Panda",
-        "given": "Sambit"
-      },
-      {
-        "family": "Saad-Eldin",
-        "given": "Ali"
-      },
-      {
-        "family": "Loftus",
-        "given": "Alexander R."
-      },
-      {
-        "family": "Vogelstein",
-        "given": "Joshua T."
-      }
-    ]
-  },
   "panda2024random": {
     "type": "thesis",
     "abstract": "Hypothesis testing is the foundation of scientific inquiry. Contemporary data for hypothesis testing includes thousands of variables collected on a cohort composed of a small number of samples. From these data, machine learning technologies are employed to evaluate various hypotheses and statistics about an outcome, such as the presence or absence of a disease. We here ask a question that has been challenging to answer: does a set of variables provide enough relevant information about an outcome? We answer this question in this thesis by: (1) reducing this question (also known as the k-sample testing problem) to the well-known independence testing problem, (2) using a kernel decision forests, which are popular tools for classification and regression, to develop a new hypothesis test, and (3) estimate information-theoretic quantities directly from random forest which allows us to quantify uncertainty within the data set. We show the value of these approaches through extensive mathematical theory, simulated experiments, and applications to cancer detection. Specifically, when developing cancer detection models, we find that combinations of variable sets often decrease rather than increase sensitivity over the optimal single variable set. Based on these results, we suggest that our algorithms can more efficiently and reliably answer this question than existing approaches.",
