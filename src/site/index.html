@@ -19,10 +19,10 @@ home: true
       width="700"
       height="700"
       loading="eager"
-      decoding="sync"
+      decoding="async"
     />
     <div class="profile-title">
-      <h1>{{- heading | markdown | safe }}</h1>
+      <h1>{{- heading | smart | safe }}</h1>
       <div class="subtitle">{{- subtitle | smart | safe }}</div>
       <div class="social" aria-label="repeated social links">
         {% include "social-links.html" -%}
