@@ -41,18 +41,16 @@
 }
 
 .profile-img {
-  max-width: 8rem;
-  min-width: 6rem;
   height: auto;
   border-radius: 50%;
   margin: 0;
-  width: 100%;
+  width: 8rem;
 
   @media (min-width: $l) {
     @include overspill-reset;
   }
 
   @media (max-width: $m) {
-    max-width: 6rem;
+    width: 6rem;
   }
 }
