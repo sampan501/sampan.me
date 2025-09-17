@@ -1,6 +1,6 @@
 ---
 title: "Leah"
-intro: "A powerful, compassionate tool that empower doctors to deliver faster, smarter, and more human care"
+intro: "A powerful, compassionate tool that empower doctors to deliver faster, smarter, and more human care."
 url: https://leah.health/
 date: 2025-09-17
 featured: true

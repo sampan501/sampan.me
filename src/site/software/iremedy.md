@@ -8,7 +8,6 @@ tags:
   - Python
   - PyTorch
   - scikit-learn
-  - TypeScript
   - SQL
   - Google Cloud
   - React JS
