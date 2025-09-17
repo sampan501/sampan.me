@@ -8,7 +8,9 @@ permalink: about.html
 
 Hi, my name is Sambit! <span class="wave">👋</span>
 
-I currently work as an AI Research Scientist at the [MATRIX AI Consortium](https://ai.utsa.edu/) where I develop AI solutions to improve trauma care delivery for patients.
+I'm currently the Co-Founder/CEO of Leah Health, a health-tech startup focused on
+giving clinicians smarter and faster decision support.
+I also work as an AI Research Scientist at the [MATRIX AI Consortium](https://ai.utsa.edu/) where I am a lead on the [iRemedyACT project](https://ai.utsa.edu/iremedyact/), which is focused on improving trauma care delivery for patients.
 My research interests lie on the intersection of AI and medicine.
 
 Previously, I completed a PhD in the [Department of Biomedical Engineering](http://www.bme.jhu.edu/) and [Institute of Computational Medicine](https://icm.jhu.edu/), at Johns Hopkins, where I had the pleasure working with Joshua T. Vogelstein in the [NeuroData lab](https://neurodata.io/).
